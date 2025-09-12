@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InsuranceFlatOnOffInactiveView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На вашем балансе 30 дней" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUg-0E-iWn">
+                    <rect key="frame" x="18" y="24" width="378" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы можете активировать дополнительную защиту от рисков" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hle-DI-W8y">
+                    <rect key="frame" x="33" y="60" width="348" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cJ-T7-RbA">
+                    <rect key="frame" x="27" y="119" width="360" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="yv9-gg-9jB"/>
+                    </constraints>
+                    <state key="normal" title="Купить пакет дней"/>
+                    <connections>
+                        <action selector="purchase" destination="iN0-l3-epB" eventType="touchUpInside" id="3t0-W4-5xy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRD-nv-WsP" customClass="RoundEdgeButton" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="20" y="164" width="374" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="iJO-2j-nwg"/>
+                    </constraints>
+                    <state key="normal" title="Активировать защиту"/>
+                    <connections>
+                        <action selector="activate" destination="iN0-l3-epB" eventType="touchUpInside" id="4nK-92-AfW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dRD-nv-WsP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0Ji-cY-qsx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1cJ-T7-RbA" secondAttribute="trailing" constant="27" id="25T-5b-oj9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nUg-0E-iWn" secondAttribute="trailing" constant="18" id="71X-U6-Fjw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dRD-nv-WsP" secondAttribute="bottom" constant="24" id="8h3-vg-vro"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hle-DI-W8y" secondAttribute="trailing" constant="33" id="9zm-uR-wrQ"/>
+                <constraint firstItem="nUg-0E-iWn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="Hyg-kv-hfe"/>
+                <constraint firstItem="dRD-nv-WsP" firstAttribute="top" secondItem="1cJ-T7-RbA" secondAttribute="bottom" constant="3" id="Ixq-4G-acI"/>
+                <constraint firstItem="1cJ-T7-RbA" firstAttribute="top" secondItem="Hle-DI-W8y" secondAttribute="bottom" constant="18" id="Y0h-LS-Mog"/>
+                <constraint firstItem="1cJ-T7-RbA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="27" id="aXM-Cj-OiX"/>
+                <constraint firstItem="Hle-DI-W8y" firstAttribute="top" secondItem="nUg-0E-iWn" secondAttribute="bottom" constant="15" id="cID-62-9Tf"/>
+                <constraint firstItem="Hle-DI-W8y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="33" id="hhM-AY-h9s"/>
+                <constraint firstItem="nUg-0E-iWn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="q34-fn-1fD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dRD-nv-WsP" secondAttribute="trailing" constant="20" id="qaf-iK-rhq"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activateButton" destination="dRD-nv-WsP" id="TQh-sk-KiS"/>
+                <outlet property="purchaseButton" destination="1cJ-T7-RbA" id="yvO-aV-11A"/>
+                <outlet property="subtitleLabel" destination="Hle-DI-W8y" id="EjA-Ur-0DY"/>
+                <outlet property="titleLabel" destination="nUg-0E-iWn" id="bxB-WI-obn"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="-146.62668665667167"/>
+        </view>
+    </objects>
+</document>

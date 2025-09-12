@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InsuranceFlatOnOffLoadingView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqH-5S-hJ2" customClass="ShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="110" y="45" width="155" height="9"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="eGs-6d-G2C"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ud-s0-KeV" customClass="ShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="48" y="78" width="279" height="9"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="UPg-zP-m4K"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKd-cQ-x75" customClass="ShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="73" y="93" width="229" height="9"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="1MR-cf-Nea"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sV5-NJ-LSj" customClass="ShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="42" y="135" width="291" height="36"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="ggQ-TC-4ZI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eqH-5S-hJ2" secondAttribute="trailing" constant="110" id="3MS-Fz-tkB"/>
+                <constraint firstItem="8ud-s0-KeV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="BzQ-5E-agO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8ud-s0-KeV" secondAttribute="trailing" constant="48" id="DMV-l0-Q3T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dKd-cQ-x75" secondAttribute="trailing" constant="73" id="DWc-se-oUh"/>
+                <constraint firstItem="8ud-s0-KeV" firstAttribute="top" secondItem="eqH-5S-hJ2" secondAttribute="bottom" constant="24" id="GW4-s0-ESl"/>
+                <constraint firstItem="dKd-cQ-x75" firstAttribute="top" secondItem="8ud-s0-KeV" secondAttribute="bottom" constant="6" id="USn-nH-xve"/>
+                <constraint firstItem="eqH-5S-hJ2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="45" id="X9E-fy-GmG"/>
+                <constraint firstItem="dKd-cQ-x75" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="73" id="azC-f1-DGR"/>
+                <constraint firstItem="sV5-NJ-LSj" firstAttribute="top" secondItem="dKd-cQ-x75" secondAttribute="bottom" constant="33" id="hNZ-xD-iEK"/>
+                <constraint firstItem="eqH-5S-hJ2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="110" id="mnG-zL-vZY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sV5-NJ-LSj" secondAttribute="trailing" constant="42" id="orl-vD-IJP"/>
+                <constraint firstItem="sV5-NJ-LSj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="42" id="rom-vc-g3e"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sV5-NJ-LSj" secondAttribute="bottom" constant="45" id="wzs-jr-dkY"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="loadingView1" destination="eqH-5S-hJ2" id="ZQr-sJ-nqG"/>
+                <outlet property="loadingView2" destination="8ud-s0-KeV" id="Xzh-z2-Pl4"/>
+                <outlet property="loadingView3" destination="dKd-cQ-x75" id="fGe-mt-M7R"/>
+                <outlet property="loadingView4" destination="sV5-NJ-LSj" id="WlM-Ys-i0q"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-54.422788605697157"/>
+        </view>
+    </objects>
+</document>

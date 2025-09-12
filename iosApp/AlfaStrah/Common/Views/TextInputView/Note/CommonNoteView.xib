@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonNoteView" customModule="AlfaStrah" customModuleProvider="target">
+            <connections>
+                <outlet property="iconView" destination="yib-r0-nhZ" id="zbj-Kv-Oez"/>
+                <outlet property="noteView" destination="i5s-mp-zbo" id="9JV-GO-FdY"/>
+                <outlet property="rootStackView" destination="k9O-wB-S5o" id="P24-dV-hS9"/>
+                <outlet property="separatorView" destination="o2f-8t-EmB" id="bCt-Rb-8iO"/>
+                <outlet property="titleLabel" destination="fHn-ID-fui" id="16N-Sx-TNg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="swx-wn-ZJm">
+                    <rect key="frame" x="0.0" y="20" width="382" height="132"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k9O-wB-S5o">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="104.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EUE-9j-mqC">
+                                    <rect key="frame" x="0.0" y="0.0" width="338" height="104.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-ID-fui">
+                                            <rect key="frame" x="0.0" y="0.0" width="338" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5s-mp-zbo" customClass="NoteView" customModule="AlfaStrah" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="24.5" width="338" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" placeholder="YES" id="Svl-Rc-ESL"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yib-r0-nhZ">
+                                    <rect key="frame" x="358" y="40.5" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="ebd-GV-eEF"/>
+                                        <constraint firstAttribute="height" constant="24" id="rfj-3P-7UU"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-8t-EmB" customClass="HairLineView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="151" width="382" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="i0y-eZ-p28"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="o2f-8t-EmB" firstAttribute="leading" secondItem="swx-wn-ZJm" secondAttribute="leadingMargin" id="Jdo-AG-e5w"/>
+                <constraint firstItem="swx-wn-ZJm" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KqI-Oe-r9p"/>
+                <constraint firstItem="swx-wn-ZJm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fsn-jd-JDn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="o2f-8t-EmB" secondAttribute="bottom" id="hRH-Y6-Xbs"/>
+                <constraint firstItem="swx-wn-ZJm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="l9b-qT-8t4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="swx-wn-ZJm" secondAttribute="bottom" id="oTm-Rc-B13"/>
+                <constraint firstItem="o2f-8t-EmB" firstAttribute="trailing" secondItem="swx-wn-ZJm" secondAttribute="trailing" id="pi4-qI-XeW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34" y="-202"/>
+        </view>
+    </objects>
+</document>

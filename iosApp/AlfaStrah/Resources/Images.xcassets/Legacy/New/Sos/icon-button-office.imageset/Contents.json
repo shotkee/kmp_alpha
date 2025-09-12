@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon-sos-action-office.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

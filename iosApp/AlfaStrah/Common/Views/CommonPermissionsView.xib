@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nsP-AM-cAg" customClass="CommonPermissionsView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCh-cz-FfS">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcv-a2-Ffz">
+                            <rect key="frame" x="0.0" y="0.0" width="418" height="236"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="2Qq-NS-dXn">
+                                    <rect key="frame" x="18" y="18" width="382" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" placeholder="YES" id="L4G-eV-qIF"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="2Qq-NS-dXn" firstAttribute="top" secondItem="Tcv-a2-Ffz" secondAttribute="top" constant="18" id="8ZF-tE-C3U"/>
+                                <constraint firstAttribute="trailing" secondItem="2Qq-NS-dXn" secondAttribute="trailing" constant="18" id="ISj-Uw-qlB"/>
+                                <constraint firstAttribute="bottom" secondItem="2Qq-NS-dXn" secondAttribute="bottom" constant="18" id="ad9-sq-YGO"/>
+                                <constraint firstItem="2Qq-NS-dXn" firstAttribute="leading" secondItem="Tcv-a2-Ffz" secondAttribute="leading" constant="18" id="boZ-jP-Sr2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Tcv-a2-Ffz" firstAttribute="top" secondItem="yCh-cz-FfS" secondAttribute="top" id="CvW-dV-Z14"/>
+                        <constraint firstAttribute="trailing" secondItem="Tcv-a2-Ffz" secondAttribute="trailing" id="TNX-d1-1wo"/>
+                        <constraint firstItem="Tcv-a2-Ffz" firstAttribute="leading" secondItem="yCh-cz-FfS" secondAttribute="leading" id="z0q-K4-Bqh"/>
+                        <constraint firstAttribute="bottom" secondItem="Tcv-a2-Ffz" secondAttribute="bottom" id="zJm-85-eyT"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x51-Lm-Cox" customClass="RoundEdgeButton" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="18" y="798" width="378" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Cgb-Sj-A77"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="settingsTap" destination="nsP-AM-cAg" eventType="touchUpInside" id="deU-WM-EGY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dji-Pe-30s"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yCh-cz-FfS" firstAttribute="trailing" secondItem="dji-Pe-30s" secondAttribute="trailing" id="2CN-lT-RcX"/>
+                <constraint firstItem="yCh-cz-FfS" firstAttribute="leading" secondItem="dji-Pe-30s" secondAttribute="leading" id="P4B-uf-aZB"/>
+                <constraint firstItem="Tcv-a2-Ffz" firstAttribute="width" secondItem="nsP-AM-cAg" secondAttribute="width" multiplier="1.00966" id="UgH-oz-kSo"/>
+                <constraint firstItem="x51-Lm-Cox" firstAttribute="leading" secondItem="dji-Pe-30s" secondAttribute="leading" constant="18" id="hMP-JB-Fya"/>
+                <constraint firstItem="yCh-cz-FfS" firstAttribute="bottom" secondItem="dji-Pe-30s" secondAttribute="bottom" id="jeK-HR-dyi"/>
+                <constraint firstItem="dji-Pe-30s" firstAttribute="bottom" secondItem="x51-Lm-Cox" secondAttribute="bottom" constant="16" id="m7z-LA-aHV"/>
+                <constraint firstItem="dji-Pe-30s" firstAttribute="trailing" secondItem="x51-Lm-Cox" secondAttribute="trailing" constant="18" id="q9b-Yp-eQ2"/>
+                <constraint firstItem="yCh-cz-FfS" firstAttribute="top" secondItem="dji-Pe-30s" secondAttribute="top" id="y2C-zY-GPu"/>
+            </constraints>
+            <connections>
+                <outlet property="actionButton" destination="x51-Lm-Cox" id="BCe-sx-OwQ"/>
+                <outlet property="rootStackView" destination="2Qq-NS-dXn" id="f2Q-oP-7PI"/>
+                <outlet property="scrollView" destination="yCh-cz-FfS" id="UOd-pD-VUj"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="-498"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="x51-Lm-Cox">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

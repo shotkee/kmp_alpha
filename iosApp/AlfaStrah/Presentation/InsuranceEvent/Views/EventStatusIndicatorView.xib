@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventStatusIndicatorView" customModule="AlfaStrah" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLineView" destination="suy-vL-3pB" id="xsw-za-KvI"/>
+                <outlet property="iconImageView" destination="jdE-U5-t1D" id="CVd-i5-A5V"/>
+                <outlet property="topLineView" destination="sKB-s3-juM" id="hmi-t3-b2q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Otx-Xd-t5b">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="299"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKB-s3-juM">
+                    <rect key="frame" x="84.5" y="0.0" width="1" height="11"/>
+                    <color key="backgroundColor" red="0.81185984609999995" green="0.82528805729999999" blue="0.8445427418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="W4R-bS-8Et"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="jdE-U5-t1D" customClass="NetworkImageView" customModule="Legacy">
+                    <rect key="frame" x="69" y="15" width="32" height="32"/>
+                    <color key="backgroundColor" red="0.13142174479999999" green="0.87128096820000001" blue="0.3569818139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="UIX-hg-rhY"/>
+                        <constraint firstAttribute="height" constant="32" id="eUf-H9-eBR"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suy-vL-3pB">
+                    <rect key="frame" x="84.5" y="51" width="1" height="248"/>
+                    <color key="backgroundColor" red="0.81185984609999995" green="0.82528805729999999" blue="0.8445427418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Ma6-Mt-Wz8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cGJ-8B-L8s"/>
+            <constraints>
+                <constraint firstItem="jdE-U5-t1D" firstAttribute="leading" secondItem="Otx-Xd-t5b" secondAttribute="leading" priority="990" constant="6" id="6jJ-87-t8D"/>
+                <constraint firstAttribute="trailing" secondItem="jdE-U5-t1D" secondAttribute="trailing" priority="990" constant="6" id="A9k-3g-DQZ"/>
+                <constraint firstAttribute="bottom" secondItem="suy-vL-3pB" secondAttribute="bottom" id="KRq-21-Kmd"/>
+                <constraint firstAttribute="centerX" secondItem="suy-vL-3pB" secondAttribute="centerX" id="Sdk-cV-fwu"/>
+                <constraint firstItem="jdE-U5-t1D" firstAttribute="top" secondItem="Otx-Xd-t5b" secondAttribute="top" constant="15" id="ccX-Dj-zjH"/>
+                <constraint firstItem="sKB-s3-juM" firstAttribute="top" secondItem="Otx-Xd-t5b" secondAttribute="top" id="fvh-lH-rS4"/>
+                <constraint firstAttribute="centerX" secondItem="jdE-U5-t1D" secondAttribute="centerX" id="gLj-1i-n0y"/>
+                <constraint firstItem="suy-vL-3pB" firstAttribute="top" secondItem="jdE-U5-t1D" secondAttribute="bottom" constant="4" id="gUN-iM-oOc"/>
+                <constraint firstAttribute="centerX" secondItem="sKB-s3-juM" secondAttribute="centerX" id="nwL-2c-JWJ"/>
+                <constraint firstItem="jdE-U5-t1D" firstAttribute="top" secondItem="sKB-s3-juM" secondAttribute="bottom" constant="4" id="tDU-xg-xwm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="A9k-3g-DQZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="395" y="242"/>
+        </view>
+    </objects>
+</document>

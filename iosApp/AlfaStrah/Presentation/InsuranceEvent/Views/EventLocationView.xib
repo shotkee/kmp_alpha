@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EventLocationView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="207"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="j2A-nm-4c1">
+                    <rect key="frame" x="0.0" y="0.0" width="383" height="207"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gyp-CA-XXS">
+                            <rect key="frame" x="0.0" y="0.0" width="383" height="107"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="I32-Jd-T6R">
+                                    <rect key="frame" x="0.0" y="31" width="329" height="45"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="245" verticalHuggingPriority="245" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-00-7wt">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="245" verticalHuggingPriority="245" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1L-xV-XzR">
+                                            <rect key="frame" x="0.0" y="24.5" width="329" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-sos-kasko-location" translatesAutoresizingMaskIntoConstraints="NO" id="0mt-sX-y5V">
+                                    <rect key="frame" x="339" y="31.5" width="44" height="44"/>
+                                    <color key="tintColor" red="0.81185984609999995" green="0.82528805729999999" blue="0.8445427418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPJ-Ei-Y45" customClass="YMKMapView">
+                            <rect key="frame" x="0.0" y="111" width="383" height="96"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="900" constant="96" id="5T6-wF-QgK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j2A-nm-4c1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4jX-7w-Xr5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="j2A-nm-4c1" secondAttribute="trailing" id="SHU-Lc-omd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j2A-nm-4c1" secondAttribute="bottom" id="TCo-7o-nsG"/>
+                <constraint firstItem="j2A-nm-4c1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gas-k6-80m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressStackView" destination="Gyp-CA-XXS" id="edX-Gi-G6w"/>
+                <outlet property="mapView" destination="vPJ-Ei-Y45" id="FAm-0f-MzY"/>
+                <outlet property="stackView" destination="j2A-nm-4c1" id="owo-jh-A6d"/>
+                <outlet property="subtitleLabel" destination="T1L-xV-XzR" id="pYG-Zi-FKl"/>
+                <outlet property="titleLabel" destination="KMg-00-7wt" id="JeL-Bg-pUV"/>
+            </connections>
+            <point key="canvasLocation" x="0.80000000000000004" y="-133.5832083958021"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-sos-kasko-location" width="44" height="44"/>
+    </resources>
+</document>

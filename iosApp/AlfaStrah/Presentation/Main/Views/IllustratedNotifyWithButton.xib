@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="IllustratedNotifyWithButton" id="iN0-l3-epB" customClass="IllustratedNotifyWithButton" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="276"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Текст" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qft-5U-Pdw">
+                    <rect key="frame" x="3" y="163" width="371" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" name="Text Secondary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NiV-bZ-mlr">
+                    <rect key="frame" x="129.5" y="41" width="118" height="106"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="106" id="LRD-Y7-CYa"/>
+                        <constraint firstAttribute="width" constant="118" id="YK3-Ks-ASi"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmw-lz-zn5" customClass="RoundEdgeButton" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="107.5" y="216" width="162" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="162" id="9bW-de-rB6"/>
+                        <constraint firstAttribute="height" constant="42" id="G8D-Az-0qx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Войти">
+                        <color key="titleColor" red="0.89803921568627454" green="0.098039215686274508" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.8980392157" green="0.098039215690000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="UIz-uV-9y9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background Content"/>
+            <constraints>
+                <constraint firstItem="qft-5U-Pdw" firstAttribute="top" secondItem="NiV-bZ-mlr" secondAttribute="bottom" constant="16" id="1Sa-RZ-dNU"/>
+                <constraint firstItem="qft-5U-Pdw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="3" id="63N-9h-gso"/>
+                <constraint firstItem="Dmw-lz-zn5" firstAttribute="top" secondItem="qft-5U-Pdw" secondAttribute="bottom" constant="18" id="6nv-Lo-ssv"/>
+                <constraint firstItem="qft-5U-Pdw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AV4-Jb-kVd"/>
+                <constraint firstItem="NiV-bZ-mlr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P8T-d7-SND"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dmw-lz-zn5" secondAttribute="bottom" constant="18" id="Soe-1M-dpY"/>
+                <constraint firstItem="Dmw-lz-zn5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wil-gH-p3w"/>
+                <constraint firstItem="NiV-bZ-mlr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="21" id="uc5-ly-Scc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButton" destination="Dmw-lz-zn5" id="Hqw-DE-4FT"/>
+                <outlet property="illustrationImageView" destination="NiV-bZ-mlr" id="XhJ-kt-t8v"/>
+                <outlet property="textLabel" destination="qft-5U-Pdw" id="R1V-sA-6lb"/>
+            </connections>
+            <point key="canvasLocation" x="143.19999999999999" y="254.57271364317842"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Dmw-lz-zn5">
+            <size key="intrinsicContentSize" width="44" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Background Content">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Secondary">
+            <color red="0.52549019607843139" green="0.52549019607843139" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

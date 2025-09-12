@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocumentCardView" customModule="AlfaStrah" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="MJc-4Q-Nwv" id="xEm-Yt-TDq"/>
+                <outlet property="iconView" destination="hWv-V7-e8x" id="XtH-ay-lZa"/>
+                <outlet property="titleLabel" destination="zNg-gq-Obj" id="jYD-Fk-iU7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="178"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insurance-action-manual" translatesAutoresizingMaskIntoConstraints="NO" id="hWv-V7-e8x">
+                    <rect key="frame" x="15" y="15" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hWv-V7-e8x" secondAttribute="height" multiplier="1:1" id="evX-E3-EjM"/>
+                        <constraint firstAttribute="height" constant="24" id="pM4-6D-SAc"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ULB-01-v4D">
+                    <rect key="frame" x="337" y="15" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ULB-01-v4D" secondAttribute="height" multiplier="1:1" id="Gyx-lT-ZUs"/>
+                        <constraint firstAttribute="height" constant="24" id="juo-qM-gcd"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="HvW-tD-uzK">
+                    <rect key="frame" x="48" y="17" width="280" height="146"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-gq-Obj">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJc-4Q-Nwv">
+                            <rect key="frame" x="0.0" y="29.333333333333336" width="280" height="116.66666666666666"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ULB-01-v4D" firstAttribute="leading" secondItem="HvW-tD-uzK" secondAttribute="trailing" constant="9" id="3Cz-Zi-TXz"/>
+                <constraint firstItem="hWv-V7-e8x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="B5m-tl-TOc"/>
+                <constraint firstItem="hWv-V7-e8x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="R2m-FJ-s0n"/>
+                <constraint firstItem="ULB-01-v4D" firstAttribute="centerY" secondItem="hWv-V7-e8x" secondAttribute="centerY" id="U1K-70-BHA"/>
+                <constraint firstItem="zNg-gq-Obj" firstAttribute="centerY" secondItem="hWv-V7-e8x" secondAttribute="centerY" id="Vse-t4-ODx"/>
+                <constraint firstAttribute="trailing" secondItem="ULB-01-v4D" secondAttribute="trailing" constant="15" id="aLQ-Za-T0z"/>
+                <constraint firstAttribute="bottom" secondItem="HvW-tD-uzK" secondAttribute="bottom" constant="15" id="cUO-6D-kpv"/>
+                <constraint firstItem="HvW-tD-uzK" firstAttribute="leading" secondItem="hWv-V7-e8x" secondAttribute="trailing" constant="9" id="h0l-JQ-rMu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="117.55725190839694" y="-250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-arrow" width="24" height="24"/>
+        <image name="insurance-action-manual" width="24" height="24"/>
+    </resources>
+</document>

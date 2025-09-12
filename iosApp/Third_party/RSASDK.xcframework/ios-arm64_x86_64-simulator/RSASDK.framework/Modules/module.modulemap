@@ -1,0 +1,11 @@
+framework module RSASDK {
+  umbrella header "RSASDK.h"
+  export *
+
+  module * { export * }
+}
+
+module RSASDK.Swift {
+  header "RSASDK-Swift.h"
+  requires objc
+}

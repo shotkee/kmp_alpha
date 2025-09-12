@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>${APP_DISPLAY_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${APP_DISPLAY_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAdvertisingAttributionReportEndpoint</key>
+	<string>https://appmetrica.yandex</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+	</dict>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Для добавления событий в календарь</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Для фотографирования места ДТП при оформлении страхового случая или добавления различных документов.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Доступ будет использоваться для управления вашими контактами.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Используйте Face ID для быстрого входа в приложение</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Для участия в программах, анализирующих манеру вашей езды, и использования продуктов поминутного страхования.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Для участия в программах, анализирующих манеру вашей езды, и использования продуктов поминутного страхования.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Для того, чтобы мобильное приложение смогло показывать ближайшие офисы, помогало заполнять заявление о страховом случае и обратном звонке, а также помогало вам экономить с помощью программ, анализирующих манеру езды.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Для совершения звонков через Интернет.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Для загрузки изображений.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Для загрузки изображений.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Если Вы хотите в будущем получать персональные предложения, нам потребуется ваше разрешение на использование ваших данных в обезличенном виде.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>TT-Norms-Pro-Regular.otf</string>
+		<string>TT-Norms-Pro-Normal.otf</string>
+		<string>TT-Norms-Pro-Medium.otf</string>
+		<string>TT-Norms-Pro-DemiBold.otf</string>
+		<string>KievitPro-Bold.otf</string>
+		<string>KievitPro-Book.ttf</string>
+		<string>KievitPro-Regular.otf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>fetch</string>
+		<string>remote-notification</string>
+		<string>voip</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen.storyboard</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+</dict>
+</plist>

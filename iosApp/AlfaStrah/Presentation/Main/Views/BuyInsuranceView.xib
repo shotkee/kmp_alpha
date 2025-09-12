@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KievitPro-Bold.otf">
+            <string>KievitPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="BuyInsuranceView" id="iN0-l3-epB" customClass="BuyInsuranceView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibJ-rc-ge0">
+                    <rect key="frame" x="0.0" y="0.0" width="339" height="63"/>
+                    <connections>
+                        <action selector="insuranceTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="OOq-na-QTE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПОЛИС" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YR-Ef-Y0G">
+                    <rect key="frame" x="39" y="21" width="261" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="V13-j1-5y8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="KievitPro-Bold" family="KievitPro" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ibJ-rc-ge0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Kg-Yj-dbj"/>
+                <constraint firstAttribute="bottom" secondItem="2YR-Ef-Y0G" secondAttribute="bottom" constant="21" id="3ht-zd-a0Z"/>
+                <constraint firstItem="ibJ-rc-ge0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="DWE-wJ-AUB"/>
+                <constraint firstItem="ibJ-rc-ge0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Dej-ge-64Y"/>
+                <constraint firstItem="2YR-Ef-Y0G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="V7f-Qb-Ufh"/>
+                <constraint firstItem="2YR-Ef-Y0G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="39" id="Zvs-kq-svb"/>
+                <constraint firstAttribute="bottom" secondItem="ibJ-rc-ge0" secondAttribute="bottom" id="aer-kK-lCJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2YR-Ef-Y0G" secondAttribute="trailing" constant="39" id="rle-NK-axf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="2YR-Ef-Y0G" id="0sm-jK-I8t"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="254.79910714285714"/>
+        </view>
+    </objects>
+</document>

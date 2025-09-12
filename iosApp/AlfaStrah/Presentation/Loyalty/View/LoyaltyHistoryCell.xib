@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoyaltyHistoryCell" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APR-3e-yJe">
+                    <rect key="frame" x="18" y="14.999999999999998" width="282.66666666666669" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-1w-oKc">
+                    <rect key="frame" x="315.66666666666669" y="14.999999999999998" width="41.333333333333314" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="kdu-pe-cUR">
+                    <rect key="frame" x="18" y="51" width="330" height="71"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h99-J2-IEN">
+                            <rect key="frame" x="0.0" y="0.0" width="330" height="41.666666666666664"/>
+                            <string key="text">Label
+Label</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knF-xT-Ko8">
+                            <rect key="frame" x="0.0" y="50.666666666666671" width="330" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCk-eo-YMS" customClass="HairLineView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="18" y="145" width="339" height="1"/>
+                    <color key="backgroundColor" name="Divider"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ZOf-w4-Yxe"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAg-Sx-4mO">
+                    <rect key="frame" x="357" y="101.66666666666667" width="0.0" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kdu-pe-cUR" secondAttribute="trailing" priority="999" constant="15" id="2Xv-Ao-JDt"/>
+                <constraint firstAttribute="bottom" secondItem="cAg-Sx-4mO" secondAttribute="bottom" constant="24" id="42x-CQ-IXK"/>
+                <constraint firstAttribute="trailing" secondItem="uCk-eo-YMS" secondAttribute="trailing" constant="18" id="4qK-ki-WeM"/>
+                <constraint firstItem="cAg-Sx-4mO" firstAttribute="leading" secondItem="knF-xT-Ko8" secondAttribute="trailing" constant="9" id="5KU-RQ-9Gt"/>
+                <constraint firstItem="kdu-pe-cUR" firstAttribute="leading" secondItem="APR-3e-yJe" secondAttribute="leading" id="AoX-6e-6Yd"/>
+                <constraint firstItem="kdu-pe-cUR" firstAttribute="top" secondItem="APR-3e-yJe" secondAttribute="bottom" constant="15.666666666666664" id="DtX-La-5XU"/>
+                <constraint firstItem="APR-3e-yJe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="Jvl-ZV-6zH"/>
+                <constraint firstAttribute="bottom" secondItem="uCk-eo-YMS" secondAttribute="bottom" id="LVc-hm-o1W"/>
+                <constraint firstItem="APR-3e-yJe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Qd7-PC-9yg"/>
+                <constraint firstItem="uCk-eo-YMS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="QxS-e5-UkH"/>
+                <constraint firstItem="8ZO-1w-oKc" firstAttribute="leading" secondItem="APR-3e-yJe" secondAttribute="trailing" constant="15" id="RhO-Ce-Ac3"/>
+                <constraint firstAttribute="trailing" secondItem="8ZO-1w-oKc" secondAttribute="trailing" constant="18" id="ZgV-i5-Q3s"/>
+                <constraint firstItem="8ZO-1w-oKc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="dQS-TI-65s"/>
+                <constraint firstAttribute="bottom" secondItem="kdu-pe-cUR" secondAttribute="bottom" constant="24" id="nEx-Xq-AOg"/>
+                <constraint firstAttribute="trailing" secondItem="cAg-Sx-4mO" secondAttribute="trailing" constant="18" id="uKn-gf-GQ5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="amountLabel" destination="8ZO-1w-oKc" id="5Vw-1h-1bf"/>
+                <outlet property="bottomConstraint" destination="nEx-Xq-AOg" id="8b0-yi-fWJ"/>
+                <outlet property="contractNumberLabel" destination="knF-xT-Ko8" id="3Sm-zs-34b"/>
+                <outlet property="dateLabel" destination="APR-3e-yJe" id="Asm-kU-fd3"/>
+                <outlet property="descriptionLabel" destination="h99-J2-IEN" id="utN-lv-1Ib"/>
+                <outlet property="operationCanceledLabel" destination="cAg-Sx-4mO" id="msw-eD-ckF"/>
+                <outlet property="separatorView" destination="uCk-eo-YMS" id="LaN-zk-v0k"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Divider">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

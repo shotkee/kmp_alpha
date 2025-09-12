@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="SZV-Un-bt3" customClass="PhotoCardCollectionViewCell" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="S5k-7g-mDo" customClass="PhotoCardView" customModule="AlfaStrah" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="tsA-4q-jUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Z6-M0-slA" customClass="PhotoCardDeleteButton" customModule="AlfaStrah" customModuleProvider="target">
+                        <rect key="frame" x="114" y="-3" width="24" height="24"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="N4G-7Q-DOP"/>
+                            <constraint firstAttribute="height" constant="24" id="eww-vk-jRc"/>
+                        </constraints>
+                        <state key="normal" image="delete"/>
+                        <connections>
+                            <action selector="deleteButtonPressed:" destination="SZV-Un-bt3" eventType="touchUpInside" id="2JC-YG-kvW"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6Z6-M0-slA" secondAttribute="trailing" constant="-3" id="3hO-BU-tQB"/>
+                    <constraint firstAttribute="trailing" secondItem="tsA-4q-jUZ" secondAttribute="trailing" id="BBb-lu-kDo"/>
+                    <constraint firstAttribute="bottom" secondItem="tsA-4q-jUZ" secondAttribute="bottom" id="XJh-Ym-nrf"/>
+                    <constraint firstItem="6Z6-M0-slA" firstAttribute="top" secondItem="S5k-7g-mDo" secondAttribute="top" constant="-3" id="aDR-O2-rWJ"/>
+                    <constraint firstItem="tsA-4q-jUZ" firstAttribute="top" secondItem="S5k-7g-mDo" secondAttribute="top" id="bqg-2s-v6Z"/>
+                    <constraint firstItem="tsA-4q-jUZ" firstAttribute="leading" secondItem="S5k-7g-mDo" secondAttribute="leading" id="urx-EG-JGn"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="115" height="111"/>
+            <connections>
+                <outlet property="deleteButton" destination="6Z6-M0-slA" id="iMa-ue-yeP"/>
+                <outlet property="photoCardImage" destination="tsA-4q-jUZ" id="9pW-Zg-dNZ"/>
+                <outlet property="photoCardView" destination="S5k-7g-mDo" id="Yjp-ov-bee"/>
+            </connections>
+            <point key="canvasLocation" x="105.07246376811595" y="61.272321428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="8" height="8"/>
+        <image name="photo" width="20" height="19"/>
+    </resources>
+</document>

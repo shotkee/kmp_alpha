@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ModalActivityIndicatorView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7f7-LI-iOQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZZ-1U-5OH">
+                    <rect key="frame" x="97" y="388" width="220" height="120"/>
+                    <subviews>
+                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="XBL-OI-vGR" userLabel="activity_indicator_container">
+                            <rect key="frame" x="0.0" y="0.0" width="220" height="88"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="54" placeholderIntrinsicHeight="54" translatesAutoresizingMaskIntoConstraints="NO" id="qMB-nT-pmX" userLabel="activity_indicator_view" customClass="ActivityIndicatorView" customModule="AlfaStrah" customModuleProvider="target">
+                                    <rect key="frame" x="66" y="0.0" width="88" height="88"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="qMB-nT-pmX" secondAttribute="height" multiplier="1:1" id="gL7-jV-qKp"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-9S-XDy">
+                                    <rect key="frame" x="66" y="0.0" width="88" height="88"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="88" id="VlF-gA-jxO"/>
+                                    </constraints>
+                                    <state key="normal" image="icon-close-small"/>
+                                    <connections>
+                                        <action selector="closeTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="O7D-ZV-J5r"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="hfm-9S-XDy" firstAttribute="top" secondItem="qMB-nT-pmX" secondAttribute="top" id="0ni-R1-7qa"/>
+                                <constraint firstAttribute="bottom" secondItem="qMB-nT-pmX" secondAttribute="bottom" id="3r7-cG-bXY"/>
+                                <constraint firstItem="hfm-9S-XDy" firstAttribute="leading" secondItem="qMB-nT-pmX" secondAttribute="leading" id="Izb-6o-dJb"/>
+                                <constraint firstItem="hfm-9S-XDy" firstAttribute="bottom" secondItem="qMB-nT-pmX" secondAttribute="bottom" id="gLc-3I-zqr"/>
+                                <constraint firstItem="qMB-nT-pmX" firstAttribute="top" secondItem="XBL-OI-vGR" secondAttribute="top" id="hJM-m9-cSI"/>
+                                <constraint firstAttribute="centerX" secondItem="qMB-nT-pmX" secondAttribute="centerX" id="i3v-0J-tqx"/>
+                                <constraint firstItem="hfm-9S-XDy" firstAttribute="trailing" secondItem="qMB-nT-pmX" secondAttribute="trailing" id="pcZ-PQ-g0P"/>
+                            </constraints>
+                        </view>
+                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Puo-Ur-iHq" userLabel="info_label_container">
+                            <rect key="frame" x="0.0" y="88" width="220" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="100" constant="32" id="mzC-9s-Fen"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XBL-OI-vGR" firstAttribute="leading" secondItem="hZZ-1U-5OH" secondAttribute="leading" id="0JQ-0w-chg"/>
+                        <constraint firstItem="Puo-Ur-iHq" firstAttribute="top" secondItem="XBL-OI-vGR" secondAttribute="bottom" id="69I-lO-nTA"/>
+                        <constraint firstAttribute="width" priority="740" constant="220" id="CZP-sg-jHQ"/>
+                        <constraint firstAttribute="trailing" secondItem="XBL-OI-vGR" secondAttribute="trailing" id="TgJ-HE-0zu"/>
+                        <constraint firstItem="XBL-OI-vGR" firstAttribute="top" secondItem="hZZ-1U-5OH" secondAttribute="top" id="Y4C-PO-fvN"/>
+                        <constraint firstAttribute="trailing" secondItem="Puo-Ur-iHq" secondAttribute="trailing" id="nOO-t4-Uxp"/>
+                        <constraint firstItem="Puo-Ur-iHq" firstAttribute="leading" secondItem="hZZ-1U-5OH" secondAttribute="leading" id="q4z-rr-XmZ"/>
+                        <constraint firstAttribute="bottom" secondItem="Puo-Ur-iHq" secondAttribute="bottom" id="yy0-Ci-3ol"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7f7-LI-iOQ" secondAttribute="trailing" id="11i-gP-ZEh"/>
+                <constraint firstAttribute="bottom" secondItem="7f7-LI-iOQ" secondAttribute="bottom" id="TI3-Zo-GkU"/>
+                <constraint firstItem="hZZ-1U-5OH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="ZlV-we-gCr"/>
+                <constraint firstItem="hZZ-1U-5OH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="m2F-5G-zak"/>
+                <constraint firstAttribute="centerX" secondItem="hZZ-1U-5OH" secondAttribute="centerX" id="nnG-aR-37W"/>
+                <constraint firstAttribute="centerY" secondItem="hZZ-1U-5OH" secondAttribute="centerY" id="r6g-l2-Ybe"/>
+                <constraint firstItem="7f7-LI-iOQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v2P-WL-4v3"/>
+                <constraint firstItem="7f7-LI-iOQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yvC-1N-2PT"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicatorContainer" destination="XBL-OI-vGR" id="7l2-gA-unv"/>
+                <outlet property="activityIndicatorView" destination="qMB-nT-pmX" id="o4K-wK-ivt"/>
+                <outlet property="closeButton" destination="hfm-9S-XDy" id="awx-IB-F8I"/>
+                <outlet property="indicatorContainer" destination="hZZ-1U-5OH" id="R5S-4t-tfl"/>
+                <outlet property="infoContainer" destination="Puo-Ur-iHq" id="36W-ZD-i0l"/>
+            </connections>
+            <point key="canvasLocation" x="392" y="318"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-close-small" width="14" height="14"/>
+    </resources>
+</document>

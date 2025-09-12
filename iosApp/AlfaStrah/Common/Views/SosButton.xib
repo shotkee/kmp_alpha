@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SosButton" id="iN0-l3-epB" customClass="SosButton" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sos" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Yk-y2-p0s">
+                    <rect key="frame" x="14" y="25" width="38" height="16"/>
+                    <color key="tintColor" name="Icon Contrast"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="dUO-k6-Dlt"/>
+                        <constraint firstAttribute="height" constant="16" id="eFB-cJ-h2c"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background Accent"/>
+            <constraints>
+                <constraint firstItem="8Yk-y2-p0s" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XMD-8u-JQe"/>
+                <constraint firstItem="8Yk-y2-p0s" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oCm-I5-v61"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="-82.366071428571431"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="iN0-l3-epB">
+            <size key="intrinsicContentSize" width="40" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="sos" width="24" height="24"/>
+        <namedColor name="Background Accent">
+            <color red="0.89803921568627454" green="0.098039215686274508" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Icon Contrast">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

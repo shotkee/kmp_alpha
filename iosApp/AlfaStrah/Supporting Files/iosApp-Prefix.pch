@@ -1,0 +1,9 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifndef __cplusplus
+#define auto __auto_type
+#endif

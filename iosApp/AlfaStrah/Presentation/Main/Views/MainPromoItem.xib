@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KievitPro-Regular.otf">
+            <string>KievitPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MainPromoItem" id="iN0-l3-epB" customClass="MainPromoItem" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zo-zw-O9H" customClass="PromoImageView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="0zo-zw-O9H" secondAttribute="width" multiplier="10:25" priority="999" id="uht-7C-VDA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="150" translatesAutoresizingMaskIntoConstraints="NO" id="SBr-L4-hgw">
+                    <rect key="frame" x="0.0" y="150" width="375" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заголовок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzp-93-JXu">
+                            <rect key="frame" x="15" y="15" width="345" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="56y-jd-osC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="245" text="Подзаголовок" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7R-70-X3P">
+                            <rect key="frame" x="15" y="36" width="345" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="dpz-x2-mYF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KievitPro-Regular" family="KievitPro" pointSize="15"/>
+                            <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoI-qS-EEh" customClass="RoundEdgeButton" customModule="AlfaStrah" customModuleProvider="target">
+                            <rect key="frame" x="240" y="99" width="120" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="00A-Bx-2pN"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="x92-kJ-XH5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Подробнее">
+                                <color key="titleColor" name="Text Primary"/>
+                            </state>
+                            <connections>
+                                <action selector="detailClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="9WJ-lP-4D9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QoI-qS-EEh" firstAttribute="top" secondItem="G7R-70-X3P" secondAttribute="bottom" constant="3" id="63U-Gx-y2t"/>
+                        <constraint firstAttribute="trailing" secondItem="uzp-93-JXu" secondAttribute="trailing" constant="15" id="84J-Iz-R1U"/>
+                        <constraint firstItem="uzp-93-JXu" firstAttribute="top" secondItem="SBr-L4-hgw" secondAttribute="top" constant="15" id="BPl-aP-9HH"/>
+                        <constraint firstItem="G7R-70-X3P" firstAttribute="leading" secondItem="uzp-93-JXu" secondAttribute="leading" id="CXN-bL-2PU"/>
+                        <constraint firstAttribute="trailing" secondItem="G7R-70-X3P" secondAttribute="trailing" constant="15" id="MHc-JC-0sT"/>
+                        <constraint firstAttribute="trailing" secondItem="QoI-qS-EEh" secondAttribute="trailing" constant="15" id="NOx-K7-4zF"/>
+                        <constraint firstItem="G7R-70-X3P" firstAttribute="top" secondItem="uzp-93-JXu" secondAttribute="bottom" constant="3" id="Yb5-d4-zro"/>
+                        <constraint firstItem="uzp-93-JXu" firstAttribute="leading" secondItem="SBr-L4-hgw" secondAttribute="leading" constant="15" id="dMp-nv-VQ3"/>
+                        <constraint firstAttribute="bottom" secondItem="QoI-qS-EEh" secondAttribute="bottom" constant="15" id="l3N-2Z-h1L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background Secondary"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SBr-L4-hgw" secondAttribute="trailing" id="D6q-Ol-0cm"/>
+                <constraint firstItem="0zo-zw-O9H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JgR-DZ-avf"/>
+                <constraint firstItem="0zo-zw-O9H" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jy0-Ug-Fe4"/>
+                <constraint firstItem="SBr-L4-hgw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dJp-OK-NF2"/>
+                <constraint firstItem="SBr-L4-hgw" firstAttribute="top" secondItem="0zo-zw-O9H" secondAttribute="bottom" id="iBA-9i-t29"/>
+                <constraint firstItem="SBr-L4-hgw" firstAttribute="height" secondItem="0zo-zw-O9H" secondAttribute="height" id="mtL-FV-eCQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0zo-zw-O9H" secondAttribute="trailing" id="sJg-0W-V5A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SBr-L4-hgw" secondAttribute="bottom" id="wIJ-id-QIx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailButton" destination="QoI-qS-EEh" id="ZIc-Eb-R5q"/>
+                <outlet property="promoImage" destination="0zo-zw-O9H" id="PZt-dp-iY6"/>
+                <outlet property="subtitleLabel" destination="G7R-70-X3P" id="4gz-tp-BvT"/>
+                <outlet property="titleLabel" destination="uzp-93-JXu" id="u20-ZT-etH"/>
+            </connections>
+            <point key="canvasLocation" x="197.59999999999999" y="233.88305847076464"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="QoI-qS-EEh">
+            <size key="intrinsicContentSize" width="81" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Background Secondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Primary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

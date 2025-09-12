@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5IK-iM-bV0" customClass="FirstDamagePlaceBikePickerView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="821"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzH-0c-8H1" userLabel="Main Container">
+                    <rect key="frame" x="90" y="48" width="320" height="739"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-XB-8FR" userLabel="Center Arrow Container">
+                            <rect key="frame" x="87" y="0.0" width="146" height="739"/>
+                            <subviews>
+                                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-g3-gFS" userLabel="Damage Direction Control" customClass="DamageDirectionControl" customModule="AlfaStrah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="509.5" width="146" height="229.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxk-QY-JA4" userLabel="Damage Direction Control" customClass="DamageDirectionControl" customModule="AlfaStrah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="146" height="229.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="146" id="2Yj-es-RAO"/>
+                                <constraint firstAttribute="trailing" secondItem="lxk-QY-JA4" secondAttribute="trailing" id="4Dc-Bx-JjL"/>
+                                <constraint firstItem="lxk-QY-JA4" firstAttribute="leading" secondItem="DNP-XB-8FR" secondAttribute="leading" id="XdO-uq-Jp1"/>
+                                <constraint firstAttribute="bottom" secondItem="eXZ-g3-gFS" secondAttribute="bottom" id="Xfm-nV-cuY"/>
+                                <constraint firstAttribute="trailing" secondItem="eXZ-g3-gFS" secondAttribute="trailing" id="bkp-vq-el4"/>
+                                <constraint firstItem="lxk-QY-JA4" firstAttribute="top" secondItem="DNP-XB-8FR" secondAttribute="top" id="sSc-mk-uS9"/>
+                                <constraint firstItem="eXZ-g3-gFS" firstAttribute="leading" secondItem="DNP-XB-8FR" secondAttribute="leading" id="w2a-od-KP3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-5U-MER" userLabel="Left Arrow Container">
+                            <rect key="frame" x="0.0" y="0.0" width="87" height="739"/>
+                            <subviews>
+                                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ju6-sZ-l4X" customClass="DamageDirectionControl" customModule="AlfaStrah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="229.5" width="87" height="280"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="280" id="OR8-ZC-jLQ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Ju6-sZ-l4X" firstAttribute="centerY" secondItem="muQ-5U-MER" secondAttribute="centerY" id="6PR-pX-68M"/>
+                                <constraint firstAttribute="trailing" secondItem="Ju6-sZ-l4X" secondAttribute="trailing" id="az0-jA-SIl"/>
+                                <constraint firstItem="Ju6-sZ-l4X" firstAttribute="leading" secondItem="muQ-5U-MER" secondAttribute="leading" id="cXr-Rr-Owa"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1Y-qZ-QuU" userLabel="Right Arrow Container">
+                            <rect key="frame" x="233" y="0.0" width="87" height="739"/>
+                            <subviews>
+                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwO-TN-09x" customClass="DamageDirectionControl" customModule="AlfaStrah" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="229.5" width="87" height="280"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="280" id="sdh-Bc-gDx"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="dwO-TN-09x" firstAttribute="leading" secondItem="D1Y-qZ-QuU" secondAttribute="leading" id="8km-Y0-6JN"/>
+                                <constraint firstItem="dwO-TN-09x" firstAttribute="centerY" secondItem="D1Y-qZ-QuU" secondAttribute="centerY" id="DBd-wK-ZLg"/>
+                                <constraint firstAttribute="trailing" secondItem="dwO-TN-09x" secondAttribute="trailing" id="oPS-J6-84C"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikeShape" translatesAutoresizingMaskIntoConstraints="NO" id="o0F-sn-b2O" userLabel="Bike Icon">
+                            <rect key="frame" x="62" y="62" width="196" height="615"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="D1Y-qZ-QuU" firstAttribute="leading" secondItem="DNP-XB-8FR" secondAttribute="trailing" id="1ZD-8h-57t"/>
+                        <constraint firstItem="DNP-XB-8FR" firstAttribute="centerX" secondItem="tzH-0c-8H1" secondAttribute="centerX" id="1kD-cv-ElQ"/>
+                        <constraint firstItem="muQ-5U-MER" firstAttribute="leading" secondItem="tzH-0c-8H1" secondAttribute="leading" id="1sq-85-FyG"/>
+                        <constraint firstItem="o0F-sn-b2O" firstAttribute="leading" secondItem="tzH-0c-8H1" secondAttribute="leading" constant="62" id="7ow-wh-WS3"/>
+                        <constraint firstAttribute="bottom" secondItem="D1Y-qZ-QuU" secondAttribute="bottom" id="7yI-go-sib"/>
+                        <constraint firstAttribute="trailing" secondItem="o0F-sn-b2O" secondAttribute="trailing" constant="62" id="9um-Lj-qLb"/>
+                        <constraint firstItem="D1Y-qZ-QuU" firstAttribute="top" secondItem="tzH-0c-8H1" secondAttribute="top" id="Fw5-2Z-ooX"/>
+                        <constraint firstItem="Ju6-sZ-l4X" firstAttribute="top" secondItem="lxk-QY-JA4" secondAttribute="bottom" id="I2g-ma-9tH"/>
+                        <constraint firstItem="o0F-sn-b2O" firstAttribute="top" secondItem="tzH-0c-8H1" secondAttribute="top" constant="62" id="YYh-hQ-tc6"/>
+                        <constraint firstAttribute="trailing" secondItem="D1Y-qZ-QuU" secondAttribute="trailing" id="ZWU-5s-EHm"/>
+                        <constraint firstItem="muQ-5U-MER" firstAttribute="top" secondItem="tzH-0c-8H1" secondAttribute="top" id="Zuj-YF-dwA"/>
+                        <constraint firstItem="DNP-XB-8FR" firstAttribute="leading" secondItem="muQ-5U-MER" secondAttribute="trailing" id="bQ3-Qt-SWR"/>
+                        <constraint firstAttribute="bottom" secondItem="muQ-5U-MER" secondAttribute="bottom" id="hu2-th-Msa"/>
+                        <constraint firstAttribute="bottom" secondItem="DNP-XB-8FR" secondAttribute="bottom" id="mHR-p8-SQ0"/>
+                        <constraint firstItem="eXZ-g3-gFS" firstAttribute="top" secondItem="Ju6-sZ-l4X" secondAttribute="bottom" id="nXo-xu-YEg"/>
+                        <constraint firstAttribute="bottom" secondItem="o0F-sn-b2O" secondAttribute="bottom" constant="62" id="oTK-Jz-OsP"/>
+                        <constraint firstAttribute="width" constant="320" id="s9z-Or-kYQ"/>
+                        <constraint firstItem="DNP-XB-8FR" firstAttribute="top" secondItem="tzH-0c-8H1" secondAttribute="top" id="y8c-Pw-uJ3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0DH-ha-mZv"/>
+            <constraints>
+                <constraint firstItem="tzH-0c-8H1" firstAttribute="centerX" secondItem="5IK-iM-bV0" secondAttribute="centerX" id="G8Q-pQ-cyI"/>
+                <constraint firstItem="0DH-ha-mZv" firstAttribute="bottom" secondItem="tzH-0c-8H1" secondAttribute="bottom" id="LbH-G9-woj"/>
+                <constraint firstItem="0DH-ha-mZv" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tzH-0c-8H1" secondAttribute="trailing" id="YHg-UC-IuJ"/>
+                <constraint firstItem="tzH-0c-8H1" firstAttribute="top" secondItem="0DH-ha-mZv" secondAttribute="top" id="deu-zr-cUN"/>
+                <constraint firstItem="tzH-0c-8H1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0DH-ha-mZv" secondAttribute="leading" id="yFC-S9-R2p"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bikeModelImageView" destination="o0F-sn-b2O" id="7fl-9m-6ve"/>
+                <outletCollection property="directionControls" destination="lxk-QY-JA4" collectionClass="NSMutableArray" id="ldc-sl-peS"/>
+                <outletCollection property="directionControls" destination="dwO-TN-09x" collectionClass="NSMutableArray" id="gAi-ln-3UY"/>
+                <outletCollection property="directionControls" destination="eXZ-g3-gFS" collectionClass="NSMutableArray" id="bQG-O4-oi5"/>
+                <outletCollection property="directionControls" destination="Ju6-sZ-l4X" collectionClass="NSMutableArray" id="nR8-35-IFd"/>
+            </connections>
+            <point key="canvasLocation" x="49.275362318840585" y="41.852678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bikeShape" width="199" height="393"/>
+    </resources>
+</document>

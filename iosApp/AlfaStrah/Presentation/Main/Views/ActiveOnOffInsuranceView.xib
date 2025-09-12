@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="frC-PO-ijh" customClass="ActiveOnOffInsuranceView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-Ya-IBn">
+                    <rect key="frame" x="18" y="18" width="4.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Labelg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pip-Kj-xyT">
+                    <rect key="frame" x="18" y="42" width="52" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-Y2-rEQ">
+                    <rect key="frame" x="18" y="77" width="376" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="OKe-yE-jYo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpp-Ko-Dhb" customClass="RoundEdgeButton" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="18" y="125" width="378" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="UxK-mo-7I9"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="viewInsuranceTap:" destination="frC-PO-ijh" eventType="touchUpInside" id="TY6-hG-4f0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cYq-4Z-zYw"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pip-Kj-xyT" firstAttribute="leading" secondItem="SDb-Ya-IBn" secondAttribute="leading" id="5Gb-F5-nL1"/>
+                <constraint firstItem="aIu-Y2-rEQ" firstAttribute="leading" secondItem="pip-Kj-xyT" secondAttribute="leading" id="D38-kP-gdf"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SDb-Ya-IBn" secondAttribute="trailing" constant="18" id="FIy-bW-iBW"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pip-Kj-xyT" secondAttribute="trailing" constant="18" id="Lpi-Lq-oQd"/>
+                <constraint firstItem="aIu-Y2-rEQ" firstAttribute="top" secondItem="pip-Kj-xyT" secondAttribute="bottom" constant="15" id="RMA-nK-Fvr"/>
+                <constraint firstItem="cYq-4Z-zYw" firstAttribute="trailing" secondItem="aIu-Y2-rEQ" secondAttribute="trailing" constant="20" id="XZl-iB-135"/>
+                <constraint firstItem="rpp-Ko-Dhb" firstAttribute="leading" secondItem="aIu-Y2-rEQ" secondAttribute="leading" id="ZeD-pF-mMQ"/>
+                <constraint firstItem="SDb-Ya-IBn" firstAttribute="leading" secondItem="frC-PO-ijh" secondAttribute="leading" constant="18" id="aib-AJ-V3A"/>
+                <constraint firstItem="pip-Kj-xyT" firstAttribute="top" secondItem="SDb-Ya-IBn" secondAttribute="bottom" constant="3" id="gLl-wo-bzr"/>
+                <constraint firstAttribute="trailing" secondItem="rpp-Ko-Dhb" secondAttribute="trailing" constant="18" id="h5N-uG-nJ4"/>
+                <constraint firstItem="rpp-Ko-Dhb" firstAttribute="top" secondItem="aIu-Y2-rEQ" secondAttribute="bottom" constant="16" id="mGK-Fw-nld"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rpp-Ko-Dhb" secondAttribute="bottom" constant="18" id="nQt-yF-bvA"/>
+                <constraint firstItem="SDb-Ya-IBn" firstAttribute="top" secondItem="frC-PO-ijh" secondAttribute="top" constant="18" id="sD4-WZ-dsi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="insuredPeriodLabel" destination="aIu-Y2-rEQ" id="JBm-aZ-DL7"/>
+                <outlet property="insuredPersonNameLabel" destination="pip-Kj-xyT" id="60r-l4-Nl2"/>
+                <outlet property="titleLabel" destination="SDb-Ya-IBn" id="lHk-jL-Rzy"/>
+                <outlet property="viewInsuranceButton" destination="rpp-Ko-Dhb" id="8Z7-GK-WdM"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="-255.80357142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="rpp-Ko-Dhb">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" id="F6D-av-7Is" customClass="NumPadControl" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu3-qq-IOE">
+                    <rect key="frame" x="172.5" y="471" width="30" height="34"/>
+                    <state key="normal" title="2">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="lxl-ZH-KIu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUK-ag-jAq">
+                    <rect key="frame" x="116.5" y="471" width="30" height="34"/>
+                    <state key="normal" title="1">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="Kby-BX-dDU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXa-sI-Xgv">
+                    <rect key="frame" x="116.5" y="579" width="30" height="34"/>
+                    <state key="normal" title="7">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="PYk-oE-gKe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-pd-cI4">
+                    <rect key="frame" x="172.5" y="525" width="30" height="34"/>
+                    <state key="normal" title="5">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="4Po-w6-4rL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5B-Pu-A0n">
+                    <rect key="frame" x="172.5" y="579" width="30" height="34"/>
+                    <state key="normal" title="8">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="v8E-eE-Tkt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA8-fm-20W">
+                    <rect key="frame" x="228.5" y="471" width="30" height="34"/>
+                    <state key="normal" title="3">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="3bX-ha-SaE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4b-2L-cvD">
+                    <rect key="frame" x="228.5" y="525" width="30" height="34"/>
+                    <state key="normal" title="6">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="z0o-BB-lsh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlE-AQ-jQk">
+                    <rect key="frame" x="228.5" y="579" width="30" height="34"/>
+                    <state key="normal" title="9">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="PZi-7P-J3V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skf-Ip-C15" userLabel="Сбросить код">
+                    <rect key="frame" x="96.5" y="626" width="70" height="48"/>
+                    <color key="tintColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <string key="title">Сбросить
+код</string>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="val-yt-v1y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4t-1J-1tf" userLabel="Backspace">
+                    <rect key="frame" x="221.5" y="628" width="44" height="44"/>
+                    <color key="tintColor" red="0.8118598461151123" green="0.82528805732727051" blue="0.8445427417755127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="icon-cancel">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="Rne-AZ-M5G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm8-KK-Raf">
+                    <rect key="frame" x="172.5" y="633" width="30" height="34"/>
+                    <state key="normal" title="0">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="qeW-5B-dGM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKk-pJ-fXv">
+                    <rect key="frame" x="116.5" y="525" width="30" height="34"/>
+                    <state key="normal" title="4">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="F6D-av-7Is" eventType="touchUpInside" id="imq-Oa-0ms"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="tintColor" red="0.86110562086105347" green="0.0" blue="0.16588647663593292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NlE-AQ-jQk" firstAttribute="centerY" secondItem="g5B-Pu-A0n" secondAttribute="centerY" id="7HQ-jm-swG"/>
+                <constraint firstItem="vA8-fm-20W" firstAttribute="centerX" secondItem="b4b-2L-cvD" secondAttribute="centerX" id="9fo-TP-ROq"/>
+                <constraint firstItem="g5B-Pu-A0n" firstAttribute="centerY" secondItem="RXa-sI-Xgv" secondAttribute="centerY" id="CVf-ot-gi9"/>
+                <constraint firstItem="mUK-ag-jAq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F6D-av-7Is" secondAttribute="leading" id="Dhi-ec-skg"/>
+                <constraint firstItem="NlE-AQ-jQk" firstAttribute="centerX" secondItem="b4b-2L-cvD" secondAttribute="centerX" id="EHF-7v-M56"/>
+                <constraint firstItem="vKk-pJ-fXv" firstAttribute="centerX" secondItem="RXa-sI-Xgv" secondAttribute="centerX" id="FrT-ZG-k0A"/>
+                <constraint firstItem="KNJ-pd-cI4" firstAttribute="centerY" secondItem="b4b-2L-cvD" secondAttribute="centerY" id="Gdb-qa-ect"/>
+                <constraint firstAttribute="centerX" secondItem="KNJ-pd-cI4" secondAttribute="centerX" id="H2N-lU-Hgr"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vA8-fm-20W" secondAttribute="trailing" id="LCN-vQ-vDl"/>
+                <constraint firstItem="vA8-fm-20W" firstAttribute="leading" secondItem="Fu3-qq-IOE" secondAttribute="trailing" constant="26" id="OMc-dR-OiC"/>
+                <constraint firstItem="dm8-KK-Raf" firstAttribute="top" secondItem="g5B-Pu-A0n" secondAttribute="bottom" constant="20" id="Sil-IG-U7q"/>
+                <constraint firstItem="vKk-pJ-fXv" firstAttribute="centerX" secondItem="mUK-ag-jAq" secondAttribute="centerX" id="UgF-EA-w1A"/>
+                <constraint firstItem="Fu3-qq-IOE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="F6D-av-7Is" secondAttribute="top" id="VyV-t7-IMZ"/>
+                <constraint firstAttribute="centerX" secondItem="Fu3-qq-IOE" secondAttribute="centerX" id="Xec-hc-dxU"/>
+                <constraint firstAttribute="centerX" secondItem="g5B-Pu-A0n" secondAttribute="centerX" id="ZkT-vF-xFZ"/>
+                <constraint firstItem="vA8-fm-20W" firstAttribute="centerY" secondItem="Fu3-qq-IOE" secondAttribute="centerY" id="ezk-A3-31J"/>
+                <constraint firstAttribute="bottom" secondItem="dm8-KK-Raf" secondAttribute="bottom" id="h4g-bP-Ze3"/>
+                <constraint firstItem="mUK-ag-jAq" firstAttribute="centerY" secondItem="Fu3-qq-IOE" secondAttribute="centerY" id="iQl-4v-kgG"/>
+                <constraint firstAttribute="centerX" secondItem="dm8-KK-Raf" secondAttribute="centerX" id="lo9-bo-XxF"/>
+                <constraint firstItem="KNJ-pd-cI4" firstAttribute="top" secondItem="Fu3-qq-IOE" secondAttribute="bottom" constant="20" id="nky-K5-UAV"/>
+                <constraint firstItem="Fu3-qq-IOE" firstAttribute="leading" secondItem="mUK-ag-jAq" secondAttribute="trailing" constant="26" id="oOm-SU-VaP"/>
+                <constraint firstItem="skf-Ip-C15" firstAttribute="centerY" secondItem="dm8-KK-Raf" secondAttribute="centerY" id="spB-HI-oLt"/>
+                <constraint firstItem="skf-Ip-C15" firstAttribute="centerX" secondItem="RXa-sI-Xgv" secondAttribute="centerX" id="w12-4S-ioP"/>
+                <constraint firstItem="v4t-1J-1tf" firstAttribute="centerY" secondItem="dm8-KK-Raf" secondAttribute="centerY" id="yGo-G2-Wef"/>
+                <constraint firstItem="v4t-1J-1tf" firstAttribute="centerX" secondItem="NlE-AQ-jQk" secondAttribute="centerX" id="yaP-xr-Bfl"/>
+                <constraint firstItem="vKk-pJ-fXv" firstAttribute="centerY" secondItem="KNJ-pd-cI4" secondAttribute="centerY" id="zHa-Hm-SfR"/>
+                <constraint firstItem="g5B-Pu-A0n" firstAttribute="top" secondItem="KNJ-pd-cI4" secondAttribute="bottom" constant="20" id="zTk-Mv-XZy"/>
+                <constraint firstItem="vKk-pJ-fXv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F6D-av-7Is" secondAttribute="leading" constant="16" id="zqk-ya-v3x"/>
+            </constraints>
+            <connections>
+                <outlet property="customButton" destination="skf-Ip-C15" id="xar-RO-3pb"/>
+                <outletCollection property="numButtons" destination="Fu3-qq-IOE" collectionClass="NSMutableArray" id="gi2-6c-QUq"/>
+                <outletCollection property="numButtons" destination="mUK-ag-jAq" collectionClass="NSMutableArray" id="SGP-Aa-j1K"/>
+                <outletCollection property="numButtons" destination="RXa-sI-Xgv" collectionClass="NSMutableArray" id="5IJ-r3-Iaz"/>
+                <outletCollection property="numButtons" destination="KNJ-pd-cI4" collectionClass="NSMutableArray" id="BpR-Ab-pfX"/>
+                <outletCollection property="numButtons" destination="g5B-Pu-A0n" collectionClass="NSMutableArray" id="Ddp-Wv-vbf"/>
+                <outletCollection property="numButtons" destination="vA8-fm-20W" collectionClass="NSMutableArray" id="qMz-nZ-Xu5"/>
+                <outletCollection property="numButtons" destination="b4b-2L-cvD" collectionClass="NSMutableArray" id="ZVf-Wu-e1b"/>
+                <outletCollection property="numButtons" destination="NlE-AQ-jQk" collectionClass="NSMutableArray" id="CbL-Yr-JzD"/>
+                <outletCollection property="numButtons" destination="dm8-KK-Raf" collectionClass="NSMutableArray" id="PDF-u4-v4g"/>
+                <outletCollection property="numButtons" destination="vKk-pJ-fXv" collectionClass="NSMutableArray" id="xgJ-Hs-NIS"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="-154.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-cancel" width="44" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bC3-H0-Hy0" customClass="VzrOnOffTripView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZy-AD-kfK">
+                    <rect key="frame" x="15" y="15" width="384" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="pge-ke-dMb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFK-o1-kx9">
+                    <rect key="frame" x="15" y="36" width="384" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="ure-vp-wDI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RFK-o1-kx9" secondAttribute="bottom" priority="999" constant="15" id="0SK-Oh-uTS"/>
+                <constraint firstAttribute="trailing" secondItem="EZy-AD-kfK" secondAttribute="trailing" constant="15" id="3Ou-Bd-fPl"/>
+                <constraint firstItem="RFK-o1-kx9" firstAttribute="leading" secondItem="EZy-AD-kfK" secondAttribute="leading" id="MNW-k8-ZwN"/>
+                <constraint firstItem="EZy-AD-kfK" firstAttribute="leading" secondItem="bC3-H0-Hy0" secondAttribute="leading" constant="15" id="P8b-mX-JPe"/>
+                <constraint firstItem="EZy-AD-kfK" firstAttribute="top" secondItem="bC3-H0-Hy0" secondAttribute="top" constant="15" id="RHq-eo-Gh0"/>
+                <constraint firstItem="RFK-o1-kx9" firstAttribute="trailing" secondItem="EZy-AD-kfK" secondAttribute="trailing" id="SgB-ry-gVT"/>
+                <constraint firstItem="RFK-o1-kx9" firstAttribute="top" secondItem="EZy-AD-kfK" secondAttribute="bottom" constant="3" id="YWT-bR-XWO"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="owa-po-8My"/>
+            <connections>
+                <outlet property="datesIntervalLabel" destination="EZy-AD-kfK" id="cEh-eO-PFy"/>
+                <outlet property="tripDurationLabel" destination="RFK-o1-kx9" id="99j-N2-LsW"/>
+            </connections>
+            <point key="canvasLocation" x="-3328" y="227"/>
+        </view>
+    </objects>
+</document>

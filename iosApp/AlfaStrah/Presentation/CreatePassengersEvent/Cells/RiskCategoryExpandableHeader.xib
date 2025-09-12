@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalHuggingPriority="990" verticalCompressionResistancePriority="990" id="mOW-hw-Zcm" customClass="RiskCategoryExpandableHeader" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRc-cg-PHJ">
+                    <rect key="frame" x="16" y="16" width="248" height="44"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" verticalHuggingPriority="251" image="arrowDownRed" translatesAutoresizingMaskIntoConstraints="NO" id="aU4-3Z-8gB">
+                    <rect key="frame" x="280" y="26" width="24" height="24"/>
+                    <color key="tintColor" red="0.84313725490000002" green="0.1529411765" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="5do-lv-YwG"/>
+                        <constraint firstAttribute="width" constant="24" id="mKK-te-F0j"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-H2-zpu">
+                    <rect key="frame" x="16" y="75" width="304" height="1"/>
+                    <color key="backgroundColor" red="0.81185984609999995" green="0.82528805729999999" blue="0.8445427418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="D22-lq-MbM" customClass="SeparatorSizeConstraint" customModule="AlfaStrah" customModuleProvider="target"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znS-cv-PEa" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="tap" destination="mOW-hw-Zcm" eventType="touchUpInside" id="6TA-j9-Shm"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QRc-cg-PHJ" secondAttribute="bottom" constant="16" id="5GN-TY-y4q"/>
+                <constraint firstItem="QRc-cg-PHJ" firstAttribute="top" secondItem="mOW-hw-Zcm" secondAttribute="top" constant="16" id="8cx-iN-zjl"/>
+                <constraint firstItem="QRc-cg-PHJ" firstAttribute="leading" secondItem="mOW-hw-Zcm" secondAttribute="leading" constant="16" id="CHf-3X-h2T"/>
+                <constraint firstItem="znS-cv-PEa" firstAttribute="leading" secondItem="mOW-hw-Zcm" secondAttribute="leading" id="CLG-dI-U1s"/>
+                <constraint firstAttribute="trailing" secondItem="znS-cv-PEa" secondAttribute="trailing" id="DZs-9s-p3R"/>
+                <constraint firstAttribute="bottom" secondItem="sjw-H2-zpu" secondAttribute="bottom" id="IR5-DJ-Cjw"/>
+                <constraint firstItem="aU4-3Z-8gB" firstAttribute="centerY" secondItem="mOW-hw-Zcm" secondAttribute="centerY" id="N3R-Hg-ykC"/>
+                <constraint firstAttribute="trailing" secondItem="aU4-3Z-8gB" secondAttribute="trailing" constant="16" id="XmL-5K-Ifx"/>
+                <constraint firstAttribute="bottom" secondItem="znS-cv-PEa" secondAttribute="bottom" id="YIQ-B2-EEm"/>
+                <constraint firstAttribute="trailing" secondItem="sjw-H2-zpu" secondAttribute="trailing" id="ghf-HI-VdN"/>
+                <constraint firstItem="znS-cv-PEa" firstAttribute="top" secondItem="mOW-hw-Zcm" secondAttribute="top" id="kqS-ih-UT9"/>
+                <constraint firstItem="sjw-H2-zpu" firstAttribute="leading" secondItem="mOW-hw-Zcm" secondAttribute="leading" constant="16" id="nQx-JB-QvP"/>
+                <constraint firstItem="aU4-3Z-8gB" firstAttribute="leading" secondItem="QRc-cg-PHJ" secondAttribute="trailing" constant="16" id="rTR-L7-VPX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="aU4-3Z-8gB" id="Mk4-Mn-ofj"/>
+                <outlet property="titleLabel" destination="QRc-cg-PHJ" id="rT2-8e-Ksm"/>
+            </connections>
+            <point key="canvasLocation" x="408" y="-9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowDownRed" width="24" height="24"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

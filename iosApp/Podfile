@@ -1,0 +1,29 @@
+platform :ios, '15.0'
+use_frameworks!
+inhibit_all_warnings!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'iosApp' do
+	pod 'SlackTextViewController', :git => 'https://github.com/S-V/SlackTextViewController.git'
+	pod 'CocoaDebug', '~> 1.7.2', :configurations => ['Debug Test', 'Debug Stage', 'Debug Prod', 'Release Test', 'Release Stage', 'Release Prod']
+	pod 'SwiftDate', '~> 6.3.1'
+	pod 'SDWebImage', '~> 5.15.8'
+	pod 'Firebase/Crashlytics', '~> 10.24.0'
+	pod 'FirebaseMessaging', '~> 10.24.0'
+	pod 'SwiftSignalRClient', '~> 1.0.0'
+	pod 'IQKeyboardManagerSwift', '~> 6.5.12'
+	pod 'YandexMapsMobile', '~> 4.3.2-lite'
+	pod 'TinyConstraints', '~> 4.0.0'
+  pod 'VoxImplantSDK', '~> 2.50.0'
+end
+
+post_install do |installer|
+    installer.generated_projects.each do |project|
+          project.targets.each do |target|
+              target.build_configurations.each do |config|
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+               end
+          end
+   end
+end

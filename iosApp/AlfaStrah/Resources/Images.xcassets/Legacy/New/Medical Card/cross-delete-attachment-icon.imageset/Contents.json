@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "cross-delete-attachment-icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

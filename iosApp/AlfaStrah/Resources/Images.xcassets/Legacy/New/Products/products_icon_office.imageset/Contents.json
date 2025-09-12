@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "products_icon_office.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,972 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-bare-slash-regex -module-name RSASDK
+import AVFoundation
+import CommonCrypto
+import CoreLocation
+import Foundation
+import Photos
+@_exported import RSASDK
+import Security
+import Swift
+import UIKit
+extension RSASDK {
+  public struct ServicesStatusError : Swift.Codable {
+    public let code: Swift.Int
+    public let message: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct DetailedServiceStatus : Swift.Codable {
+    public let epguStatus: Swift.String
+    public let pstStatus: RSASDK.DetailedServiceStatus.PSTStatus
+    public let ivStatus: RSASDK.DetailedServiceStatus.IVStatus
+    public struct PSTStatus : Swift.Codable {
+      public let photofixation: Swift.String
+      public let notice: Swift.String
+      public let policyInfo: Swift.String
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct IVStatus : Swift.Codable {
+      public let auth: Swift.String
+      public let crypto: Swift.String
+      public let smev: Swift.String
+      public let rsa: Swift.String
+      public let glonass: Swift.String
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public struct ServerEnvironment {
+    public let glonas: RSASDK.ServerEnvironment.GlonasEnvironment
+    public let esia: RSASDK.ServerEnvironment.EsiaEnvironment
+    public init(glonas: RSASDK.ServerEnvironment.GlonasEnvironment, esia: RSASDK.ServerEnvironment.EsiaEnvironment)
+    public var isProd: Swift.Bool {
+      get
+    }
+    public enum GlonasEnvironment : Swift.String, Swift.CaseIterable {
+      case prod
+      case test
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [RSASDK.ServerEnvironment.GlonasEnvironment]
+      public typealias RawValue = Swift.String
+      public static var allCases: [RSASDK.ServerEnvironment.GlonasEnvironment] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum EsiaEnvironment : Swift.String, Swift.CaseIterable {
+      case prod
+      case dev
+      case uat
+      case test
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [RSASDK.ServerEnvironment.EsiaEnvironment]
+      public typealias RawValue = Swift.String
+      public static var allCases: [RSASDK.ServerEnvironment.EsiaEnvironment] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+  }
+}
+extension RSASDK.ServerEnvironment : Swift.Codable, Swift.Equatable {
+  public static func == (lhs: RSASDK.ServerEnvironment, rhs: RSASDK.ServerEnvironment) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension RSASDK.ServerEnvironment.GlonasEnvironment : Swift.Codable {
+}
+extension RSASDK.ServerEnvironment.EsiaEnvironment : Swift.Codable {
+}
+public typealias UserName = (surname: Swift.String, firstname: Swift.String, middlename: Swift.String?)
+extension RSASDK {
+  public struct Witness : Swift.Codable {
+    public var surname: Swift.String
+    public var firstname: Swift.String
+    public var middleName: Swift.String?
+    public var address: Swift.String
+    public var phone: Swift.String?
+    public var generalPhoto: Swift.String?
+    public var lpPhoto: Swift.String?
+    public init(surname: Swift.String, firstname: Swift.String, middleName: Swift.String?, address: Swift.String, phone: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+public protocol FirstBumpSchemeType {
+  var value: Swift.String { get }
+  var vechicleType: RSASDK.VechicleType { get }
+}
+extension FirstBumpSchemeType where Self : Swift.RawRepresentable, Self.RawValue == Swift.String {
+  public var value: Swift.String {
+    get
+  }
+}
+extension RSASDK {
+  public enum VechicleType : Swift.String, Swift.Codable, Swift.CaseIterable {
+    case truck
+    case car
+    case bike
+    public var schemes: [any FirstBumpSchemeType] {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [RSASDK.VechicleType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [RSASDK.VechicleType] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum TruckSchemeType : Swift.String, Swift.CaseIterable, FirstBumpSchemeType {
+    case pos_2
+    case pos_3
+    case pos_4
+    case pos_5
+    case pos_6
+    case pos_7
+    case pos_8
+    case pos_9
+    case pos_10
+    case pos_11
+    case pos_12
+    case pos_1
+    case pos_2_3
+    case pos_3_4
+    case pos_4_5
+    case pos_5_6
+    case pos_6_7
+    case pos_7_8
+    case pos_8_9
+    case pos_9_10
+    case pos_10_11
+    case pos_11_12
+    case pos_12_1
+    case pos_1_2
+    public var vechicleType: RSASDK.VechicleType {
+      get
+    }
+    public init?(sector: Swift.String)
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [RSASDK.TruckSchemeType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [RSASDK.TruckSchemeType] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum CarSchemeType : Swift.String, Swift.CaseIterable, FirstBumpSchemeType {
+    case pos_3
+    case pos_4
+    case pos_5
+    case pos_6
+    case pos_7
+    case pos_8
+    case pos_9
+    case pos_10
+    case pos_11
+    case pos_12
+    case pos_13
+    case pos_14
+    case pos_1
+    case pos_2
+    case pos_3_4
+    case pos_4_5
+    case pos_5_6
+    case pos_6_7
+    case pos_7_8
+    case pos_8_9
+    case pos_9_10
+    case pos_10_11
+    case pos_11_12
+    case pos_12_13
+    case pos_13_14
+    case pos_14_1
+    case pos_1_2
+    case pos_2_3
+    public var vechicleType: RSASDK.VechicleType {
+      get
+    }
+    public init?(sector: Swift.String)
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [RSASDK.CarSchemeType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [RSASDK.CarSchemeType] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum BikeSchemeType : Swift.String, Swift.CaseIterable, FirstBumpSchemeType {
+    case pos_1
+    case pos_2
+    case pos_3
+    case pos_4
+    public var vechicleType: RSASDK.VechicleType {
+      get
+    }
+    public init?(sector: Swift.String)
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [RSASDK.BikeSchemeType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [RSASDK.BikeSchemeType] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public struct AccidentRegistrationError : Swift.Codable {
+  public let code: Swift.Int
+  public let message: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension RSASDK {
+  public struct UserIdResponse : Swift.Codable {
+    public let statusCode: Swift.Int
+    public let statusMessage: Swift.String
+    public let userId: Swift.String?
+    public let errors: [RSASDK.UserIdResponse.UserIdError]?
+    public struct UserIdError : Swift.Codable {
+      public let code: Swift.Int
+      public let message: Swift.String
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BaseFrameworkView : UIKit.UIView {
+  @objc deinit
+}
+extension RSASDK {
+  public struct CurrentDraftContentModel {
+    public let role: RSASDK.ParticipantType?
+    public let noticeInfo: RSASDK.CurrentDraftContentModel.NoticeInfo
+    public let witnesses: [RSASDK.CurrentDraftContentModel.Witness]
+    public let tsA: RSASDK.CurrentDraftContentModel.ParticipantInfo
+    public let tsB: RSASDK.CurrentDraftContentModel.ParticipantInfo
+    public let otherPhotos: [RSASDK.PrivateDocumentType]
+    public struct NoticeInfo {
+      public let invitationCode: Swift.String?
+      public let orderID: Swift.String?
+      public let placePhotos: [RSASDK.FreeDocumentType]
+      public let place: Swift.String?
+      public let latitude: Swift.String?
+      public let longitude: Swift.String?
+      public let date: Swift.String?
+      public let scheme: RSASDK.PrivateDocumentType?
+      public let disagreements: Swift.Bool?
+      public let numberDTP: Swift.String?
+    }
+    public struct Witness {
+      public let surname: Swift.String
+      public let firstname: Swift.String
+      public let middleName: Swift.String?
+      public let address: Swift.String
+      public let phone: Swift.String?
+      public let photo: RSASDK.PrivateDocumentType?
+      public let lpPhoto: RSASDK.PrivateDocumentType?
+    }
+    public struct ParticipantInfo {
+      public let transport: RSASDK.CurrentDraftContentModel.ParticipantInfo.Transport
+      public let owner: RSASDK.Owner
+      public let policy: RSASDK.CurrentDraftContentModel.ParticipantInfo.InsurancePolicy
+      public let license: RSASDK.License?
+      public let driver: RSASDK.Driver?
+      public let roadAccidents: RSASDK.CurrentDraftContentModel.ParticipantInfo.RoadAccidents
+      public let damages: [RSASDK.PrivateDocumentType]
+      public let damageInsured: Swift.Bool
+      public struct Transport {
+        public let typeTS: RSASDK.VechicleType?
+        public let brand: Swift.String?
+        public let model: Swift.String?
+        public let vin: Swift.String?
+        public let regmark: Swift.String?
+        public let photo: RSASDK.PrivateDocumentType?
+        public let vehicleCertificate: RSASDK.VehicleCertificate?
+      }
+      public struct InsurancePolicy {
+        public let series: Swift.String?
+        public let number: Swift.String?
+        public let insurer: Swift.String?
+        public let toDate: Foundation.Date?
+        public let policyId: Swift.String?
+        public let photo: RSASDK.PrivateDocumentType?
+        public let beginDate: Swift.String?
+        public let period1BeginDate: Swift.String?
+        public let period1EndDate: Swift.String?
+        public let period2BeginDate: Swift.String?
+        public let period2EndDate: Swift.String?
+        public let period3BeginDate: Swift.String?
+        public let period3EndDate: Swift.String?
+        public let licensePlate: Swift.String?
+        public let vin: Swift.String?
+        public let bodyNumber: Swift.String?
+        public let chassisNumber: Swift.String?
+        public let mark: Swift.String?
+        public let model: Swift.String?
+        public let state: Swift.String?
+      }
+      public struct RoadAccidents {
+        public let initialImpact: RSASDK.InitialImpact?
+        public let comments: Swift.String?
+        public let other: Swift.String?
+        public let circumstances: [RSASDK.CircumstanceType]
+      }
+    }
+  }
+}
+extension RSASDK {
+  public enum LicenseCategory : Swift.String, Swift.Codable, Swift.CaseIterable {
+    case A
+    case B
+    case C
+    case D
+    case E
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [RSASDK.LicenseCategory]
+    public typealias RawValue = Swift.String
+    public static var allCases: [RSASDK.LicenseCategory] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension RSASDK {
+  public struct VehicleCertificate : Swift.Codable {
+    public let series: Swift.String?
+    public let number: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public struct License : Swift.Codable {
+    public var series: Swift.String?
+    public var number: Swift.String?
+    public var category: [RSASDK.LicenseCategory]
+    public var issueDate: Foundation.Date?
+    public var expiryDate: Foundation.Date?
+    public init(series: Swift.String, number: Swift.String, categories: [RSASDK.LicenseCategory], issueDate: Foundation.Date, expiryDate: Foundation.Date)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public struct PassportESIA : Swift.Codable {
+    public init(isRussian: Swift.Bool, isVerified: Swift.Bool, series: Swift.String, number: Swift.String, issueDate: Foundation.Date)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+public typealias DefaultResponseAction = (any RSAResponse) -> Swift.Void
+public typealias OptionalResponseAction = ((any RSAResponse)?) -> Swift.Void
+public typealias UploadingImageAction = (_ total: Swift.Int, _ sent: Swift.Int) -> Swift.Void
+@_hasMissingDesignatedInitializers final public class RSASDK {
+  public static func exceptionHandler(_ exception: Foundation.NSException)
+  @objc deinit
+}
+extension RSASDK {
+  public static var reviewTimeLeft: Foundation.TimeInterval? {
+    get
+  }
+  public static func initSDK(mobileGuid: Swift.String, icLogin: Swift.String, icPassword: Swift.String, environment: RSASDK.ServerEnvironment, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func finalizeSDK(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setProtectedPhoto(action: RSASDK.DocumentActionType, document: RSASDK.PrivateDocumentType, cameraOverlay: UIKit.UIView?, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setFreePhoto(action: RSASDK.DocumentActionType, document: RSASDK.FreeDocumentType, cameraOverlay: UIKit.UIView?, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setPolicyInfo(participant: RSASDK.ParticipantType, type: RSASDK.PolicyType, showQR: Swift.Bool, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setDriverInfo(esiaSubjId: Swift.String, info: RSASDK.DriverPersonalInfo, document: RSASDK.PassportESIA, license: RSASDK.License, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func initLinkQR(deviceType: RSASDK.DraftQRDevicesType, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func qrReaderView(authInfo: RSASDK.AuthInfo) -> (view: RSASDK.QRReaderView?, response: any RSAResponse)
+  public static func setAccidentCoords(address: Swift.String, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setAccidentTime(date: Foundation.Date, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setAccidentFirstHit(participant: RSASDK.ParticipantType, schemeType: any FirstBumpSchemeType, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setAccidentCircumstances(participant: RSASDK.ParticipantType, types: [RSASDK.CircumstanceType], description: Swift.String, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setAccidentDamagedParts(participant: RSASDK.ParticipantType, types: [RSASDK.DetailType], authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setAccidentWitnessInfo(first: RSASDK.Witness?, second: RSASDK.Witness?, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func createDraft(disagreements: Swift.Bool, create: Swift.Bool, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func acceptDraft(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func declineDraft(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func sendNotice(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setOwner(participant: RSASDK.ParticipantType, owner: RSASDK.Owner, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func getCurrentContent(authInfo: RSASDK.AuthInfo) -> any RSAResponse
+  public static func getDraftStatus(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func getDraftContent(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func getImage(document: any RSADocumentType, authInfo: RSASDK.AuthInfo) -> UIKit.UIImage?
+  public static func policyQRReader(authInfo: RSASDK.AuthInfo) -> (view: RSASDK.QRReaderView?, response: any RSAResponse)
+  public static func getPDF(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func setAdditionalData(participant: RSASDK.ParticipantType, vehicleCertificate: (series: Swift.String, number: Swift.String)?, driverOwnership: Swift.String?, policyDamageInsured: Swift.Bool?, accidentDescription: Swift.String?, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func checkServices(authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+  public static func useAccidentSchemePhoto(url: Foundation.URL, authInfo: RSASDK.AuthInfo, completion: DefaultResponseAction?)
+}
+extension RSASDK {
+  @_hasMissingDesignatedInitializers final public class Driver : Swift.Codable {
+    final public var address: Swift.String?
+    final public var phone: Swift.String?
+    final public var document: Swift.String?
+    @objc deinit
+    final public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public struct AuthInfo {
+    public init(secureGuid: Swift.String, token: Swift.String)
+  }
+}
+extension RSASDK {
+  public struct PolicyInfoStatusError : Swift.Codable {
+    public let code: Swift.Int
+    public let message: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct PolicyInfo : Swift.Codable {
+    public let series: Swift.String
+    public let number: Swift.String
+    public let insurer: Swift.String
+    public let beginDate: Swift.String?
+    public let endDate: Swift.String
+    public let period1BeginDate: Swift.String?
+    public let period1EndDate: Swift.String?
+    public let period2BeginDate: Swift.String?
+    public let period2EndDate: Swift.String?
+    public let period3BeginDate: Swift.String?
+    public let period3EndDate: Swift.String?
+    public let licensePlate: Swift.String?
+    public let vin: Swift.String?
+    public let bodyNumber: Swift.String?
+    public let chassisNumber: Swift.String?
+    public let mark: Swift.String?
+    public let model: Swift.String?
+    public let state: Swift.String?
+    public let id: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public enum DraftQRDevicesType {
+    case oneDevice(user: (fullName: UserName, birthday: Foundation.Date), showURL: Swift.Bool)
+    case twoDevices
+  }
+}
+extension RSASDK {
+  public struct InitialImpact : Swift.Codable {
+    public let typeTS: RSASDK.VechicleType
+    public let sector: Swift.String
+    public var scheme: (any FirstBumpSchemeType)? {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+public protocol RSADocumentType {
+}
+extension RSASDK {
+  public enum DocumentActionType : Swift.String {
+    case add
+    case remove
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum PrivateDocumentType : RSADocumentType {
+    case accidentScheme
+    case damage(owner: RSASDK.ParticipantType, detail: RSASDK.DetailType)
+    case regMark(owner: RSASDK.ParticipantType)
+    case policy(owner: RSASDK.ParticipantType)
+    case witnessVehicle(type: RSASDK.WitnessType)
+    case witnessVehiclePlate(type: RSASDK.WitnessType)
+    case other(description: Swift.String)
+  }
+  public enum FreeDocumentType : RSADocumentType, Swift.Equatable {
+    case place(id: Swift.Int)
+    public static func == (a: RSASDK.FreeDocumentType, b: RSASDK.FreeDocumentType) -> Swift.Bool
+  }
+}
+extension RSASDK {
+  public enum DraftStatus {
+    case noInviteCode
+    case draftNotConfigured
+    case myDraftNotFound
+    case myDraftRejected
+    case partyDraftRejected
+    case draftNotFound
+    case draftSaved
+    case signed
+    case waitingForMySign
+    case waitingForOtherSign
+    case rejected
+    case rejectedAgain
+    case waiting
+    case sentToRegistrate
+    case registered(status: Swift.String?)
+    case timeout
+    case sendingServerError
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+extension RSASDK {
+  public enum ParticipantType : Swift.String, Swift.Codable, Swift.CaseIterable {
+    case A
+    case B
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [RSASDK.ParticipantType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [RSASDK.ParticipantType] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension RSASDK {
+  public enum Error : RSAResponse {
+    case invalidSDKVersion(errors: [RSASDK.CheckSDKStatusError], actualSDKVersions: [Swift.String])
+    case invalidPolicy
+    case invalidPolicySeries
+    case invalidPolicyNumber
+    case unknownError
+    case esiaTokenExpired
+    case participantDataIsEmpty(innerError: Swift.Int)
+    case draftIsNotRegistered
+    case draftIsAlreadyRegistered
+    case draftIsNotSigned
+    case invalidAccidentDate
+    case secureGuidExpired
+    case foundActiveSession
+    case noActiveSession
+    case cantSendPhoto
+    case errorSaveImageToSDK
+    case networkError
+    case requestTimeout
+    case cantSavePhotoToGallery
+    case errorToReadPolicy(errors: [RSASDK.PolicyInfoStatusError])
+    case esiaErrorNoInvitationLink
+    case invalidGPSCoordinates
+    case draftIsIncomplete
+    case ownerDraftSingingError
+    case draftRejectingError
+    case draftIsNotFound
+    case draftFixingError
+    case invalidQRImage
+    case invalidQRFormat
+    case tooManyDamagePhotosForParticipant
+    case tooManyPhotos
+    case operationAborted
+    case getUserDataError(response: RSASDK.UserIdResponse)
+    case invalidWitnessName
+    case invalidWitnessAddress
+    case invalidWitnessPhone
+    case noCameraAccess
+    case didCancelCamera
+    case noLocationAccess
+    case invalidInputData
+    case unexpectedType
+    case tooManyPlacePhotos
+    case checkUserDataByESIA
+    case invalidFirstBumpScheme
+    case draftIsConfirmedAndUneditable
+    case serverError(innerError: Swift.Int? = nil, response: [Swift.String : Any?]?)
+    case invalidOtherPhotoItemName
+    case invalidOtherPhotoDescription
+    case emptyCircumstancesList
+    case invalidCircumstancesCount
+    case circumstanceDescriptionIsEmpty
+    case invalidCircumstancesDescription
+    case photoNotFound
+    case unavailableForBParticipant
+    case registrationFailed(errors: [AccidentRegistrationError])
+    case invalidDriverOwnership
+    case invalidRoadAccidentDescription
+    case noFile
+    case incorrectVehicleCertificate
+    case serviceStatuses(_: [RSASDK.ServicesStatusError])
+    case noticeIsRejectedBySecondParty
+    case tooBigLogFile
+    public var code: Swift.Int {
+      get
+    }
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+extension RSASDK {
+  public struct DraftModelParticipant : Swift.Codable {
+    public struct Driver : Swift.Codable {
+      public let lastname: Swift.String?
+      public let firstname: Swift.String?
+      public let middlename: Swift.String?
+      public let birthDate: Swift.String?
+      public let address: Swift.String?
+      public let phone: Swift.String?
+      public let document: Swift.String?
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct License : Swift.Codable {
+      public let series: Swift.String?
+      public let number: Swift.String?
+      public let category: [RSASDK.LicenseCategory]?
+      public let issueDate: Swift.String?
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct Policy : Swift.Codable {
+      public let series: Swift.String?
+      public let number: Swift.String?
+      public let insurer: Swift.String?
+      public let toDate: Swift.String?
+      public let policyId: Swift.String?
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class QRReaderView : BaseFrameworkView, AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+    final public var completion: ((any RSAResponse) -> Swift.Void)?
+    @objc final override public func layoutSubviews()
+    @objc final public func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
+    @objc deinit
+  }
+}
+extension RSASDK {
+  public enum CircumstanceType : Swift.Int, Swift.CaseIterable, Swift.Codable {
+    case wasParked
+    case movingOnParking
+    case leavingParking
+    case enteringParking
+    case drivingWithoutManeuvering
+    case passingCrossroad
+    case enteringRoundabout
+    case drivingOnRoundabout
+    case hitVehicleInSameLane
+    case hitVehicleInDifferentLane
+    case changingLane
+    case overtakingVehicle
+    case turningRight
+    case turningLeft
+    case makingTurnaround
+    case reversing
+    case wheeledOncomingLane
+    case otherVehicleWasOnMyLeft
+    case ignoredPrioritySign
+    case hitStandingVehicle
+    case stoppedAtRedLight
+    case other
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [RSASDK.CircumstanceType]
+    public typealias RawValue = Swift.Int
+    public static var allCases: [RSASDK.CircumstanceType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension RSASDK {
+  public enum PolicyType {
+    case osago(series: Swift.String, number: Swift.String)
+  }
+}
+extension RSASDK {
+  public enum Success : RSAResponse {
+    case success
+    case initialization(actualSDKVersions: [Swift.String], currentVersion: Swift.String)
+    case userID(_: Swift.String)
+    case image(_: UIKit.UIImage)
+    case inviteURL(_: Swift.String)
+    case policy(info: RSASDK.PolicyInfo, qrImage: UIKit.UIImage?)
+    case currentDraftContent(_: RSASDK.CurrentDraftContentModel)
+    case draftStatus(_: RSASDK.DraftStatus)
+    case draftContent(model: RSASDK.DraftContentModel, participantChangedPolicy: Swift.Bool)
+    case noticeRegistered(_: Swift.Int)
+    case pdf(path: Swift.String)
+    case serviceStatuses(_: RSASDK.DetailedServiceStatus, generalStatus: Swift.String?)
+    public var code: Swift.Int {
+      get
+    }
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+public protocol RSAResponse {
+  var code: Swift.Int { get }
+  var description: Swift.String { get }
+}
+extension RSASDK {
+  public struct CheckSDKStatusError : Swift.Codable {
+    public let code: Swift.Int
+    public let message: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public struct DraftContentModel {
+    public let noticeInfo: RSASDK.DraftContentModel.NoticeInfo?
+    public let witnesses: [RSASDK.Witness]
+    public let tsA: RSASDK.DraftContentModel.ParticipantInfo?
+    public let tsB: RSASDK.DraftContentModel.ParticipantInfo?
+    public struct NoticeInfo {
+      public let place: Swift.String?
+      public let date: Swift.String?
+      public let invitationCode: Swift.String?
+      public let orderID: Swift.String?
+      public let scheme: UIKit.UIImage?
+      public let placePhotos: [Swift.String]
+      public let disagreements: Swift.Bool?
+      public let numberDTP: Swift.String?
+    }
+    public struct ParticipantInfo {
+      public let transport: RSASDK.Transport?
+      public let license: RSASDK.DraftModelParticipant.License?
+      public let policy: RSASDK.DraftModelParticipant.Policy?
+      public let driver: RSASDK.DraftModelParticipant.Driver?
+      public let owner: RSASDK.Owner?
+      public let roadAccidents: RSASDK.CurrentDraftContentModel.ParticipantInfo.RoadAccidents?
+      public let photos: [RSASDK.DraftContentModel.ParticipantPhoto]
+      public let damageInsured: Swift.Bool
+      public let photofixationNumber: Swift.String?
+    }
+    public struct ParticipantPhoto {
+      public let detail: RSASDK.DetailType?
+      public let guid: Swift.String?
+      public let itemName: Swift.String?
+      public let description: Swift.String?
+    }
+  }
+}
+extension RSASDK {
+  @_hasMissingDesignatedInitializers final public class Transport : Swift.Codable {
+    final public var typeTS: RSASDK.VechicleType?
+    final public var brand: Swift.String?
+    final public var model: Swift.String?
+    final public var vin: Swift.String?
+    final public var regmark: Swift.String?
+    final public var photo: Swift.String?
+    final public var vehicleCertificate: RSASDK.VehicleCertificate?
+    @objc deinit
+    final public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public enum WitnessType : Swift.Int, Swift.Codable, Swift.CaseIterable {
+    case first
+    case second
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [RSASDK.WitnessType]
+    public typealias RawValue = Swift.Int
+    public static var allCases: [RSASDK.WitnessType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Swift.Array : RSAResponse where Element == RSASDK.ValidationError {
+  public var code: Swift.Int {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+extension RSASDK {
+  public enum ValidationError {
+    case emptyInvitationCode
+    case invalidAccidentCoordinates
+    case emptyAccidentDate
+    case emptyDTPScheme
+    case invalidTransportBrand(part: RSASDK.ParticipantType)
+    case invalidTransportModel(part: RSASDK.ParticipantType)
+    case invalidTransportVIN(part: RSASDK.ParticipantType)
+    case invalidTransportRegmark(part: RSASDK.ParticipantType)
+    case emptyCircumstancesList(part: RSASDK.ParticipantType)
+    case invalidCircumstancesCount(part: RSASDK.ParticipantType)
+    case circumstanceDescriptionIsEmpty(part: RSASDK.ParticipantType)
+    case invalidCircumstancesDescription(part: RSASDK.ParticipantType)
+    case invalidLicenseSeriesCount
+    case invalidLicenseNumberCount
+    case emptyLicenseCategoryList
+    case invalidLicenseIssueDate
+    case invalidLicenseExpiryDate
+    case invalidDriverAddress
+    case invalidDriverPhone
+    case emptyOwnerAddress(part: RSASDK.ParticipantType)
+    case invalidOwnerName(part: RSASDK.ParticipantType)
+    case invalidOwnerNameLength(part: RSASDK.ParticipantType)
+    case invalidOwnerSurnameLength(part: RSASDK.ParticipantType)
+    case invalidOwnerMiddleNameLength(part: RSASDK.ParticipantType)
+    case invalidSymbolsInOwnerName(part: RSASDK.ParticipantType)
+    case invalidSymbolsInOwnerSurname(part: RSASDK.ParticipantType)
+    case invalidSymbolsInOwnerMiddleName(part: RSASDK.ParticipantType)
+    case invalidOwnerAddressLength(part: RSASDK.ParticipantType)
+    case invalidSymbolsInOwnerAddress(part: RSASDK.ParticipantType)
+    case invalidOwnerOrganizationNameLength(part: RSASDK.ParticipantType)
+    case emptyInitialImpactSector(part: RSASDK.ParticipantType)
+    case invalidPolicyID(part: RSASDK.ParticipantType)
+    case invalidPolicySeries(part: RSASDK.ParticipantType)
+    case invalidPolicyNumber(part: RSASDK.ParticipantType)
+    case emptyPolicyInsurer(part: RSASDK.ParticipantType)
+    case emptyDamagedDetailPhoto(RSASDK.DetailType, part: RSASDK.ParticipantType)
+    case emptyRegmarkPhoto(part: RSASDK.ParticipantType)
+    case noPolicy(part: RSASDK.ParticipantType)
+    case noOwner(part: RSASDK.ParticipantType)
+    case noCircumstance(part: RSASDK.ParticipantType)
+    case noDamages(part: RSASDK.ParticipantType)
+    public var code: Swift.Int {
+      get
+    }
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+extension RSASDK {
+  public enum DetailType : Swift.Equatable {
+    case frontBumper
+    case leftHeadlight
+    case rightHeadlight
+    case radiator
+    case capote
+    case flWing
+    case frWing
+    case flWheel
+    case frWheel
+    case rlWheel
+    case rrWheel
+    case windshield
+    case flDoorGlass
+    case frDoorGlass
+    case flDoor
+    case frDoor
+    case lRearviewMirror
+    case rRearviewMirror
+    case roof
+    case lThreshold
+    case rThreshold
+    case rlDoor
+    case rrDoor
+    case rlDoorGlass
+    case rrDoorGlass
+    case rlSidewallGlass
+    case rrSidewallGlass
+    case rearWindow
+    case rlWing
+    case rrWing
+    case trunkLid
+    case tailgate
+    case rlLamp
+    case rrLamp
+    case rearBumper
+    case driverAirbag
+    case frontPassengerAirbag
+    case sideLeftAirbag
+    case sideRightAirbag
+    case other(detailName: Swift.String, description: Swift.String? = nil)
+    public static var allDetails: [RSASDK.DetailType] {
+      get
+    }
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: RSASDK.DetailType, b: RSASDK.DetailType) -> Swift.Bool
+  }
+}
+extension RSASDK {
+  public struct Owner : Swift.Codable {
+    public let isDriver: Swift.Bool
+    public var surname: Swift.String?
+    public var firstname: Swift.String?
+    public var middleName: Swift.String?
+    public var organizationName: Swift.String?
+    public var address: Swift.String?
+    public static var driverIsOwner: RSASDK.Owner {
+      get
+    }
+    public init(surname: Swift.String, firstname: Swift.String, middleName: Swift.String? = nil, address: Swift.String)
+    public init(organizationName: Swift.String, address: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK {
+  public struct DriverPersonalInfo : Swift.Codable {
+    public init(lastname: Swift.String, firstname: Swift.String, middlename: Swift.String?, birthdate: Foundation.Date, address: Swift.String, phone: Swift.String, email: Swift.String?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension RSASDK.ServerEnvironment.GlonasEnvironment : Swift.Equatable {}
+extension RSASDK.ServerEnvironment.GlonasEnvironment : Swift.Hashable {}
+extension RSASDK.ServerEnvironment.GlonasEnvironment : Swift.RawRepresentable {}
+extension RSASDK.ServerEnvironment.EsiaEnvironment : Swift.Equatable {}
+extension RSASDK.ServerEnvironment.EsiaEnvironment : Swift.Hashable {}
+extension RSASDK.ServerEnvironment.EsiaEnvironment : Swift.RawRepresentable {}
+extension RSASDK.VechicleType : Swift.Equatable {}
+extension RSASDK.VechicleType : Swift.Hashable {}
+extension RSASDK.VechicleType : Swift.RawRepresentable {}
+extension RSASDK.TruckSchemeType : Swift.Equatable {}
+extension RSASDK.TruckSchemeType : Swift.Hashable {}
+extension RSASDK.TruckSchemeType : Swift.RawRepresentable {}
+extension RSASDK.CarSchemeType : Swift.Equatable {}
+extension RSASDK.CarSchemeType : Swift.Hashable {}
+extension RSASDK.CarSchemeType : Swift.RawRepresentable {}
+extension RSASDK.BikeSchemeType : Swift.Equatable {}
+extension RSASDK.BikeSchemeType : Swift.Hashable {}
+extension RSASDK.BikeSchemeType : Swift.RawRepresentable {}
+extension RSASDK.LicenseCategory : Swift.Equatable {}
+extension RSASDK.LicenseCategory : Swift.Hashable {}
+extension RSASDK.LicenseCategory : Swift.RawRepresentable {}
+extension RSASDK.DocumentActionType : Swift.Equatable {}
+extension RSASDK.DocumentActionType : Swift.Hashable {}
+extension RSASDK.DocumentActionType : Swift.RawRepresentable {}
+extension RSASDK.ParticipantType : Swift.Equatable {}
+extension RSASDK.ParticipantType : Swift.Hashable {}
+extension RSASDK.ParticipantType : Swift.RawRepresentable {}
+extension RSASDK.CircumstanceType : Swift.Equatable {}
+extension RSASDK.CircumstanceType : Swift.Hashable {}
+extension RSASDK.CircumstanceType : Swift.RawRepresentable {}
+extension RSASDK.WitnessType : Swift.Equatable {}
+extension RSASDK.WitnessType : Swift.Hashable {}
+extension RSASDK.WitnessType : Swift.RawRepresentable {}

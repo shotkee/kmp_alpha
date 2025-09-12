@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="InsuranceView" id="lOZ-jd-cHp" customClass="InsuranceView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXH-4J-EVe">
+                    <rect key="frame" x="0.0" y="0.0" width="383" height="78"/>
+                    <connections>
+                        <action selector="insuranceTap:" destination="lOZ-jd-cHp" eventType="touchUpInside" id="nFL-4A-8l8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПОЛИС" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIh-b6-mfg">
+                    <rect key="frame" x="15" y="18" width="326" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="BG2-15-pHg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок действия" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EI-yR-veB">
+                    <rect key="frame" x="15" y="45" width="326" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="gEz-Z2-jwy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="fuY-ra-yR4">
+                    <rect key="frame" x="344" y="27" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="8dO-SG-3LL"/>
+                        <constraint firstAttribute="width" constant="24" id="uMJ-Cv-xFt"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nXH-4J-EVe" firstAttribute="top" secondItem="lOZ-jd-cHp" secondAttribute="top" id="29A-ua-ant"/>
+                <constraint firstAttribute="trailing" secondItem="fuY-ra-yR4" secondAttribute="trailing" constant="15" id="3JJ-fk-fJr"/>
+                <constraint firstItem="fuY-ra-yR4" firstAttribute="leading" secondItem="9EI-yR-veB" secondAttribute="trailing" constant="3" id="7Td-fQ-fRR"/>
+                <constraint firstItem="9EI-yR-veB" firstAttribute="top" secondItem="rIh-b6-mfg" secondAttribute="bottom" constant="9" id="GL6-I3-r7Q"/>
+                <constraint firstItem="nXH-4J-EVe" firstAttribute="bottom" secondItem="lOZ-jd-cHp" secondAttribute="bottom" id="Laa-y3-HbZ"/>
+                <constraint firstItem="nXH-4J-EVe" firstAttribute="leading" secondItem="lOZ-jd-cHp" secondAttribute="leading" id="MRz-R2-blY"/>
+                <constraint firstAttribute="bottom" secondItem="9EI-yR-veB" secondAttribute="bottom" constant="15" id="Mfc-hW-38f"/>
+                <constraint firstItem="fuY-ra-yR4" firstAttribute="leading" secondItem="rIh-b6-mfg" secondAttribute="trailing" constant="3" id="PKL-pc-1Kr"/>
+                <constraint firstItem="fuY-ra-yR4" firstAttribute="centerY" secondItem="lOZ-jd-cHp" secondAttribute="centerY" id="SNr-Yr-hVO"/>
+                <constraint firstItem="nXH-4J-EVe" firstAttribute="trailing" secondItem="lOZ-jd-cHp" secondAttribute="trailing" id="elZ-IP-bHb"/>
+                <constraint firstItem="rIh-b6-mfg" firstAttribute="leading" secondItem="lOZ-jd-cHp" secondAttribute="leading" constant="15" id="k0k-kf-vjl"/>
+                <constraint firstItem="rIh-b6-mfg" firstAttribute="top" secondItem="lOZ-jd-cHp" secondAttribute="top" constant="18" id="qLf-cU-grw"/>
+                <constraint firstItem="9EI-yR-veB" firstAttribute="leading" secondItem="rIh-b6-mfg" secondAttribute="leading" id="uVA-es-xD1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="9EI-yR-veB" id="jso-MF-yBP"/>
+                <outlet property="titleLabel" destination="rIh-b6-mfg" id="iyx-FN-BnM"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="126.22767857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-arrow" width="24" height="24"/>
+    </resources>
+</document>

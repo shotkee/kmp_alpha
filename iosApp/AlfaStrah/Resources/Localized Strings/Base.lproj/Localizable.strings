@@ -1,0 +1,2004 @@
+/* 
+  Localizable.strings
+  AlfaStrah
+
+  Created by Roman Churkin on 13/07/15.
+  Copyright (c) 2015 RedMadRobot. All rights reserved.
+*/
+
+/* Common */
+
+"common_cancel_button" = "Отмена";
+"common_stay_button" = "Остаться";
+"common_done_button" = "Готово";
+"common_choose_button" = "Выбрать";
+"common_ok_button" = "OK";
+"common_close_button" = "Закрыть";
+"common_yes_button" = "Да";
+"common_no_button" = "Нет";
+"common_all_button" = "Все";
+"common_skip_button" = "Пропустить";
+"common_insurance_title" = "Страховой полис";
+"common_settings_button" = "Настройки";
+"common_copy" = "Скопировать";
+"common_call" = "Позвонить";
+"common_write_email" = "Написать";
+"common_call_action" = "Вызов %@";
+"common_error_title" = "Ошибка";
+"common_loading_error" = "Не удалось загрузить";
+"common_error_something_went_wrong_tile" = "Что-то пошло не так…";
+"common_please_try_again" = "Пожалуйста, попробуйте еще раз";
+"common_please_try_again_or_contact_to_chat" = "Попробуйте еще раз или обратитесь в чат";
+"common_please_try_again_or_write_to_chat" = "Попробуйте еще раз или напишите в чат";
+"common_loading_title" = "Загрузка";
+"common_load" = "Загружаем";
+"common_distance_unit_km" = "км";
+"common_distance_unit_km_to" = "%.0f км";
+"common_distance_unit_m" = "м";
+"common_distance_unit_m_to" = "%.0f м";
+"common_search" = "Поиск";
+"common_send" = "Отправить";
+"common_success" = "Успешно";
+"common_reset_action" = "Сбросить";
+"common_demo_mode_alert" = "Эта функция недоступна в демо-режиме";
+"common_continue" = "Продолжить";
+"common_next" = "Далее";
+"common_understand" = "Понятно";
+"common_save" = "Сохранить";
+"common_quit" = "Выйти";
+"common_whatever_quit" = "Все равно выйти";
+"common_attention" = "Внимание!";
+"common_do_not_disturb" = "Не беспокоить";
+"common_proceed" = "Перейти";
+"common_select" = "Выбрать";
+"common_delete" = "Удалить";
+"common_change" = "Изменить";
+"common_end" = "Завершить";
+"common_email" = "Эл. почта";
+"common_photo_library" = "Медиатека";
+"common_take_photo" = "Снять фото";
+"common_pick_documents" = "Документы";
+"common_add_photo" = "Добавить фото";
+"common_I_am_here" = "Я здесь";
+"common_ask_chat" = "Уточнить в чате";
+"common_insurance_title" = "Cтраховой полис";
+"common_details" = "Подробнее";
+"common_checkout" = "Рассчитать";
+"common_confirm" = "Подтвердить";
+"common_camera_unavailable_title" = "Камера недоступна";
+"common_camera_unavailable_message" = "Пожалуйста, убедитесь в доступности камеры на вашем устройстве";
+"common_progress_percentage" = "%@ %%";
+"common_purchase" = "Купить";
+"common_view_insurance" = "Посмотреть полис";
+"common_reload" = "Обновить";
+"common_activate" = "Активировать";
+"common_to_main_screen" = "На главный экран";
+"common_retry" = "Повторить";
+"common_try_again" = "Попробовать еще раз";
+"common_with_year_sign" = "%@ г.";
+"common_with_full_year" = "%@ год";
+"common_range_calendar_title" = "Даты поездки";
+"common_goto_insurance" = "Перейти к полису";
+"common_open_url" = "Перейти по ссылке";
+"common_write_to_chat" = "Написать в чат";
+"common_show" = "Показать";
+"common_go_to_alfapoints" = "Перейти к АльфаБАЛЛАМ";
+"common_enter_address" = "Введите адрес";
+"common_photos" = "Фотографии";
+"common_nothing_found" = "Ничего не найдено";
+"common_request_timeout" = "Превышен лимит времени на запрос";
+"common_missing_category" = "Не найдена категория для полиса";
+"common_save_draft" = "Сохранить черновик";
+"common_documents_title" = "Документы";
+"common_photos_sub_title" = "Выберите фотографию";
+"common_documents_sub_title" = "Выберите фотографию или файл PDF";
+"common_documents_sub_title_count" = "Выбрано 0 файлов";
+"common_unsopported_title" = "Не поддерживается в текущей версии приложения";
+"common_documents_count_max" = "Вы добавили максимальное количество документов";
+"common_open_settings" = "Перейти в настройки";
+"common_open_home_sreen" = "Выйти на главную";
+"common_restart" = "Начать заново";
+"common_go_to_chat" = "Перейти в чат";
+"common_contact_to_chat" = "Обратиться в чат";
+"common_loading_description" = "Пожалуйста, подождите.";
+"common_error_accured_title" = "Произошла ошибка";
+"common_error_description" = "Попробуйте ещё раз или напишите в чат";
+"common_turn_on" = "Включить";
+"common_popular" = "Популярные";
+"common_progress_counter" = "%i из %i";
+"common_archive_list" = "Архив полисов";
+"common_search" = "Найти";
+"common_activate" = "Активировать";
+"common_copied" = "Скопировано";
+"common_contact_to_chat" = "Обратиться в чат";
+"common_unknown_error" = "Неизвестная ошибка";
+"common_download" = "Скачать";
+"snack_network_reachibility_error_title" = "Интернет-соединение отсутствует";
+"snack_network_reachibility_error_description" = "Пожалуйста, проверьте настройки сети";
+
+"tabbar_main_title" = "Главный";
+"tabbar_chat_title" = "Чат";
+"tabbar_products_title" = "Витрина";
+"tabbar_profile_title" = "Профиль";
+"location_denied" = "Доступ к определению геопозиции запрещён. Необходимо перейти в настройки и разрешить доступ для приложения \"АльфаСтрахование\"";
+"location_restricted" = "Доступ к определению геопозиции запрещён. Необходимо обратиться к администратору вашего устройства";
+"no_internet_connection" = "Ошибка подключения к интернету";
+"common_error_unknown_error" = "Произошла неизвестная ошибка. Пожалуйста, попробуйте повторить запрос позже.";
+"common_year_suffix" = "г.";
+
+/* Permissions */
+
+"permission_camera_denied_title" = "Требуется предоставить доступ к камере";
+"permission_camera_denied_text" = "Для возможности фотосъемки, пожалуйста, разрешите доступ приложения к камере в настройках конфиденциальности вашего устройства";
+"permission_photo_library_denied_title" = "Требуется предоставить доступ к фотографиям";
+"permission_photo_library_denied_text" = "Для работы с медиатекой, пожалуйста, разрешите доступ приложения к фотографиям в настройках конфиденциальности вашего устройства";
+
+/* Main screen */
+
+"main_banner_details" = "Подробнее";
+"main_banner_health_magazine_title" = "AlfaHealth";
+"main_banner_health_magazine_text" = "Периодическое издание с передовыми идеями и методиками в области управления здоровьем персонала";
+"main_banner_avia_moment_title" = "Моментальная выплата";
+"main_banner_avia_moment_text" = "При задержке или отмене рейса. Быстро. Удобно.";
+
+"main_banner_promo_loyalty_title" = "Бонусная программа\nАльфаБАЛЛЫ";
+"main_banner_auth_title" = "Неавторизованный режим";
+"main_banner_auth_text" = "Чтобы воспользоваться\nвсеми функциями приложения,\nпожалуйста, войдите";
+"main_banner_auth_action" = "Войти";
+"main_banner_add_insurance_title" = "Отображаются не все ваши полисы?";
+"main_banner_add_insurance_text" = "Вы можете добавить их самостоятельно.";
+"main_banner_add_insurance_action" = "Добавить полис";
+"main_banner_promo_loyalty_text" = "Сэкономьте до 30% на полисах";
+"main_banner_draft_kasko" = "Черновик ДТП";
+"main_vzr_disclaimer_title" = "Бонусные полисы банков не отображаются в мобильном приложении.";
+"main_vzr_disclaimer_description" = "Бонусные полисы ВЗР Альфа-Банка и МТС Банка отображаются только в приложениях банков по их требованию.";
+"main_banner_reach_goals_title" = "Приложение «Достижение целей»";
+"main_banner_reach_goals_text" = "Устанавливайте цели, достигайте их и прививайте привычки. Доступно для всех.";
+"main_questions_show_all_button_title" = "Смотреть все";
+
+/* Draft screens */
+
+"draft_calculate_cost_policy" = "Рассчитать стоимость полиса";
+"draft_calculate_continue_button" = "Продолжить оформление";
+"draft_calculate_error_title" = "Не удалось загрузить черновики";
+"draft_calculate_error_description" = "Попробуйте ешё раз или обратитесь в чат";
+"draft_calculate_retry" = "Попробовать ещё раз";
+"draft_calculate_loading_title" = "Загружаем";
+"draft_error_search_title" = "Результаты не найдены";
+"draft_error_search_description" = "Попробуйте изменить запрос";
+"draft_delete_alert_title" = "Удалить черновики?";
+"draft_single_delete_alert_title" = "Удалить черновик?";
+"draft_delete_retry_alert_title" = "Ошибка удаления";
+"draft_delete_retry_alert_description" = "Не удалось удалить черновики. Повторить попытку?";
+"draft_delete_loader_description" = "Подождите мы удаляем ваши черновики";
+
+/* Question screen */
+"question_vote_title" = "Ответ был полезен?";
+"question_vote_yes_answer_title" = "Спасибо за ваше мнение";
+"question_vote_yes_answer_description" = "Мы ценим каждого клиента и хотим сделать ответы полезными для вас";
+"question_vote_no_answer_title" = "Мы бы очень хотели вам помочь";
+"question_vote_no_answer_description" = "Расскажите нам в чате, что осталось непонятным, и мы ответим на все вопросы";
+"question_vote_error_title" = "Не удалось отправить отзыв";
+"question_try_again" = "Попробуйте ещё раз";
+"question_yes_response" = "Да 👍";
+"question_no_response" = "Нет 👎";
+
+/* Stories */
+
+"stories_error_title" = "Произошла ошибка";
+"stories_error_description" = "Попробуйте ещё раз или зайдите позже";
+"stories_retry_title_button" = "Попробовать ещё раз";
+"stories_loading_text" = "Загружаем";
+
+/* Onboarding */
+
+"onboarding_button_title" = "Далее";
+"onboarding_button_title_end" = "Приступить";
+"onboarding_page_title_one" = "Удобное управление\nполисами";
+"onboarding_page_title_two" = "Урегулирование онлайн";
+"onboarding_page_title_three" = "Покупка полиса";
+"onboarding_page_title_four" = "Программа лояльности\n«АльфаБАЛЛЫ»";
+"onboarding_page_title_five" = "Медицинские сервисы\nонлайн";
+
+/* Buy Insurance */
+
+"product_showcase_title" = "Витрина продуктов";
+"buy_insurance_title" = "Покупка полиса";
+"buy_insurance_error_text" = "Произошла ошибка";
+"buy_insurance_error_description" = "Попробуйте ещё раз";
+"buy_insurance_loading_text" = "Подождите, загружаются продукты...";
+"buy_insurance_empty_title" = "Продуктов сейчас нет";
+"buy_insurance_empty_description" = "Тут появятся продукты, которые\nвы сможете приобрести";
+"buy_insurance_error_go_to_chat" = "Обратиться в чат";
+"buy_insurance_retry_title_button" = "Попробовать ещё раз";
+
+/* Insurance List */
+
+"user_insurance_list_screen_title" = "Ваши полисы";
+
+"search_insurance_title" = "Найти полис";
+"search_insurance_type" = "Тип полиса";
+"search_insurance_take_photo" = "Сделать фото";
+"search_insurance_take_other_photo" = "Сделать другое фото";
+"search_insurance_choose_photo" = "Выбрать из галереи";
+"search_insurance_choose_other_photo" = "Выбрать другое фото из галереи";
+"search_insurance_request_success" = "Заявка на поиск договора %@ получена";
+"search_insurance_no_data" = "Данные об указанном Вами договоре не получены";
+"search_insurance_planned_date_hint" = "Предполагаемая дата поступления информации о полисе %@";
+"search_insurance_no_products" = "Не удалось загрузить список типов полисов";
+
+/* Auth */
+
+"auth_pincode_description" = "Если вы израсходуете все попытки,\nто нужно будет авторизоваться заново";
+"auth_pincode_attempts_exhausted" = "Попытки исчерпаны";
+"auth_pincode_attempts_exhausted_description" = "Нужно будет авторизоваться заново";
+"auth_spinner_title" = "Авторизация";
+"authtype_title_demo" = "Демо-режим";
+"authtype_title_full" = "Логин и пароль";
+"authtype_title_auto" = "Автоматический вход";
+"authtype_title_fastcode" = "Быстрый пароль";
+"authtype_title_touch_id" = "Touch ID";
+"authtype_title_face_id" = "Face ID";
+"auth_touch_id_reason" = "Для входа в приложение пройдите авторизацию по отпечатку пальца";
+"auth_face_id_reason" = "Для входа в приложение пройдите авторизацию, используя распознавание лица";
+"auth_invitation_touch_id" = "Авторизация в приложении будет производиться с помощью Touch ID";
+"auth_invitation_face_id" = "Авторизация в приложении будет производиться с помощью Face ID";
+"auth_touch_id_offer_title" = "Включить Touch ID для входа в приложение?";
+"auth_face_id_offer_title" = "Включить Face ID для входа в приложение?";
+"auth_type_offer_description" = "Так вам не придется каждый раз вводить код при входе";
+"auth_invitation_pin" = "Создайте короткий код для безопасного входа в приложение";
+"create_pincode_title" = "Пин-код для входа";
+"auth_create_pincode_title" = "Придумайте пин-код для входа";
+"auth_create_pincode_description" = "Нужно, чтобы защитить ваши личные данные";
+"auth_reenter_pincode_title" = "Введите код ещё раз";
+"auth_enter_pincode_title" = "Введите пин-код для входа";
+"auth_enter_pincode_navigation_title" = "Пин-код для входа";
+
+"auth_pincode_logout_alert_title" = "Код сбросится при выходе";
+"auth_pincode_logout_alert_description" = "Нужно будет заново придумать код при авторизации в приложении";
+
+"auth_sign_in_login_password" = "Для входа в приложение используйте логин и пароль от личного кабинета на сайте www.alfastrah.ru";
+"auth_sign_in_user_login" = "Электронная почта";
+"auth_sign_in_user_password" = "Пароль";
+"auth_sign_in_forgot_password" = "Забыли пароль?";
+"auth_sign_in_sign_in" = "Войти";
+"auth_sign_in_get_code" = "Получить код";
+"auth_sign_in_title" = "Вход в личный кабинет";
+"auth_sign_in_description" = "Используйте логин и пароль от личного кабинета на сайте www.alfastrah.ru";
+"auth_sign_in_description_link" = "www.alfastrah.ru";
+"auth_sign_in_all_registration_methods_button_title" = "Все способы авторизации";
+"auth_sign_in_loading_description" = "Загружаем";
+"auth_sign_in_error_title" = "Произошла ошибка";
+"auth_sign_in_error_description" = "Попробуйте ещё раз или обратитесь в чат";
+"auth_sign_switch_left_title" = "Вход по СМС";
+"auth_sign_switch_right_title" = "Вход по Email";
+"auth_sign_phone" = "Номер телефона";
+"auth_sign_all_methods_registration_title" = "Все способы авторизации";
+"auth_sign_all_methods_registration_description" = "Выберите удобный для вас способ авторизации или регистрации";
+"auth_sign_error_otp_registration_description" = "Пожалуйста, авторизуйтесь через Email
+или Госуслуги";
+"auth_sign_up_register" = "Регистрация";
+"auth_sign_up_chat_nav_item_title" = "Чат";
+"auth_sign_up_first_name" = "Имя*";
+"auth_sign_up_patronymic" = "Отчество*";
+"auth_sign_up_patronymic_placeholder" = "Отчество (обязательно при наличии)";
+"auth_sign_up_last_name" = "Фамилия*";
+"auth_sign_up_phone" = "Номер телефона*";
+"auth_sign_up_birthday" = "Дата рождения*";
+"auth_sign_up_insurance_number" = "Номер полиса";
+"auth_sign_up_email" = "Электронная почта*";
+"auth_sign_up_insurance_number_placeholder" = "Номер полиса (необязательно)";
+"auth_sign_up_has_no_patronymic" = "У меня нет отчества";
+
+/* All Registration Methods BottomSheet */
+
+"all_registration_methods_registration_title" = "Нет аккаунта? Зарегистрироваться";
+"all_registration_methods_gosuslugi_title" = "Войти через Госуслуги";
+"all_registration_methods_email_title" = "Войти через Email";
+"all_registration_methods_phone_title" = "Войти по номеру телефона";
+
+/* SignIn SMS Code */
+"sign_in_sms_code_screen_title" = "Код подтверждения";
+"sign_in_sms_code_screen_sms_send" = "Отправили код подтверждения\nна ";
+
+"auth_sign_up_common_error_description" = "Произошла ошибка, попробуйте ещё раз или обратитесь в чат";
+"auth_sign_up_loading_common_error_title" = "Ошибка сервера";
+"auth_sign_up_terms_loading_server_error_description" = "Попробуйте ещё раз или обратитесь в чат";
+"auth_sign_up_request_loading_description" = "Подождите, проверяем ваши данные";
+"auth_sign_up_alert_confirm_button_title" = "Понятно";
+"auth_sign_up_text_inputs_passwords_mismatch" = "Пароли не совпадают";
+"auth_sign_up_terms_loading_title" = "Загружаем";
+"auth_sign_up_data_loading_title" = "Подождите, проверяем ваши данные";
+"auth_sign_up_request_common_error_title" = "Произошла ошибка";
+
+"auth_offer_plain" = "Регистрируясь в приложении,\nвы соглашаетесь с условиями\n";
+"auth_offer_underline" = "пользовательского соглашения";
+
+"auth_password" = "Пароль";
+"auth_password_create_title" = "Придумайте новый пароль";
+"auth_password_repeat" = "Пароль ещё раз";
+"auth_new_user_password_hint" = "Придумайте и подтвердите новый пароль";
+"auth_new_user_password_requirements_loading_description" = "Загружаем требования к паролю";
+"auth_new_user_password_requirements_title" = "Требования к паролю";
+"auth_new_user_password_requirements_error_go_to_chat" = "Обратиться в чат";
+"auth_new_user_password_requirements_download_error_title" = "Ошибка сервера";
+"auth_new_user_password_requirements_download_error_description" = "Попробуйте ещё раз или обратитесь в чат";
+"auth_new_user_password_requirements_error_retry" = "Попробовать ещё раз";
+"auth_new_user_password_requirements_confirm_placeholder" = "Подтвердите пароль";
+
+"auth_phone_sms_sent" = "Введите код из СМС.\nОтправлено на";
+"auth_phone_sms_code_title" = "Код подтверждения";
+"auth_phone_sms_code_resend_availability" = "Запросить код через ";
+"auth_phone_sms_code_resend_again" = "Отправить код ещё раз";
+"auth_phone_sms_code_chat" = "В случае проблем обратитесь в чат";
+"auth_phone_sms_code_chat_link_text" = "обратитесь в чат";
+"auth_update_app" = "Oбновить";
+
+/* Clinics */
+
+"clinics_cities_title" = "Города";
+"clinics_show_all_clinics" = "Все клиники";
+
+"clinics_picker_title" = "Клиники";
+"clinic_picker_apply_filters" = "Применить";
+"clinic_picker_reset_all_filters" = "Сбросить все";
+"clinic_picker_cities_list" = "Список";
+"clinic_picker_map" = "Карта";
+"clinic_picker_filters" = "Фильтры";
+
+"clinic_title" = "Клиника";
+"clinic_confirm_appointment" = "Оставить заявку";
+"clinic_confirm_choose" = "Выбрать";
+"clinic_confirm_online_appointment" = "Записаться";
+"clinic_confirm_online" = "Записаться онлайн";
+"clinic_confirm" = "Подтвердить";
+"clinic_cancel" = "Отменить";
+"clinic_change" = "Перенести";
+"clinic_new_offline_appointment" = "Заявка на новую запись";
+"clinic_search_name" = "Поиск по фамилии";
+"clinic_search_speciality" = "Поиск специальности";
+"clinic_speciality_title_completion_for_user_input" = "введите специалиста";
+"clinic_day_today" = "Сегодня";
+"clinic_select_next_date" = "К следующему дню";
+"clinic_all_doctors_are_busy_today" = "Все врачи заняты в этот день";
+"clinic_look_other_date" = "Посмотрите другую дату";
+"clinic_no_time_slots_available_on_this_day" = "Нет доступных слотов для записи в этот день";
+"clinic_check_another_date_for_slot" = "Посмотрите другую дату";
+
+// clinic filters
+"clinic_filter_title" = "Фильтр";
+"clinic_filter_city_warning_info_title" = "Для вашего полиса доступны клиники только в данных городах с метро. Для посещения клиник в другом городе с метро обратитесь в чат поддержки.";
+"clinic_filter_specialities_warning_info_title" = "Если вы затрудняетесь с выбором врача или же нужной специальности нет в списке, пожалуйста, обратитесь в чат поддержки";
+"clinic_filter_chat_label" = "чат поддержки";
+"clinic_filter_town_title" = "Выберите метро города";
+"clinic_filter_speciality_title" = "Специальности";
+"clinic_filter_metro_title" = "Выберите станции";
+"clinic_filter_search_placeholder" = "Название станции";
+"clinic_filter_city_metro_title" = "Метро %@";
+"clinic_filter_city_specialities_title" = "Выбрать специальность врача";
+"clinic_filter_city_metro_station_title" = "Выбрать метро";
+"clinic_filter_reset_filter_title_alert" = "Вы действительно хотите сбросить предыдущий фильтр?";
+"clinic_filter_reset_filter_description_alert" = "Предыдущий фильтр выбора метро будет сброшен";
+"clinic_filter_reset_filter_leave_button_title" = "Оставить";
+"clinic_filter_apply_title_button" = "Применить";
+"clinic_filter_select_title_button" = "Выбрать";
+"clinic_filter_empty_state_title" = "По вашему запросу ничего не найдено";
+"clinic_filter_empty_state_description" = "Попробуйте изменить параметры запроса";
+"clinic_filter_metro_title" = "Метро";
+"clinic_filter_metro_description" = "Метро – процесс отбора и фильтрации доступных клиник, с учетом наличия метрополитена в городе. Клиент может выбрать станцию метро и записаться в удобную ему клинику. ";
+"clinic_filter_not_clinics" = "(нет клиник)";
+
+"info_phone" = "Телефон";
+"info_phone_long" = "Телефон клиники";
+"info_site" = "Сайт";
+"info_address" = "Адрес";
+"info_get_route" = "Проложить маршрут";
+"info_proceed_to_map" = "Перейти к картам";
+"info_proceed_to_yandex_map" = "Яндекс.Карты";
+"info_proceed_to_2gis_map" = "2ГИС";
+"info_open_address" = "Адрес";
+"info_open_hours" = "Часы работы";
+"info_office_services" = "Специализация";
+"info_clinic_treatments" = "Услуги";
+"info_clinic_service_hours" = "Время работы";
+"info_clinic_franchise" = "Франшиза";
+"filter_clinics_with_franchise" = "Услуги с франшизой";
+"filter_clinics_without_franchise" = "Услуги без франшизы";
+"info_clinic_disclaimer" = "В данном медицинском учреждении нет услуг для плановой записи к врачу.";
+"info_campaigns" = "Акции";
+"info_add_to_calendar" = "Добавить в календарь";
+"info_clinic_route_button" = "Проложить маршрут";
+"info_clinic_call_button" = "Позвонить\nв клинику";
+
+"clinic_appointment_title" = "Заявка на запись к врачу";
+"clinic_appointment_term_of_validity_title" = "Срок действия полиса";
+"clinic_appointment_insured_full_name_title" = "ФИО застрахованного";
+"clinic_appointment_clinic_name_title" = "Клиника";
+"clinic_appointment_clinic_address_title" = "Адрес клиники";
+"clinic_appointment_clinic_address" = "Адрес";
+"clinic_appointment_request_for_filling" = "Заполните поля ниже, указав дату и удобное время визита (приема). При необходимости оператор перезвонит Вам для уточнения информации.";
+"clinic_appointment_data_title" = "Дата и время визита";
+"clinic_appointment_convenient_date_card_text" = "Удобная дата визита";
+"clinic_appointment_convenient_time_card_text" = "Удобное время визита";
+"clinic_appointment_convenient_time_bottom_sheet_text" = "Время визита";
+"clinic_appointment_add_one_more_date_card_text" = "Добавить еще одну дату и время";
+"clinic_appointment_add_one_more_date_info_text" = "На случай отсутствия свободной записи к выбранному специалисту укажите 2 альтернативные удобные для Вас даты и время визита";
+
+"clinic_appointment_confirm" = "Записаться к врачу";
+"clinic_appointment_reason" = "Причина обращения";
+"clinic_appointment_reason_placeholder" = "Введите причину обращения";
+"clinic_appointment_reason_card_title" = "Причина обращения (что беспокоит)";
+"clinic_appointment_clinic" = "Клиника";
+"clinic_appointment_doctor" = "Доктор";
+"clinic_appointment_speciality" = "Специальность";
+"clinic_online_appointment_date" = "Дата";
+"clinic_appointment_phone" = "Телефон клиники";
+"clinic_appointment_date" = "Удобная дата визита";
+"clinic_appointment_calendar_text" = "Дата визита";
+"clinic_appointment_operator_confirm_alert" = "Оператор перезвонит вам и уточнит детали";
+"clinic_appointment_cancel_alert" = "Вы действительно хотите отменить запись?";
+"clinic_appointment_reschedule_alert" = "Отменить текущую запись при создании новой заявки на запись к врачу?";
+"clinic_appointment_number" = "Номер заявки";
+"clinic_appointment_specialist" = "Специалист (врач)";
+"clinic_appointment_specialist_caption" = "Специалист";
+"clinic_appointment_user_contacts" = "Контакты для связи";
+"clinic_appointment_user_phone" = "Телефон";
+"clinic_appointment_disclaimer_title" = "Уточните, пожалуйста, информацию";
+"clinic_appointment_disclaimer_placeholder" = "Ваш ответ";
+"clinic_appointment_status_appointment_creation" = "Отправляем заявку на запись к врачу";
+"clinic_appointment_status_appointment_cancelation" = "Выполняется отмена записи, пожалуйста, подождите";
+"clinic_appointment_status_appointment_creation_error" = "При подтверждении записи произошла ошибка";
+"clinic_appointment_status_appointment_cancelation_error" = "При отмене записи произошла ошибка";
+"clinic_appointment_status_cancelation_prohibited" = "К сожалению, данную запись не удалось отменить";
+"clinic_appointment_success_offline_title" = "Ваша заявка принята";
+"clinic_appointment_success_offline_subtitle" = "При необходимости оператор свяжется с вами для уточнения деталей или времени приема у специалиста клиники";
+"clinic_appointment_success_online_title" = "Вы успешно записаны\nна прием к врачу";
+"clinic_appointment_success_online_subtitle" = "Мы напомним о предстоящей встрече за 2 дня.\nВы можете перенести или отменить визит\nв разделе «Записи на прием» в полисе ДМС";
+"clinic_appointment_cancel_online_title" = "Вы отменили запись к врачу";
+"clinic_appointment_cancel_date_format" = "d MMMM в HH:mm";
+"clinic_appointment_history" = "История";
+"clinic_appointment_create_online_appointment_success_title" = "Вы успешно записаны на приём к врачу";
+"clinic_appointment_create_online_appointment_success_description" = "Напомним о предстоящей встрече за 2 дня. Вы можете перенести или отменить визит в разделе «Записи на приём» в полисе ДМС.";
+"clinic_appointment_create_online_appointment_retry" = "Выбрать другое время";
+"clinic_appointment_loading_title" = "Загружаем";
+"clinic_appointment_status_appointment_creation_error_description" = "К сожалению, при загрузке произошла ошибка, попробуйте ещё раз";
+"clinic_appointment_go_to_chat" = "Обратиться в чат";
+"clinic_appointment_retry" = "Поробовать ещё раз";
+
+"clinics_specialties_picker_title" = "Специальности";
+"clinics_doctor_picker_button" = "К списку врачей";
+"clinics_doctor_time_picker_title" = "Выбор времени";
+"clinics_doctor_time_picker_other" = "Другое";
+"clinic_about_doctor_title" = "О враче";
+"clinic_appointment_online_create_title" = "Запись на прием";
+"clinic_appointment_online_edit_title" = "Запланированный прием";
+"clinic_info_doctor" = "Врач";
+"clinic_info_referral_or_department" = "Отделение/Направление к врачу (на исследование)";
+"clinic_info_date_and_time" = "Дата и время";
+"clinic_doctor_experience" = "Опыт";
+"clinic_doctor_experience_value" = ", стаж, %@";
+"clinic_doctor_picker_cell_expirience" = "Стаж: %@";
+"clinic_online_appointment_available" = "Доступна онлайн-запись";
+"clinic_has_services_with_franchise" = "Услуги с франшизой";
+"clinic_active_appointment_send_title" = "Вы отправили заявку";
+"clinic_appointments_banner_text" = "Внимание! Здесь отображаются записи в клиники, сделанные с помощью мобильного приложения";
+"clinic_appointments_banner_highlighted_text" = "Внимание!";
+
+"doctor_calendar_filter_title" = "Выбор даты";
+"doctor_calendar_filter_note" = "Выберите удобный день или период для записи";
+
+"osago_renew_policy_template_link" = "образцом полиса";
+"osago_renew_agreement_terms_text" = "Я согласен с образцом полиса\nи правилами страхования";
+
+"osago_create_draft_saved" = "Черновик сохранён";
+"main_request_complete" = "Запрос отправлен";
+"main_request_not_complete" = "Данные не отправлены на сервер. Продолжите оформление и отправьте заявку для завершения";
+"drafts" = "Черновики";
+"active_events" = "Активные случаи";
+"alert_email_changed" = "Email изменён";
+
+"insurance_passbook_pass_exists" = "Полис уже находится в Wallet.";
+
+/* Telematics */
+
+"telematics_alfa_points" = "АльфаБАЛЛЫ";
+
+"insurance_number" = "Номер договора";
+"insurance_case" = "Страховой случай";
+"insurance_loss_status" = "Статус убытка";
+"insurance_cases" = "Страховые случаи";
+"insurance_appointments" = "Записи на прием";
+"insurance_information" = "Информация";
+"insurance_renew_without_changes" = "Узнать цену и продлить";
+"insurance_make_changes" = "Изменить данные в договоре";
+"insurance_terminate" = "Расторжение";
+"insurance_create_title" = "Страховой случай";
+"insurance_create_title_dms" = "Выбрать клинику и записаться";
+"insurance_create_title_vzr" = "Возместить расходы";
+"insurance_create_title_life_qa" = "Вопросы и ответы";
+"insurance_create_right_title_vzr" = "Мои заявки";
+"insurance_buy_new" = "Купить новый";
+"insurance_add_to_passbook" = "Добавить полис в Wallet";
+"insurance_pdf_insurance" = "Полис";
+"insurance_program" = "Программа страхования";
+"insurance_select_bills" = "Выбрать счета";
+"insurance_pay_off_cancel" = "Отменить";
+"insurance_dms_info_message_appointment_not_available" = "Запись к врачу недоступна после окончания срока действия полиса";
+"insurance_dms_info_message_appointment_will_be_available" = "Запись к врачу станет доступна после начала срока действия полиса";
+"insurance_health_academy" = "Академия здоровья";
+
+/* Insurance program */
+"insurance_program_download_pdf" = "Скачать в PDF";
+
+/* Insurance entry */
+"insurance_entry_zero_entry" = "Ранее поданных заявок\nна возмещение расходов нет";
+"insurance_entry_continue_button" = "Продолжить оформление";
+"insurance_entry_loading_title" = "Загружаем";
+"insurance_entry_error_title" = "Произошла ошибка";
+"insurance_entry_error_description" = "Попробуйте ещё раз или обратитесь в чат";
+"insurance_entry_retry" = "Попробовать ещё раз";
+
+/* Insurance bills */
+"insurance_bill_status" = "Статус";
+"insurance_bill_creation_date" = "Дата выставления счета";
+"insurance_bill_payment_date" = "Дата оплаты";
+"insurance_bill_sum_to_pay_in_roubles" = "Сумма к оплате (в российских рублях)";
+"insurance_bill_recipient" = "Получатель услуг";
+"insurance_bill_details" = "Детализация счета";
+"insurance_bill_pay_off" = "Оплатить счет";
+"insurance_bill_disagree" = "Не согласны с оказанными услугами?";
+"insurance_bills_pay" = "Оплатить";
+"insurance_bills_pay_amount" = "Оплатить %@ руб.";
+"insurance_bills" = "Счета";
+"insurance_bill_no" = "Счет № %@";
+"insurance_bill_payment" = "Оплата";
+"insurance_bill_payment_success_title" = "Успешная оплата";
+"insurance_bill_payment_success_description" = "Чек будет направлен на почту, указанную при оплате";
+"insurance_bill_payment_failure_title" = "Не удалось оплатить";
+"insurance_bill_payment_failure_description" = "Оплата не прошла в связи с технической ошибкой. Попробуйте повторить запрос через 1 час — мы уже работаем над устранением неисправности";
+"insurance_bill_payment_personal_info_notice" = "Проверьте правильность электронной почты для отправки чека";
+"insurance_bill_payment_personal_info_phone_number" = "Номер телефона";
+"insurance_bill_payment_personal_info_email" = "Эл. почта";
+"insurance_bill_phone_number" = "Номер телефона";
+"insurance_bill_phone_number_prompt" = "Укажите номер телефона";
+"insurance_bill_email" = "E-mail";
+"insurance_bill_email_prompt" = "Укажите e-mail";
+
+"insurance_letters_of_guarantee" = "Гарантийные письма";
+"zero_no_letters_of_guarantee_banner_highlighted_text" = "Внимание!";
+"zero_no_letters_of_guarantee_banner_text" = "Внимание! Некоторые гарантийные письма могут не отображаться. В случае, если нужные письма отсутствуют, вы можете запросить их в чате, для этого нажмите на кнопку ниже и выберите раздел «ДМС»";
+"zero_no_letters_of_guarantee" = "Некоторые гарантийные письма могут не отображаться. В случае, если нужные письма отсутствуют, вы можете запросить их в чате, для этого нажмите на кнопку ниже и выберите раздел «ДМС»";
+"zero_no_matching_letters_of_guarantee" = "По Вашему запросу ничего не найдено";
+"guarantee_letter_issue_date" = "Дата создания: %@";
+"download_letter_of_guarantee" = "Скачать гарантийное письмо";
+"request_letter_of_guarantee" = "Запросить гарантийное письмо";
+"insurance_instruction" = "Инструкции";
+"insurance_ask_question" = "Задать вопрос";
+"insurance_trip_departure" = "Точка отправления";
+"insurance_trip_intermediate" = "Промежуточные точки";
+"insurance_trip_arrival" = "Точка прибытия";
+"insurance_event_status" = "Статус страхового случая";
+"insurance_search_example_value" = "Например: %@";
+"insurance_switch_session_title" = "Смена профиля";
+"insurance_event_decision_number" = "Номер решения";
+"insurance_event_decision_sum" = "Сумма решения";
+"insurance_not_found" = "Страховой полис не найден";
+"insurance_valid_before_value" = "Действителен по %@";
+"insurance_expired_value" = "Срок действия истёк %@";
+"passengers_draft_title" = "Пассажиры";
+"auto_draft_title" = "ДТП";
+"insurance_event_accident_title" = "Несчастный случай";
+"draft_title" = "Черновик";
+"insurance_event_type_title" = "Тип страхового случая";
+"insurance_event_number_title" = "Номер заявления";
+"insurance_event_create_date_title" = "Дата создания";
+"insurance_event_sent_date_title" = "Дата отправки";
+"insurance_event_read_decision" = "Ознакомиться с решением";
+"insurance_event_date_alert_expired" = "Срок действия полиса %@ истек %@ года. Страховой случай не может быть зарегистрирован после истечения срока";
+"insurance_event_date_alert_not_started" = "Полис %@ начинает действовать %@ года. Страховой случай не может быть зарегистрирован ранее даты начала";
+"insurance_event_date_alert_change" = "Изменить";
+"insurance_event_date_alert_cancel" = "Отмена";
+"insurance_event_auto_type_title" = "Авто";
+"insurance_event_accident_type_title" = "Здоровье";
+"insurance_event_passenger_type_title" = "Пассажиры";
+"auto_event_report_event_location_title" = "Введите или укажите на карте адрес ДТП";
+"auto_event_report_event_description_title" = "Обстоятельства происшествия";
+"auto_event_report_event_description_hint" = "Укажите обстоятельства происшествия";
+"auto_event_report_event_date_title" = "Дата происшествия";
+"auto_event_report_event_date_hint" = "дд/мм/гг";
+"auto_event_report_event_time_title" = "Время происшествия";
+"auto_event_report_event_time_hint" = "чч:мм";
+"text_address_input_title" = "Место происшествия";
+"text_address_input_hint_text" = "Начните вводить адрес места, где произошло происшествия, затем выберите адрес из списка";
+"text_address_input_not_found_title" = "Ничего не найдено";
+"text_address_input_not_found_info" = "К сожалению, поиск не дал результатов.\nПопробуйте указать адрес на карте";
+"text_address_input_select_on_map" = "Выбрать на карте";
+
+"guarantee_letter_filters" = "Фильтры";
+"guarantee_letter_reset_filters" = "Сбросить все";
+"guarantee_letter_apply_filters" = "Применить";
+"guarantee_letter_filters_show_valid" = "Показать действующие";
+"guarantee_letter_filters_show_expired" = "Показать недействующие";
+
+"telemedicine_title" = "Видеоконсультация";
+"telemedicine_start" = "Перейти";
+"telemedicine_about_1" = "Записывайтесь на онлайн-консультации\nс лучшими специалистами";
+"telemedicine_about_2" = "Врач проведет консультацию в режиме online в удобное для вас время. Не нужно приезжать в клинику";
+"telemedicine_about_3" = "Дежурный врач общей практики свяжется с вами в самое ближайшее время после запроса консультации";
+"telemedicine_cell_title" = "Услуга «Телемедицина»";
+"telemedicine_cell_description" = "Вам доступна видеоконсультация с врачами";
+"telemedicine_get_details" = "Перейти и записаться";
+"medical_operator_call_cell_title" = "Медицинский пульт";
+"medical_operator_call_cell_description" = "Вам доступна выделенная линия для связи с оператором";
+"medical_operator_call_get_details" = "Выделенная линия";
+
+/* Accident insurance case */
+
+"accident_event_title" = "Несчастный случай";
+"insurance_create_title_accident" = "Заявить о выплате";
+"insurance_accident_create_screen_title" = "Заявление на страховую выплату";
+"accident_event_date_picker_title" = "Дата события";
+"accident_event_report_event_date_title" = "Дата события";
+"accident_event_report_event_date_hint" = "Укажите дату события";
+"accident_event_report_event_note_title" = "Обстоятельства события";
+"accident_event_report_event_note_hint" = "Введите обстоятельства места события, так как вы это видите со своей стороны";
+"accident_event_section_title" = "Cобытие";
+"accident_event_section_text" = "Укажите в форме данные о произошедшем с Вами событии. Более подробная информация содержится в Памятке. Обратите внимание на перечень документов, указанный в Памятке, которые вам необходимо прикрепить после заполнения";
+"accident_event_help_link_text" = "Памятка на странице информации по полису НС";
+"accident_person_section_title" = "Получатель";
+"accident_person_section_text" = "Укажите реквизиты Вашего личного банковского счета. При положительном решении – сумма страховой выплаты будет перечислена по указанным Вами реквизитам";
+"accident_person_name_title" = "ФИО";
+"accident_person_name_hint" = "Укажите ФИО";
+"accident_person_passport_title" = "Серия и номер паспорта";
+"accident_person_passport_hint" = "Укажите серию и номер паспорта";
+"accident_person_passport_series_hint" = "Укажите серию паспорта";
+"accident_person_passport_number_hint" = "Укажите номер паспорта";
+"accident_person_bik_title" = "БИК банка";
+"accident_person_bik_hint" = "Укажите БИК банка";
+"accident_person_account_number_long_title" = "Номер лицевого счета";
+"accident_person_account_number_short_title" = "Лицевой счет";
+"accident_person_account_number_hint" = "Укажите номер лицевого счета";
+"accident_person_account_number_text" = "Узнать номер вашего лицевого счета можно в личном кабинете интернет-банкинга. Лицевой счет содержит 20 цифр начиная с \"4\"";
+"accident_photo_section_text" = "Прикрепите все необходимые фотографии (перечень указан в Памятке в зависимости от события). Фотографии должны быть четкими, не смазанными, без бликов, сделаны на светлом фоне при хорошем освещении.";
+"accident_id_section_text" = "Обязательно прикрепите скан паспорта! Без документа удостоверяющего личность Заявление не будет рассмотрено!";
+"accident_action_button_title" = "Отправить";
+"accident_event_photo_galary_title" = "Что произошло";
+"accident_agreement_terms_label" = "Нажимая «Отправить», я соглашаюсь со следующими условиями";
+"accident_agreement_terms_label_link_text" = "со следующими условиями";
+
+"accident_event_status_title" = "Cтатус";
+"accident_event_event_title" = "Событие";
+"accident_event_photos_upload_text" = "Ваше Заявление зарегистрировано. Ожидайте решение. Срок рассмотрения до 10 рабочих дней. При необходимости предоставить дополнительные документы Вам будет направлено уведомление.";
+"accident_event_vpn_caution_text" = "Дождитесь загрузки все прикрепленных файлов. Для нормальной работы – отключите VPN!";
+
+"accident_event_add_photos_title" = "Дополнительные документы";
+"accident_event_add_photos_text" = "Если Вас уведомили о нехватке документов, повторно загрузите недостающие";
+"accident_event_add_photos_hint" = "Перечень документов указан в Памятке в зависимости от события. Фотографии должны быть четкими, не смазанными, без бликов, сделаны на светлом фоне при хорошем освещении.";
+"accident_event_photos_upload_progress_value" = "Загружено %@ из %@";
+"accident_event_add_photos_button_title" = "Загрузить файлы";
+
+"accident_person_account_number_hint_title" = "Если Вас уведомили о некорректно указанных реквизитах счета – повторно укажите и отправьте корректные БИК и Счет";
+"accident_edit_account_number_button_title" = "Изменить реквизиты";
+"accident_edit_account_number_screen_title" = "Реквизиты счета";
+"accident_edit_account_number_send_button_title" = "Сохранить и отправить";
+"accident_edit_account_agreement_terms_label" = "Нажимая «Сохранить и отправить», я соглашаюсь со следующими условиями";
+"accident_edit_account_agreement_terms_label_link_text" = "со следующими условиями";
+"accident_succes_screen_text" = "Данные отправлены";
+"accident_event_your_application" = "Ваше заявление";
+
+/* Offices */
+
+"office_info_view_close_today_text" = "Закрыт сегодня";
+"office_info_view_will_open_text" = "Откроется в %@ сегодня";
+"office_info_view_open_until_text" = "Открыто до %@";
+"office_info_view_close_until_text" = "Закрыто до %@ %@";
+"office_info_view_lunch_time_text" = "Обед с %@ до %@";
+"office_title" = "Офис";
+"offices_button_title" = "Офисы";
+"office_search_placeholder" = "Поиск офисов";
+"office_picker_cities_list" = "Список";
+"office_picker_map" = "Карта";
+"office_card_pay_title" = "Прием карт к оплате";
+"office_card_pay_accepted" = "Да";
+"office_card_pay_not_accepted" = "Нет";
+"office_damage_claim_available_title" = "Урегулирование убытков";
+"office_osago_claim_available_title" = "Урегулирование убытков ОСАГО";
+"office_advert_title" = "Специальное объявление";
+"office_additional_contacts_title" = "Дополнительные контакты офиса";
+"office_special_conditions_title" = "Специальные условия работы";
+"office_services_title" = "Услуги";
+"office_purchase_active_text" = "Осуществляет продажи";
+"office_damage_claim_available_text" = "Осуществляет урегулирование убытков";
+"office_osago_claim_available_text" = "Осуществляет урегулирование убытков ОСАГО";
+"office_telematics_install_available_text" = "Осуществляет установку устройства телематики";
+"office_route_button" = "Проложить маршрут";
+"office_call_button" = "Позвонить\nв офис";
+
+"office_filters_list_title" = "Фильтры";
+"office_filters_list_position_title" = "Местоположение";
+"office_filters_list_position_all_cases" = "Все города и регионы";
+"office_filters_list_city_card_title" = "Город";
+"office_filters_list_services_section_title" = "Услуги";
+"office_filters_list_time_section_title" = "Время работы";
+"office_filters_list_clean_all_button_title" = "Сбросить все";
+"office_filters_list_apply_button_title" = "Применить";
+
+"office_city_list_help_text" = "Если в списке нет интересующего Вас города или населенного пункта - укажите ближайший крупный город";
+"office_city_list_search_placeholder" = "Город или регион";
+"office_city_list_clear_selection" = "Сбросить все";
+"office_city_list_save_selection" = "Сохранить";
+"office_city_list_empty_title" = "Поиск не дал результатов";
+"office_city_list_empty_subtitle" = "Попробуйте указать ближайший к вашему населенному пункту крупный город";
+
+"office_map_info_view_text" = "Ничего не найдено";
+
+"office_metro" = "Метро";
+"office_action_route" = "Маршрут";
+
+/* Offices Filter */
+
+"filter_name_cities" = "Города";
+"filter_name_searchString" = "Найти офис";
+"filter_name_sale" = "Продажа";
+"filter_name_claim" = "Урегулирование убытков";
+"filter_name_osagoClaim" = "Урегулирование убытков ОСАГО";
+"filter_name_cardPay" = "Оплата картой";
+"filter_name_telematicsInstall" = "Установка устройств телематики";
+"filter_name_openNow" = "Открыто сейчас";
+
+/* Weekday */
+
+"weekday_monday" = "понедельника";
+"weekday_tuesday" = "вторника";
+"weekday_wednesday" = "среды";
+"weekday_thursday" = "четверга";
+"weekday_friday" = "пятницы";
+"weekday_saturday" = "субботы";
+"weekday_sunday" = "воскресенья";
+
+/* Zero screen */
+
+"zero_no_archived_policies" = "У вас нет ни одного архивного полиса";
+"zero_no_drafts" = "У вас нет черновиков расчетов";
+"zero_no_drafts_description" = "Здесь будут храниться черновики расчетов страховых полисов, которые вы не завершили";
+"zero_no_archived_policies_descriptions" = "Здесь будут храниться ваши архивные полисы";
+"zero_no_notifications" = "У вас нет ни одного уведомления";
+"zero_no_notifications_descriptions" = "Здесь будут храниться все сообщения от \"АльфаСтрахование\"";
+"zero_no_events" = "Страховых случаев нет";
+"zero_no_doctor_appointments" = "Здесь будут храниться записи в клиники, сделанные с помощью мобильного приложения";
+"zero_appointment_phone_call" = "У вас специальное обслуживание через выделенного менеджера";
+"zero_appointment_phone_call_value" = "Телефон %@";
+"zero_appointment_call" = "Позвонить";
+"zero_no_insurance_accounts" = "У Вас нет неоплаченных счетов";
+"zero_empty_list" = "Данные для отображения отсутствуют";
+
+"calendar_access_denied_title" = "В доступе отказано";
+"calendar_access_denied_message" = "Доступ к календарю ограничен. Изменить права доступа можно в настройках устройства.";
+"calendar_date_in_past" = "Дата события уже прошла";
+"calendar_event_created" = "Событие добавлено в календарь.";
+"calendar_doctor_event_title" = "Запись на приём";
+
+"microphone_access_require_message" = "Для совершения звонка, необходим доступ к микрофону. \n Перейти?";
+
+/* Main screen */
+
+"main_all_category" = "Все категории";
+"main_menu_logout" = "Выйти из аккаунта?";
+"main_present_medical_card_files" = "Посмотреть файлы";
+"main_unload_medical_card_files" = "Все незагруженные в медицинскую\nкарту файлы будут удалены из\nприложения";
+"main_chat_text" = "Если у вас есть полисы \"АльфаСтрахование\", но они не отображаются в списке, воспользуйтесь чатом или добавьте полис самостоятельно";
+"main_chat_button" = "Написать в чат";
+"main_auth_text" = "Авторизуйтесь, чтобы воспользоваться всеми функциями приложения";
+"auto_filter" = "Авто";
+"health_filter" = "Здоровье";
+"place_filter" = "Имущество";
+"travel_filter" = "Путешествия";
+"pass_filter" = "Пассажиры";
+"life_filter" = "АСЖ";
+"alphaPoint_notification_text" = "Поздравляем! Вам начислено 500 бонусных баллов";
+"alphaPoint" = "АльфаБАЛЛЫ";
+"notifications_title" = "Уведомления";
+"notifications_by_request" = "Уведомления по обращению";
+"notifications_history" = "История уведомлений";
+"notifications_history_subtitle" = "Нажмите, чтобы посмотреть историю уведомлений по страховым случаям";
+"notifications_unatorized_subtitle" = "Авторизуйтесь в мобильном приложении, чтобы получать уведомления";
+"notifications_turn_on_off_banner_text" = "Включите push-уведомления, чтобы не пропустить ничего важного";
+"notifications_turn_on_off_banner_button_title" = "Включить";
+"notifications_pull_to_refresh_description" = "Загружаем ваши уведомления...";
+"notifications_header_anonymous_title" = "Войти в аккаунт";
+"main_faq_title" = "Вопросы и ответы";
+"main_drafts_calculation_title" = "Черновики расчетов";
+"main_drafts_calculation_description" = "Полисы, которые вы начали оформлять";
+
+"main_faq_subtitle" = "Ответы на часто задаваемые вопросы";
+"question" = "Ответ";
+"filter_insurance" = "Показать %@";
+"insurance_expiration" = "Действителен ещё %@";
+"insurance_expiration_until" = "Действителен по ";
+"select_insurance_expiration_until" = "Действует по ";
+"insurance_started_from" = "Действителен c ";
+"insurance_expired" = "Полис истёк ";
+"preload_loading" = "Пожалуйста, подождите! Мы загружаем ваши данные";
+"refresh_control_title" = "Загружаем ваши полисы...";
+"insurance_archive_list" = "Архив полисов";
+
+/* Welcome screen */
+
+"welcome_title" = "Добро пожаловать";
+"welcome_info" = "Чтобы воспользоваться всеми функциями приложения, пожалуйста, войдите";
+"welcome_sign_in" = "Войти";
+"welcome_register" = "Зарегистрироваться";
+"welcome_activate_insurance" = "Активировать";
+"welcome_demo_mode" = "Демо-режим";
+"welcome_chat_title" = "Чат";
+"welcome_buy_insurance" = "Купить полис";
+"welcome_esia_sign_in" = "Войти через Госуслуги";
+
+/* Set pin screen */
+
+"set_pin_repeat_code" = "Повторите ваш\nкод доступа";
+"set_pin_error_not_equal_code" = "Коды доступа не совпадают";
+"set_pin_screen_tip" = "Придумайте код для быстрого\nвхода в приложение";
+"set_pin_screen_sub_tip" = "Запомните ваш код\nдля повторного входа в приложение\nи не сообщайте его никому.";
+
+/* Forgotten Password screen */
+
+"forgot_password_send_button_title" = "Отправить";
+"forgot_password_phone_number" = "Номер телефона";
+"forgot_password_email" = "Электронная Почта";
+"forgotten_password_title" = "Восстановить пароль";
+"forgotten_password_description" = "Чтобы восстановить пароль, введите номер телефона и почту от аккаунта. Вам придет СМС для подтверждения";
+"forgotten_password_common_error_description" = "Произошла ошибка, попробуйте ещё раз или обратитесь в чат";
+
+/* Date of Birth screen */
+
+"date_of_birth_screen_description" = "Для подтверждения аккаунта введите дату рождения";
+"date_of_birth_screen_placeholder" = "Дата рождения";
+"date_of_birth_screen_age_limit_error" = "Для доступа к приложению вам должно быть больше 18 лет. Пожалуйста, укажите корректную информацию о вашем возрасте.";
+"date_of_birth_screen_age_not_found_error" = "Аккаунт с данной датой рождения не найден, Пожалуйста, проверьте правильность введенных данных и повторите попытку. Если проблема сохраняется, обратитесь за ответом в чат.";
+"date_of_birth_screen_loading" = "Подождите, проверяем ваши данные";
+
+
+/* Email And Code Validation screen */
+
+"email_and_code_validation_placeholder" = "Введите код";
+"email_and_code_validation_chat" = "В случае проблем обратитесь в чат";
+"email_and_code_validation_link_text" = "обратитесь в чат";
+"email_and_code_validation_send_to" = "Отправлено на ";
+"email_and_code_validation_resend_again" = "Отправить код ещё раз";
+"email_and_code_validation_resend_availability" = "Запросить код через ";
+
+/* Current Password */
+
+"current_password_title" = "Текущий пароль";
+"current_password_change_description" = "Чтобы сменить пароль, необходимо ввести текущий пароль от вашего аккаунта";
+
+/* Campaign */
+
+"campaign_title" = "Акция";
+
+/* Chat */
+
+"chat_title" = "Чат";
+"chat_text_input_placeholder" = "Какой у Вас вопрос?";
+"chat_start" = "Начать";
+"chat_intro" = "Добро пожаловать в чат!";
+"chat_session_error" = "Произошлка ошибка аутентификации чата";
+"chat_account_blocked_error" = "Ваш аккаунт заблокирован\nСвяжитесь со службой поддержки";
+"chat_create_error" = "Произошла ошибка при создании сессии чата";
+"chat_send_file_size_exceeded" = "Превышен допустимый размер файла";
+"chat_send_file_size_too_small" = "Размер файла слишком маленький";
+"chat_send_file_type_not_allowed" = "Недопустимый формат файла";
+"chat_send_file_not_found" = "Файл не загружен";
+"chat_max_file_count_exeeded" = "Превышено максимально допустимое количество файлов";
+"chat_action_reply_to_message" = "Ответить";
+"chat_action_copy_message" = "Копировать";
+"chat_action_edit_message" = "Редактировать";
+"chat_action_delete_message" = "Удалить";
+"chat_message_copied" = "Сообщение скопировано";
+"chat_editing_cancel_changes_button" = "Отмена";
+"chat_editing_save_changes_button" = "Сохранить";
+"chat_loading_description" = "Пожалуйста, подождите! Мы загружаем чат";
+"chat_error_something_went_wrong_title" = "Что-то пошло не так...";
+"chat_error_something_went_wrong_description" = "В чате ведутся технические работы ;(\nВы можете позвонить нам, написать на почту или повторить запрос немного позднее.";
+"chat_error_common_title" = "Произошла ошибка";
+"chat_error_common_description" = "Что-то пошло не так, попробуйте еще раз";
+"chat_error_retry_button_title" = "Попробовать ещё раз";
+"chat_searchbar_placeholder" = "Начните вводить текст";
+"chat_empty_search_string_description" = "Чтобы найти его в сообщениях";
+"chat_empty_search_results_title" = "Результаты не найдены";
+"chat_empty_search_results_description" = "Попробуйте изменить запрос";
+
+// NOTE: - было решено закрыть ошибку SDK чата данным текстом
+"chat_rate_operator_no_chat" = "К сожалению, оценить чат невозможно. Нам важно знать Ваше мнение! Оставьте Ваши комментарии или замечания в чате ❤️";
+"chat_rate_operator_note_too_long" = "Превышен максимальный размер комментария";
+"chat_rate_operator_wrong_operator_id" = "Оценка данного оператора невозможна";
+
+// Chat Push messages
+"P.OA" = "%@ взял(а) чат в обработку";
+"P.OM" = "%@\n%@";
+"P.OF" = "%@\n%@";
+
+"chat_rate_description" = "Спасибо за оценку!";
+"chat_rate_screen_title" = "Оцените консультацию";
+"chat_rate_widget_title" = "Оцените консультацию";
+"chat_rate_screen_leave_comment_text" = "Поделитесь впечатлениями";
+"chat_bot_errors" = "Ошибка чат бота. Невозможно ответить на сообщение.";
+"chat_server_unavailable_error" = "Сервер чата недоступен";
+"chat_rate_top_button_default_title" = "Оценить консультацию";
+"chat_rate_top_button_change_title" = "Изменить оценку";
+"chat_rate_success_banner_description" = "Оценка отправлена, спасибо!";
+"chat_rate_failure_banner_title" = "Ошибка отправки";
+"chat_rate_failure_banner_description" = "Попробуйте еще раз";
+
+/* Notifications */
+
+"notifications_info_title" = "Уведомление";
+"notifications_info_insurance_number" = "Номер полиса";
+"notifications_info_incident_number" = "Номер страхового случая";
+"notifications_info_phone" = "Телефон";
+"notifications_info_route" = "Проложить маршрут";
+"notifications_info_service_hours" = "Режим работы";
+"notifications_info_button_go_to_appointment_title" = "Перейти к записи";
+"notifications_info_button_more_title" = "Подробнее";
+"notifications_info_button_gift_title" = "Получить подарок";
+"notifications_info_button_watch_points_title" = "Посмотреть баллы";
+"notifications_info_button_update_app_title" = "Обновить приложение";
+"notifications_read_all_button_title" = "Отметить все как прочитаннное";
+"notifications_list_loading_state_description" = "Пожалуйста, подождите! Мы загружаем ваши данные";
+"notifications_list_empty_state_title" = "У вас нет ни одного уведомления";
+"notifications_list_empty_state_description" = "Здесь будут храниться все сообщения от «АльфаСтрахование»";
+
+/* Security Settings */
+
+"security_settings_change_password_title" = "Сменить пароль аккаунта";
+"security_settings_change_access_code" = "Изменить код доступа";
+"security_settings_entry_by" = "Вход при помощи";
+
+/* Insurances */
+
+"osago_renew_payment_title" = "Цена за пролонгацию полиса";
+"osago_renew_date_title" = "Срок действия полиса";
+"osago_renew_info_mark_title" = "Марка";
+"osago_renew_info_auto_number_title" = "Регистрационный знак (гос.номер)";
+"osago_renew_info_vin_title" = "Идентификационный номер (VIN)";
+"osago_renew_info_auto_title" = "Транспортное средство";
+"osago_prolongation_button_title" = "Продлить полис";
+"osago_renew_inprogress_text" = "Подождите, данные обрабатываются";
+
+"osago_prolongation_driver_license_title" = "Серия и номер ВУ";
+"osago_prolongation_driver_license_seria_placeholder" = "Серия";
+"osago_prolongation_driver_license_number_placeholder" = "Номер";
+
+"osago_prolongation_adress_input_title" = "Адрес прописки";
+"osago_prolongation_adress_search_street_title" = "Улица";
+"osago_prolongation_adress_search_house_title" = "Дом";
+"osago_prolongation_adress_placeholder_region" = "Регион";
+"osago_prolongation_adress_placeholder_city" = "Город";
+"osago_prolongation_adress_placeholder_street" = "Введите улицу";
+"osago_prolongation_adress_placeholder_house" = "Введите номер дома";
+"osago_prolongation_adress_placeholder_appartament_number" = "Введите номер квартиры";
+"osago_prolongation_adress_search_error" = "К сожалению, поиск не дал результатов.\nПопробуйте изменить параметры поиска или перейдите на покупку нового полиса.";
+
+"travel_insurance" = "Для путешествий";
+"location_view_travel_title" = "Я здесь";
+"auto_insurance" = "КАСКО";
+"auto_osago_insurance" =  "ОСАГО";
+"remont_insurance" = "Страхование квартиры";
+"remont_agreement_with_conditions" = "Я согласен с условиями";
+"remont_with_conditions" = "с условиями";
+"kind_neighbours_insurance" = "Добрые соседи";
+"anti_onko_insurance" = "Alfasynopsis (АнтиОнко)";
+"insurance_buy" = "Купить полис";
+"insurance_new_buy" = "Купить новый полис";
+"kids_and_sport_insurance" = "Дети и спорт";
+"additional_defence_insurance" = "Дополнительная защита";
+"insurance_renew_unavailable_screen_title" = "Приносим свои извинения, онлайн-\nпродление полиса недоступно";
+"insurance_renew_unavailable_screen_info" = "Пожалуйста, оставьте заявку или свяжитесь\nс нами по телефону или в чате.";
+"insurance_renew_unavailable_chat_button" = "Написать в чат";
+"insurance_renew_unavailable_prolong_button" = "Оставить заявку";
+"insurance_renew_unavailable_to_main_screen_button" = "На главный экран";
+"kasko_renew_cashback_button_title" = "Подробнее об акции";
+"kasko_renew_cashback_title" = "«КАСКО кэшбэк»";
+"kasko_renew_cashback_text" = "Возвращаем 5% стоимости Вашего полиса КАСКО реальными деньгами! Зарегистрируйтесь на сайте акции «КАСКО кэшбэк» прямо сейчас!";
+"kasko_renew_button_titile" = "Оплатить полис";
+"insurance_renew_osago_title" = "Продление полиса";
+
+/* DMS bills / Disagreement with services */
+
+"disagreement_with_services" = "Несогласие с услугами";
+"disagreement_with_services_services" = "Услуги";
+"disagreement_with_services_services_prompt" = "Выберите услуги, с которыми не согласны";
+"disagreement_with_services_services_select_all" = "Выбрать все";
+"disagreement_with_services_service_number_format" = "Услуга %d";
+"disagreement_with_services_service_date_header" = "Дата услуги";
+"disagreement_with_services_service_clinic_header" = "Клиника";
+"disagreement_with_services_service_cost_header" = "Стоимость";
+"disagreement_with_services_service_quantity_header" = "Обьем услуг";
+"disagreement_with_services_service_franchise_header" = "Размер франшизы";
+"disagreement_with_services_service_to_pay_header" = "К оплате";
+"disagreement_with_services_comment" = "Причина несогласия";
+"disagreement_with_services_comment_hint" = "Описание ситуации";
+"disagreement_with_services_comment_prompt" = "Опишите ситуацию";
+"disagreement_with_services_contacts" = "Контакты";
+"disagreement_with_services_contacts_prompt" = "Выберите удобный способ для связи с вами";
+"disagreement_with_services_phone_number" = "Номер телефона";
+"disagreement_with_services_phone_number_prompt" = "Укажите номер телефона";
+"disagreement_with_services_email" = "E-mail";
+"disagreement_with_services_email_prompt" = "Укажите e-mail";
+"disagreement_with_services_documents" = "Документы";
+"disagreement_with_services_documents_hint" = "Прикрепить";
+"disagreement_with_services_documents_sheet_hint" = "Добавьте файл";
+"disagreement_with_services_documents_sheet_done" = "Прикрепить";
+"disagreement_with_services_personal_data_agreement" = "Нажимая “Отправить”, вы подтверждаете свое согласие на обработку АО “АльфаСтрахование” персональных данных, указанных и прикрепленных в форме, любыми способами, установленными законом";
+"disagreement_with_services_submit" = "Отправить";
+"disagreement_with_services_success_title" = "Обращение успешно отправлено";
+"disagreement_with_services_success_description" = "Ваше обращение будет рассмотрено в течении 15 календарных дней. В некоторых случаях, срок обращения может быть изменён.";
+"disagreement_with_services_failure_title" = "Что-то пошло не так";
+"disagreement_with_services_failure_description" = "Повторите попытку позже или обратитесь в чат";
+"disagreement_with_services_failure_retry" = "Повторить";
+
+/* Demo */
+"demo_title" = "Демо";
+"demo_button_title" = "Демо-режим";
+"demo_log_in_header" = "Демо-режим";
+"demo_log_in_title" = "Вы перейдёте в демо-режим";
+"demo_log_in_description" = "Там вы сможете протестировать некоторые функции приложения. Не волнуйтесь и нажимайте на любые кнопки — тут можно все попробовать.  Чтобы получить полный доступ к нашим сервисам необходимо авторизоваться — для этого нажмите на кнопку «Войдите в свой аккаунт»";
+"demo_log_in_button" = "Войти в свой аккаунт";
+"demo_log_in_continue_button" = "Продолжить";
+"demo_info_header" = "Демо-режим";
+"demo_info_title" = "Вы находитесь в демо-режиме";
+"demo_info_description" = "Здесь вы можете протестировать некоторые функции приложения. Не волнуйтесь и нажимайте на любые кнопки — тут можно все попробовать.  Чтобы получить полный доступ к нашим сервисам необходимо авторизоваться — для этого нажмите на кнопку «Войдите в свой аккаунт»";
+"demo_info_log_in_button" = "Войти в свой аккаунт";
+"demo_info_continue_button" = "Продолжить";
+"demo_log_out_header" = "Выйти из демо-режима?";
+"demo_log_out_title" = "Вы собираетесь выйти из демо-режима";
+"demo_log_out_description" = "Чтобы начать работу со своим аккаунтом, пожалуйста, выйдите из демо-режима и войдите в свой аккаунт";
+"demo_log_out_log_in_button" = "Войти в свой аккаунт";
+"demo_log_out_stay_button" = "Остаться в демо-режиме";
+
+/* Medical Insurance (DMS) / Franchise Program Change */
+
+"change_insurance_program_screen_title" = "Изменение программы";
+"change_insurance_program_go_to_franchise" = "Перейти на франшизу";
+
+/* Euro Protocol Event */
+
+"euro_protocol_process_title" = "Оформление ЕП";
+"euro_protocol_geolocation_access_title" = "Доступ к геолокации";
+"euro_protocol_geolocation_access_text" = "Для оформления ДТП приложению нужен доступ к системе геолокации и акселорометру";
+"euro_protocol_camera_access_title" = "Доступ к фотокамере";
+"euro_protocol_camera_access_text" = "Для оценки стиля вождения приложению нужен доступ к системе геолокации и акселерометру";
+"euro_protocol_storage_access_title" = "Доступ к хранилищу";
+"euro_protocol_storage_access_text" = "Для хранения данных о поездках мобильному приложению требуется доступ к локальному хранилищу";
+"euro_protocol_you_have_draft_text" = "У вас уже есть черновик ЕП";
+"euro_protocol_you_have_active_session_text" = "Уже существует активная сессия ЕП, вы можете продолжить заполнять существующий черновик или начать сначала";
+"euro_protocol_restart_flow" = "Создать новый ЕП";
+"euro_protocol_continue_flow" = "Продолжить заполнение ЕП";
+"insurance_euro_protocol_exit_flow_title" = "Вы действительно хотите выйти?";
+"insurance_euro_protocol_exit_flow_save_text" = "Введенная вами информация будет сохранена в черновике";
+"insurance_euro_protocol_exit_flow_erase_text" = "Все введенные данные будут потеряны. Вы сможете начать оформление черновика заново";
+
+"insurance_euro_protocol_exit_flow_button_title" = "Выйти из черновика ЕП";
+"insurance_euro_protocol_auth_again_button_title" = "Авторизоваться заново";
+
+"insurance_euro_protocol_esia_token_error" = "Не удалось получить токен авторизации. Пожалуйста, попробуйте повторить запрос позже.";
+"insurance_euro_protocol_sdk_parsing_error" = "Произошла ошибка парсинга данных. Пожалуйста, начните оформление заново";
+"insurance_euro_protocol_sdk_auth_error_title" = "Ошибка авторизации";
+"insurance_euro_protocol_sdk_auth_error" = "Срок действия вашей авторизации истек. Пожалуйста, авторизуйтесь снова, чтобы продолжить заполнение черновика. Ваши данные были сохранены";
+"insurance_euro_protocol_sdk_session_time_out_error_title" = "Время сессии истекло";
+"insurance_euro_protocol_sdk_session_time_out_error" = "Не найдена активная сессия SDK. Возможно, время заполнения черновика истекло. Пожалуйста, начните оформление заново";
+"insurance_euro_protocol_sdk_unknown_error" = "Произошла ошибка. Пожалуйста, попробуйте повторить запрос позже";
+"insurance_euro_protocol_sdk_unknown_error_comment" = "Пожалуйста, попробуйте повторить запрос позже";
+"insurance_euro_protocol_sdk_unknown_error_title" = "Произошла ошибка";
+"insurance_euro_protocol_sdk_no_internet_error" = "Интернет-соединение отсутствует. Пожалуйста, попробуйте повторить запрос позже";
+"insurance_euro_protocol_sdk_epgy_error" = "Произошла ошибка на стороне ЕПГУ. Пожалуйста, попробуйте повторить запрос позже";
+"insurance_euro_protocol_sdk_participant_B_info_missing_error" = "Второму участнику ДТП необходимо перейти по ссылке из QR-кода и указать персональные данные";
+"insurance_euro_protocol_invalid_sdk_version_title" = "Пожалуйста, обновите приложение";
+"insurance_euro_protocol_invalid_sdk_version_message" = "Для того, чтобы иметь возможность оформить электронный Европротокол, необходимо обновить приложение";
+"insurance_euro_protocol_create_paper_europrotocol" = "Бумажный Европротокол";
+"insurance_euro_protocol_update_app" = "Обновить приложение";
+
+"insurance_euro_protocol_remove_car_title" = "Рекомендуем убрать ТС";
+"insurance_euro_protocol_remove_car_text" = "Теперь Вы можете убрать ТС с проезжей части, если они мешают дорожному движению, и продолжить оформление Электронного ЕП рядом с местом ДТП.\n\nОформление ЕП должно быть выполнено в течение часа";
+
+"insurance_euro_protocol_registration_detail" = "Урегулирование страхового случая для получения направления на ремонт";
+"insurance_euro_protocol_accident_detail" = "Оформление и фотофиксация\nна месте ДТП";
+"insurance_euro_protocol_accident_protocol_title" = "Электронный Европротокол (ЕП)";
+"insurance_euro_protocol_accident_statement_title" = "ДТП без участия ГИБДД";
+
+"insurance_euro_protocol_question_detail" = "Оформление электронного Европротокола возможно только при одновременном выполнении всех условий";
+
+"insurance_euro_protocol_question_main_button_title" = "Оформить Европротокол";
+"insurance_euro_protocol_question_minor_button_title" = "Бумажный Европротокол";
+
+"insurance_euro_protocol_question_1_title" = "ТС находятся на месте ДТП";
+"insurance_euro_protocol_question_2_title" = "Оба участника ДТП зарегистрированы на Госуслугах";
+"insurance_euro_protocol_question_3_title" = "У участников ДТП есть полис ОСАГО";
+"insurance_euro_protocol_question_4_title" = "В ДТП участвуют только два транспортных средства";
+
+"insurance_euro_protocol_question_1_text" = "ТС находятся в том же положении, как при столкновении";
+"insurance_euro_protocol_question_2_text" = "Необходим подтвержденный аккаунт";
+"insurance_euro_protocol_question_3_text" = "ДТП произошло в период действия полиса ОСАГО";
+"insurance_euro_protocol_question_4_text" = "Причинение вреда жизни, здоровью, иному (кроме авто) имуществу участников ДТП отсутствует";
+
+"insurance_euro_protocol_sdk_auth_loading_title" = "Пожалуйста, подождите!\nЗапускаем сценарий оформления Европротокола";
+
+"insurance_euro_protocol_main_accident_photo_title" = "Фото ТС на месте ДТП";
+"insurance_euro_protocol_main_accident_photo_info" = "Сделайте 3 фото ДТП с разных ракурсов. Выбирайте точку съемки так, чтобы на снимке была видна общая картина столкновения";
+"insurance_euro_protocol_main_accident_photo_picker_info" = "Сделано %i из %i фото";
+
+"insurance_euro_protocol_driver_license_title" = "Водительские документы";
+"insurance_euro_protocol_driver_license_info" = "Мы подгрузили данные о ВУ из Госуслуг. Пожалуйста, проверьте и при необходимости скорректируйте эти данные";
+
+"insurance_euro_protocol_driver_license_number_input_title" = "Серия и номер ВУ";
+"insurance_euro_protocol_driver_license_number_input_info" = "Введите реквизиты водительского удостоверения, состоящие из 10 символов. Первые 4 знака – это серия, следующие 6 – номер.";
+"insurance_euro_protocol_driver_license_start_date_input_title" = "Дата выдачи ВУ";
+"insurance_euro_protocol_driver_license_end_date_input_title" = "Дата окончания действия ВУ";
+"insurance_euro_protocol_driver_license_geoplace_input_title" = "Адрес водителя";
+"insurance_euro_protocol_driver_license_phone_input_title" = "Телефон водителя";
+"insurance_euro_protocol_driver_license_categoty_type_input_title" = "Категория прав";
+"insurance_euro_protocol_driver_license_categoty_type_long_A" = "A (A, A1, M)";
+"insurance_euro_protocol_driver_license_categoty_type_long_B" = "B (B, BE, B1)";
+"insurance_euro_protocol_driver_license_categoty_type_long_C" = "C (C, CE, C1, C1E)";
+"insurance_euro_protocol_driver_license_categoty_type_long_D" = "D (D, DE, D1, D1E)";
+"insurance_euro_protocol_driver_license_categoty_type_long_E" = "E (Tm, Tb)";
+"insurance_euro_protocol_driver_license_geoplace_input_description" = "Введите адрес прописки водителя";
+"insurance_euro_protocol_osago_main_title" = "Проверка полисов ОСАГО";
+"insurance_euro_protocol_osago_main_description" = "Пожалуйста, проверьте полисы ОСАГО обоих участников ДТП";
+"insurance_euro_protocol_osago_main_participant_a_section_title" = "Участник А";
+"insurance_euro_protocol_osago_main_participant_a_title" = "Полис участника А";
+"insurance_euro_protocol_osago_main_participant_b_section_title" = "Участник B";
+"insurance_euro_protocol_osago_main_participant_b_title" = "Полис участника B";
+"insurance_euro_protocol_osago_main_participant_placeholder" = "Серия и номер";
+
+"insurance_euro_protocol_osago_participant_info" = "Данный полис зарегистрирован в базе РСА. Проверьте совпадение данных по ТС, полученных из базы РСА, с фактическими данными";
+"insurance_euro_protocol_osago_participant_policy_section_title" = "Данные полиса";
+"insurance_euro_protocol_osago_participant_auto_section_title" = "Данные ТС";
+
+"insurance_euro_protocol_osago_participant_company" = "Страховая компания";
+"insurance_euro_protocol_osago_participant_policy" = "Серия и номер полиса";
+"insurance_euro_protocol_osago_participant_policy_start_date" = "Дата начала действия полиса";
+"insurance_euro_protocol_osago_participant_policy_end_date" = "Дата окончания действия полиса";
+"insurance_euro_protocol_osago_number_input_description" = "Введите серию и номер полиса, состоящие из 13 знаков. Первые 3 знака – серия, последние 10 – номер";
+
+"insurance_euro_protocol_participant_data_A_title" = "Данные участника А";
+"insurance_euro_protocol_participant_data_B_title" = "Данные участника В";
+"insurance_euro_protocol_participant_data_owner_title" = "Собственник ТС";
+"insurance_euro_protocol_participant_data_photo_title" = "Фото гос. номера";
+"insurance_euro_protocol_participant_data_owner_placeholder" = "Не заполнено";
+"insurance_euro_protocol_participant_data_photo_placeholder" = "Не заполнено";
+"insurance_euro_protocol_participant_data_owner_text" = "Заполнено";
+"insurance_euro_protocol_participant_data_photo_text" = "Заполнено";
+
+"insurance_euro_protocol_car_owner_switch_title" = "Являюсь собственником";
+"insurance_euro_protocol_car_owner_selector_individual" = "Физ лицо";
+"insurance_euro_protocol_car_owner_selector_legalEntity" = "Юр лицо";
+"insurance_euro_protocol_car_owner_owner_title_A" = "Данные ТС участника A";
+"insurance_euro_protocol_car_owner_owner_title_B" = "Данные ТС участника B";
+"insurance_euro_protocol_car_owner_address" = "Адрес собственника";
+"insurance_euro_protocol_car_owner_entity_address" = "Адрес организации";
+"insurance_euro_protocol_car_owner_company_name" = "Наименование организации";
+
+"insurance_euro_protocol_osago_participant_auto_brand" = "Марка ТС";
+"insurance_euro_protocol_osago_participant_auto_model" = "Модель ТС";
+"insurance_euro_protocol_osago_participant_auto_vin" = "VIN ТС";
+"insurance_euro_protocol_osago_participant_auto_number" = "Гос знак ТС";
+
+"insurance_euro_protocol_osago_participant_success_info" = "Данные совпадают";
+"insurance_euro_protocol_osago_participant_failure_info" = "Данные не совпадают";
+
+"insurance_euro_protocol_osago_participant_change_data" = "Изменить данные";
+
+"insurance_euro_protocol_osago_policy_seria_placeholder" = "Серия";
+"insurance_euro_protocol_osago_policy_number_placeholder" = "Номер";
+
+"insurance_euro_protocol_accident_address_title" = "Адрес ДТП";
+"insurance_euro_protocol_accident_address_loading_info" = "Ожидайте. Уточняем адрес…";
+
+"insurance_euro_protocol_accident_date_title" = "Дата и время ДТП";
+"insurance_euro_protocol_accident_date_card_title" = "Дата";
+"insurance_euro_protocol_accident_time_card_title" = "Время";
+"insurance_euro_protocol_accident_date_input_title" = "Дата ДТП";
+"insurance_euro_protocol_accident_time_input_title" = "Время ДТП";
+
+"insurance_euro_protocol_accident_contest_title" = "Наличие разногласий";
+"insurance_euro_protocol_accident_contest_text" = "Есть разногласия";
+"insurance_euro_protocol_accident_contest_info" = "Если в извещении о ДТП, оформленном в электронном виде, зафиксированы разногласия, то лимит выплаты по ОСАГО составляет 100 000 рублей.\n\nЕсли в извещении зафиксировано отсутствие разногласий, то лимит выплаты по ОСАГО составляет 400 000 рублей.";
+
+"insurance_euro_protocol_accident_main_title" = "Обстоятельства ДТП";
+"insurance_euro_protocol_accident_main_placeholder" = "Не заполнено";
+"insurance_euro_protocol_accident_main_value" = "Заполнено";
+
+"insurance_euro_protocol_accident_photo_title" = "Фото схемы ДТП";
+"insurance_euro_protocol_accident_photo_info" = "Сделайте фото схемы ДТП. Для этого сделайте набросок на бумаге от руки, указав названия улиц, направления движения ТС и их положения на момент столкновения, расположение светофоров";
+
+"insurance_euro_protocol_draft_title" = "Оформление ДТП по ЕП";
+"insurance_euro_protocol_not_added_text" = "Не добавлен";
+"insurance_euro_protocol_not_filled_text" = "Не заполнено";
+"insurance_euro_protocol_filled_text" = "Заполнено";
+"insurance_euro_protocol_draft_add_participant_title" = "Добавить участника В";
+"insurance_euro_protocol_draft_open_qr_code_title" = "Посмотреть QR-код";
+"insurance_euro_protocol_draft_accident_title" = "Обстоятельства ДТП";
+"insurance_euro_protocol_draft_accident_setion_title" = "Причины ДТП";
+"insurance_euro_protocol_draft_participant_a_setion_title" = "Участник A";
+"insurance_euro_protocol_draft_participant_a_title" = "Данные участника А";
+"insurance_euro_protocol_draft_participant_a_auto_damage_title" = "Повреждения авто участника А";
+"insurance_euro_protocol_draft_participant_b_setion_title" = "Участник B";
+"insurance_euro_protocol_draft_participant_b_title" = "Данные участника B";
+"insurance_euro_protocol_draft_participant_b_auto_damage_title" = "Повреждения авто участника B";
+"insurance_euro_protocol_draft_button_title" = "Проверить Европротокол";
+
+"insurance_euro_protocol_preview_draft_title" = "Черновик извещения ЕП";
+"insurance_euro_protocol_preview_draft_info_text" = "Пожалуйста, проверьте полноту и правильность данных черновика перед тем, как подписать его";
+"insurance_euro_protocol_preview_draft_driver_name_title" = "ФИО водителя";
+"insurance_euro_protocol_preview_draft_driver_phone_title" = "Телефон водителя";
+"insurance_euro_protocol_preview_draft_driver_address_title" = "Адрес водителя";
+"insurance_euro_protocol_preview_draft_driver_license_title" = "Категория прав";
+"insurance_euro_protocol_preview_draft_osago_title" = "Серия и номер полиса ОСАГО";
+"insurance_euro_protocol_preview_draft_osago_start_title" = "Дата начала действия полиса ОСАГО";
+"insurance_euro_protocol_preview_draft_osago_end_title" = "Дата окончания действия полиса ОСАГО";
+"insurance_euro_protocol_preview_draft_plate_number_title" = "Гос.знак";
+"insurance_euro_protocol_preview_draft_vin_number_title" = "VIN";
+"insurance_euro_protocol_preview_draft_owner_name_title" = "ФИО собственника ТС";
+"insurance_euro_protocol_preview_draft_owner_company_title" = "Организация-собственник ТС";
+"insurance_euro_protocol_preview_draft_owner_address_title" = "Адрес собственника ТС";
+"insurance_euro_protocol_preview_draft_accident_type_title" = "Тип обстоятельств ДТП";
+
+"insurance_euro_protocol_sign_draft_button_title" = "Подписать Европротокол";
+
+"insurance_euro_protocol_add_participant_title" = "Приглашение участника B";
+"insurance_euro_protocol_add_participant_patronymic" = "Отчество (при наличии)";
+"insurance_euro_protocol_add_participant_type_section_title" = "Тип оформления";
+"insurance_euro_protocol_add_participant_type_card_title" = "Тип оформления";
+"insurance_euro_protocol_add_participant_type_card_text" = "С одного устройства";
+"insurance_euro_protocol_add_participant_info_section_title" = "Данные участника B";
+"insurance_euro_protocol_add_participant_info_section_info" = "Если участник В готов считать QR код, введите его данные. Либо Вы можете пригласить участника В позже";
+"insurance_euro_protocol_add_participant_info_card_name_title" = "ФИО";
+"insurance_euro_protocol_add_participant_info_card_date_title" = "Дата рождения";
+"insurance_euro_protocol_add_participant_later_button_title" = "Пригласить участника позже";
+"insurance_euro_protocol_add_participant_code_button_title" = "Сгенерировать QR-код";
+
+"insurance_euro_protocol_add_participant_code_title" = "Сканирование QR-кода";
+"insurance_euro_protocol_add_participant_code_text" = "Участнику B нужно\nотсканировать QR-код ";
+"insurance_euro_protocol_add_participant_code_anew_button_title" = "Сгенерировать заново";
+
+"insurance_euro_protocol_participant_car_damage_title_a" = "Повреждения авто участника А";
+"insurance_euro_protocol_participant_car_damage_title_b" = "Повреждения авто участника B";
+"insurance_euro_protocol_participant_car_damage_place_title" = "Место первоначального удара";
+"insurance_euro_protocol_participant_car_damage_place_description" = "Укажите стрелкой только место, в которое пришелся первоначальный удар. Все повреждения ТС указывать здесь не нужно";
+"insurance_euro_protocol_participant_vehicle_type" = "Тип ТС";
+"insurance_euro_protocol_participant_vehicle_type_full" = "Тип транспортного средства";
+"insurance_euro_protocol_participant_A_vehicle_type" = "Тип ТС участника A";
+"insurance_euro_protocol_participant_B_vehicle_type" = "Тип ТС участника B";
+"insurance_euro_protocol_participant_A_car_damage_place" = "Место удара участника А";
+"insurance_euro_protocol_participant_B_car_damage_place" = "Место удара участника В";
+"insurance_euro_protocol_car_damage_one_place_chosen" = "Выбрано 1 место";
+"insurance_euro_protocol_car_damage_two_places_chosen" = "Выбрано 2 места";
+
+"insurance_euro_protocol_vehicle_type_car" = "Легковое транспортное средство";
+"insurance_euro_protocol_vehicle_type_truck" = "Грузовое транспортное средство";
+"insurance_euro_protocol_vehicle_type_bike" = "Мотоцикл";
+"insurance_euro_protocol_vehicle_type_other" = "Иное транспортное средство";
+
+"insurance_euro_protocol_participant_car_damage_place_card_placeholder" = "Нет фото";
+"insurance_euro_protocol_participant_car_damage_place_card_value" = "1 фото";
+"insurance_euro_protocol_participant_car_damage_photo_title" = "Фото повреждений";
+"insurance_euro_protocol_participant_car_damage_photo_card_placeholder" = "Не заполнено";
+"insurance_euro_protocol_participant_car_damage_info_card_title" = "Описание ДТП";
+"insurance_euro_protocol_participant_car_damage_info_card_placeholder" = "Не заполнено";
+"insurance_euro_protocol_participant_car_damage_card_text" = "Заполнено";
+"insurance_euro_protocol_car_damage_add_hint" = "Сделайте фото повреждений вашего авто в этом ДТП";
+"insurance_euro_protocol_vehicle_damage_participant_A" = "Повреждения ТС участника А";
+"insurance_euro_protocol_vehicle_damage_participant_B" = "Повреждения ТС участника В";
+"insurance_euro_protocol_damaged_parts" = "Поврежденные детали";
+"insurance_euro_protocol_add_damaged_part" = "Добавить повреждение";
+"insurance_euro_protocol_damaged_parts_limit_reached" = "Вы не можете добавить больше 20-ти деталей повреждения";
+"insurance_euro_protocol_damaged_part_other_vehicle_title" = "Поврежденная деталь";
+"insurance_euro_protocol_damaged_part_other_vehicle_input_description" = "Введите название и описание поврежденной детали";
+"insurance_euro_protocol_damaged_part_other_vehicle_input_field_name" = "Название поврежденной детали";
+"insurance_euro_protocol_damaged_part_other_vehicle_input_field_description" = "Описание повреждения";
+"insurance_euro_protocol_photo_timer_initial_warning_title" = "Внимание";
+"insurance_euro_protocol_photo_timer_initial_warning_description" = "С момента добавления первой фотографии повреждения у вас будет 60 минут на то, чтобы завершить оформление черновика Европротокола. Через 60 минут сессия завершится без сохранения данных";
+"insurance_euro_protocol_photo_timer_warning_description" = "У вас %@, чтобы завершить оформление черновика, после чего сессия автоматически завершится без сохранения введенных данных";
+
+"insurance_euro_protocol_accident_type_main_title" = "Описание ДТП";
+"insurance_euro_protocol_accident_type_card_types_title" = "Выберите тип обстоятельств";
+"insurance_euro_protocol_accident_type_card_types_placeholder_a" = "Тип обстоятельств участника А";
+"insurance_euro_protocol_accident_type_card_types_placeholder_b" = "Тип обстоятельств участника B";
+"insurance_euro_protocol_accident_type_card_info_title" = "Опишите, что произошло";
+"insurance_euro_protocol_accident_type_card_info_placeholder_a" = "Описание ДТП участника А";
+"insurance_euro_protocol_accident_type_card_info_placeholder_b" = "Описание ДТП участника B";
+"insurance_euro_protocol_accident_description_card_title" = "Опишите произошедшее";
+
+"insurance_euro_protocol_accident_type_title" = "Тип обстоятельств";
+
+"insurance_euro_protocol_participant_info_photo_number_title" = "Фото гос. номера";
+"insurance_euro_protocol_participant_info_photo_number_info" = "Сделайте фото государственного номера вашего автомобиля";
+
+"insurance_euro_protocol_draft_status_title" = "Извещение ЕП";
+"insurance_euro_protocol_draft_status_waiting_for_other_sign_tip" = "В настоящее время ваше извещение находится на рассмотрении. Участнику В необходимо подписать извещение на сайте Госуслуг.";
+"insurance_euro_protocol_draft_status_rejected_tip" = "Участник В отклонил ЕП. Исправьте данные ЕП и снова подпишите его. n/ Если участник В снова отклонит ЕП, то процесс оформления в электронном виде будет прекращён.";
+"insurance_euro_protocol_draft_status_rejected_again_tip" = "Участник В повторно отклонил ЕП. Оформление в электронном виде невозможно.";
+"insurance_euro_protocol_draft_status_sent_to_registrate_tip" = "Извещение ЕП отправлено на регистрацию. Процесс регистрации может занимать до 16 минут.\n\nПожалуйста, осуществите отправку сделанных фотографий в АИС ОСАГО. Это позволит увеличить лимит суммы выплаты по полису до максимума.";
+"insurance_euro_protocol_draft_status_AIS_getting_error_tip" = "Извещение ЕП отправлено на регистрацию. Процесс регистрации может занимать до 16 минут.\n\nПри отправке фотофиксации ДТП в АИС ОСАГО произошла непредвиденная ошибка.\n\nПожалуйста, начните оформление заново для успешного оформления извещения ЕП или попробуйте еще раз.";
+"insurance_euro_protocol_draft_status_notice_sent_tip" = "Извещение ЕП отправлено на регистрацию. Процесс регистрации может занимать до 16 минут.";
+"insurance_euro_protocol_draft_status_AIS_sending_error_tip" = "Извещение ЕП отправлено на регистрацию. Процесс регистрации может занимать до 16 минут.\n\nПри отправке номера извещения о фотофиксации ДТП в страховую компанию произошла непредвиденная ошибка.\n\nПожалуйста, повторите отправку.";
+"insurance_euro_protocol_draft_status_registration_error_tip" = "При регистрации ДТП по ЕП в ЕПГУ произошла непредвиденная ошибка.\n\nПожалуйста, начните оформление заново.";
+"insurance_euro_protocol_draft_status_success_tip" = "Извещение ЕП сформировано в ЕПГУ.\n\nФотофиксация ДТП успешно отправлена в АИС ОСАГО. Пожалуйста, зарегистрируйте ДТП в страховой компании.\n\nВы можете продолжить в мобильном приложении, перейдя в раздел страхового случая в полисе, или в одном из офисов «АльфаСтрахование».";
+"insurance_euro_protocol_draft_status_registered_AIS_not_sent_tip" = "Извещение ЕП сформировано в ЕПГУ.\n\nПожалуйста, осуществите отправку сделанных фотографий в АИС ОСАГО. Это позволит увеличить лимит суммы выплаты по полису до максимума.";
+"insurance_euro_protocol_draft_status_registered_AIS_getting_error_tip" = "Извещение ЕП сформировано в ЕПГУ.\n\nПри отправке фотофиксации ДТП в АИС ОСАГО произошла непредвиденная ошибка.\n\nПожалуйста, начните оформление заново для успешного оформления извещения ЕП или попробуйте еще раз.";
+"insurance_euro_protocol_draft_status_registered_AIS_sending_error_tip" = "Извещение ЕП сформировано в ЕПГУ.\n\nПри отправке номера извещения о фотофиксации ДТП в страховую компанию произошла непредвиденная ошибка. Пожалуйста, повторите отправку.\n\nЧтобы оформить страховой случай в офисе, сохраните номера обоих извещений.";
+"insurance_euro_protocol_draft_status_notice_status_card_title" = "Статус рассмотрения извещения ЕПГУ";
+"insurance_euro_protocol_draft_status_notice_number_card_title" = "Номер извещения в ЕПГУ";
+"insurance_euro_protocol_draft_status_ais_number_card_title" = "Номер фотофиксации в АИС ОСАГО";
+"insurance_euro_protocol_draft_status_value_not_received_text" = "Не получен";
+"insurance_euro_protocol_draft_status_value_error_text" = "Ошибка получения";
+"insurance_euro_protocol_draft_status_check_status" = "Проверить статус";
+"insurance_euro_protocol_draft_status_back_to_start" = "Оформить заново";
+"insurance_euro_protocol_draft_status_back_to_home" = "Выйти на главную";
+"insurance_euro_protocol_draft_status_change_draft" = "Внести изменения";
+"insurance_euro_protocol_draft_status_send_to_ais" = "Отправить в АИС ОСАГО";
+"insurance_euro_protocol_draft_status_send_ais_to_alfa" = "Отправить данные в страховую";
+"insurance_euro_protocol_draft_status_continue_at_office" = "Продолжить в офисе";
+"insurance_euro_protocol_draft_status_registered_leave_text" = "Не забудьте зарегистрировать страховой случай в страховой компании. Вы сможете сделать это в офисе или в мобильном приложении";
+"insurance_euro_protocol_draft_status_next_steps_title" = "Дальнейшие шаги";
+"insurance_euro_protocol_draft_status_next_steps_text" = "Чтобы оформить страховой случай в офисе, сохраните номера обоих извещений. Чтобы оформить страховой случай в приложении, ожидайте уведомление с информацией о загрузке недостающих документов";
+"insurance_euro_protocol_draft_status_continue_in_app" = "Продолжить в приложении";
+"insurance_euro_protocol_draft_status_ais_send_loader_text" = "Отправляем фотофиксацию ДТП в АИС ОСАГО";
+"insurance_euro_protocol_draft_status_ais_alfa_loader_text" = "Отправляем данные извещения о фотофиксации ДТП в АльфаСтрахование";
+"insurance_euro_protocol_draft_status_loading_text" = "Пожалуйста, подождите";
+"insurance_euro_protocol_notice_status_waiting_for_my_sign" = "Участник А отправил, но не подписал черновик";
+"insurance_euro_protocol_notice_status_waiting_for_other_sign" = "Участник А подписал черновик и ожидает подписания участником В";
+"insurance_euro_protocol_notice_status_rejected" = "Участник В отклонил извещение";
+"insurance_euro_protocol_notice_status_rejected_again" = "Участник B повторно отклонил черновик";
+"insurance_euro_protocol_notice_status_sent_to_registrate" = "Извещение о ДТП отправлено";
+"insurance_euro_protocol_notice_status_registered" =  "Извещение о ДТП зарегистрировано";
+"insurance_euro_protocol_notice_status_timeout" = "Извещение о ДТП не было зарегистрировано в течение 15 минут";
+"insurance_euro_protocol_notice_status_sending_server_error" = "Ошибка отправки заявления в ведомство";
+"insurance_euro_protocol_draft_has_disagreements_true" = "Есть";
+"insurance_euro_protocol_draft_has_disagreements_false" = "Нет";
+"insurance_euro_protocol_draft_has_disagreements_not_filled" = "Не заполнено";
+
+"insurance_euro_protocol_no_participant_A_insurance_found" = "Не найдены данные полиса участника А";
+"insurance_euro_protocol_loader_wait_title" = "Пожалуйста, подождите";
+
+/* Design system */
+
+"design_system_photo_picker_info_string" = "Сделано %@ из %@ фото";
+"design_system_enter_multiline_text" = "Введите многострочный текст";
+"design_system_add_new_element" = "Добавить новый элемент";
+
+/* Auto Event */
+
+"auto_event_case_authorities_involved" = "Оформление с участием ГИБДД";
+"auto_event_case_executed_by_particioants" = "Оформление без участия ГИБДД";
+"auto_event_case_other" = "Выбор офиса";
+"auto_event_photo_step_value" = "Шаг %@";
+"auto_event_photo" = "Фото";
+"auto_event_save_photos" = "Сохранить и продолжить";
+"auto_event_case_accident_osago_gibdd_title" = "ДТП с участием ГИБДД";
+"auto_event_case_accident_osago_no_gibdd_title" = "ДТП без участия ГИБДД";
+"auto_event_case_other_title" = "Иное";
+"auto_event_case_accident_osago_gibdd_text" = "Урегулирование страхового случая для получения направления на ремонт
+";
+"auto_event_case_accident_osago_no_gibdd_text" = "Включая оформление ДТП по электронному Европротоколу";
+"auto_event_case_accident_osago_other_text" = "Выбор офиса для подписания соглашения на выплату";
+"auto_event_case_accident_kasko_gibdd_text" = "Урегулирование страхового случая для получения направления на ремонт";
+"auto_event_case_accident_kasko_no_gibdd_text" = "Урегулирование страхового случая для получения направления на ремонт";
+"auto_event_case_accident_kasko_other_text" = "Выбор офиса для получения направления на ремонт";
+
+"auto_event_place_picker_place_input_placeholder" = "Место ДТП";
+
+"auto_event_details_picker_title" = "Повреждённые участки";
+"auto_event_details_picker_prompt" = "Выберите поврежденные участки на схеме или в списке";
+"auto_event_details_picker_switch_scheme_title" = "Схема";
+"auto_event_details_picker_switch_list_title" = "Список";
+"auto_event_detail_variant_picker_title" = "Выберите деталь";
+"auto_event_detail_variant_picker_prompt" = "Пожалуйста, уточните деталь в зависимости от типа транспортного средства";
+"auto_event_photos_picker_proceed" = "Сделать фотографии";
+"auto_event_photos_picker_retake" = "Переснять";
+"auto_event_photos_picker_result_title" = "Вот, что получилось";
+"auto_event_photos_picker_result_subtitle" = "Убедитесь, что все данные хорошо видны и читаются";
+
+"searchable_list_error_chat_button_title" = "Перейти в чат поддержки";
+"searchable_list_error_subtitle" = "Пожалуйста, повторите попытку или обратитесь в чат поддержки";
+"searchable_list_empty_state_title" = "По вашему запросу ничего не найдено";
+"searchable_list_empty_state_subtitle" = "Попробуйте изменить параметры запроса";
+
+/* Attachments upload */
+
+"photos_group_hint_value" = "Шаг %@ из %@\n%@";
+"photos_mandatory_tip_value" = "Сделайте %@-%@ фото";
+"photos_optional_tip_value" = "Вы можете прикрепить до %@ фото (необязательно для заполнения)";
+
+
+"photos_upload_tip" = "Вы можете отслеживать статус страхового случая в мобильном приложении";
+"photos_upload_status_value" = "Загружено %@ из %@ фото";
+"documents_upload_status_value" = "Загружено %@ из %@ файлов";
+"photos_count_value" = "%@ фото";
+"photos_use_title" = "Использовать";
+"zero_photos_upload_success_message" = "Страховой случай успешно создан";
+"document_title" = "Документы";
+
+/* User Profile */
+
+"user_profile_bonus_account" = "Бонусный счет";
+"user_profile_till_next_status" = "До статуса %@ осталось";
+"user_profile_move_to_account" = "Сменить аккаунт на\n%@";
+"user_profile_alfa_strah_life" = "АльфаСтрахование-Жизнь";
+"user_profile_alfa_strah" = "АльфаСтрахование";
+"user_profile_change" = "Сменить";
+"user_profile_login_settings" = "Настройки входа";
+"user_profile_application_theme" = "Тема приложения";
+"user_profile_about_app" = "О приложении";
+"user_profile_logout" = "Выйти из аккаунта";
+"user_profile_logout_app" = "Выйти из приложения";
+"user_profile_logout_demo_app" = "Выйти из демо-режима";
+"user_profile_points_value" = " - %@";
+"user_profile_date_of_birth" = "Дата рождения";
+"user_profile_phone_number" = "Телефон";
+"user_profile_phone_number_title" = "Номер телефона";
+"user_profile_email" = "Электронная почта";
+"user_profile_change_info_navigation_title" = "Изменение данных";
+"user_profile_last_name" = "Фамилия";
+"user_profile_first_name" = "Имя";
+"user_profile_patronymic" = "Отчество (может отсутствовать)";
+"user_profile_change_phone" = "Изменение телефона";
+"user_profile_change_phone_message" = "На номер %@ было отправлено SMS с кодом подтверждения";
+"user_profile_resend" = "Отправить снова";
+"user_profile_change_email_message" = "На адрес %@ было отправлено письмо с кодом подтверждения";
+"user_profile_change_email" = "Изменение email";
+"user_profile_disclaimer" = "Внимание! Корректность указанных вами персональных данных в Профиле влияет на полноту информации в разделе Ваши полисы.";
+"edit_profile_notice_button_title" = "Согласен";
+"edit_profile_info_card_view_title" = "Обращаем внимание";
+"edit_profile_info_card_view_description" = "Чтобы изменить данные ниже, обратитесь в чат\nПолная смена ФИО невозможна";
+"edit_profile_info_card_view_description_selection" = "обратитесь в чат";
+"edit_profile_info_incorrectly_filled_data_for_account_update" = "Необходимые поля для обновления данных пользователя пусты или некорректны";
+"info_block_parcing_error" = "Произошла ошибка";
+"info_block_retry_button_title" = "Повторить";
+
+/* Activate Product */
+
+"activate_product_apartment" = "Квартира";
+"activate_product_house" = "Дом";
+"activate_product_product_type" = "Тип продукта";
+"activate_product_product_purchase_location" = "Где приобретен полис";
+"activate_product_step" = "Шаг %d из %d";
+"activate_product_activation_title" = "Активация";
+"activate_product_purchase_date" = "Дата приобретения (дд/мм/гггг)";
+"activate_product_product_number" = "Номер полиса";
+"activate_product_last_name" = "Фамилия";
+"activate_product_first_name" = "Имя";
+"activate_product_patronymic" = "Отчество";
+"activate_product_phone_number" = "Номер телефона";
+"activate_product_birth_date" = "Дата рождения (дд/мм/гггг)";
+"activate_product_email" = "Электронная почта";
+"activate_product_zip" = "Индекс";
+"activate_product_city" = "Город";
+"activate_product_address" = "Адрес";
+
+/* Local notifications */
+
+"local_notification_draft_incomplete" = "Вы еще не закончили оформление страхового случая, но в любой момент можете продолжить его из черновика. Для выбора черновика нажмите на кнопку \"Страховой случай\"";
+
+/* Instructions */
+
+"instructions_title" = "Инструкция";
+
+/* User Profile */
+
+"sos_title" = "Получить помощь";
+"sos_action_sheet_title" = "Вы можете позвонить по любому из телефонов";
+"sos_action_sheet_voip_calls_title" = "Вы можете позвонить, выбрав нужный полис";
+"sos_emergency_communication_title" = "Экстренная связь";
+"sos_confidant_add_button" = "Добавить";
+"sos_confidant_call_button" = "Позвонить";
+"sos_confidant_edit_button" = "Редактировать";
+"sos_confidant_title" = "Доверенное лицо";
+"sos_confidant_select_contact_button" = "Выбрать из контактов";
+"sos_confidant_delete_button" = "Удалить";
+"sos_confidant_save_button" = "Сохранить";
+"sos_confidant_save_changes_button" = "Сохранить изменения";
+"sos_confidant_name_text_field_placeholder" = "Имя";
+"sos_confidant_phone_text_field_placeholder" = "Телефон";
+"sos_confidant_delete_title_alert" = "Вы действительно хотите удалить доверенное лицо?";
+"sos_confidant_denied_contact_alert_title" = "У \"АльфаСтрахование\" нет доступа к контактам";
+"sos_cofidant_denied_contact_settings_button" = "Перейти";
+"sos_confidant_denied_contact_alert_description" = "Перейдите в настройки и предоставьте доступ к контактам";
+"sos_confidant_error_title" = "Что-то пошло не так";
+"sos_confidant_error_description" = "Попробуйте повторить попытку или обратитесь в тех. поддержку";
+"sos_confidant_error_retry_button" = "Попробовать еще раз";
+"sos_phone_action_title" = "Звонок";
+"sos_open_chat" = "Написать в чат";
+"sos_open_office" = "Найти офис";
+"sos_open_instructions" = "Инструкции";
+"sos_callback_title" = "Обратный звонок";
+"sos_callback_action_button" = "Отправить запрос";
+"sos_phonecall_title" = "Номер телефона";
+"sos_phonecall_description" = "Введите номер телефона в формате\n+7(ХХХ)ХХХХХХХ, где Х – это цифры";
+"sos_phonecall_placeholder" = "+7(ХХХ)ХХХХХХХ";
+"sos_insurance_title" = "Полис";
+"sos_comment" = "Комментарий";
+"sos_comment_placeholder" = "Введите комментарий";
+"sos_voip_connected_status" = "идет соединение...";
+"sos_voip_disconnected_status" = "завершаю...";
+"sos_voip_timer" = "%02d:%02d";
+"sos_health_title" = "Получить помощь";
+"sos_health_one_title" = "Кому нужна помощь?";
+"sos_health_second_title" = "По какому виду страхования нужна помощь?";
+"sos_health_third_title" = "Как вам удобнее  связаться с нами?";
+"sos_health_call_title" = "Звонок по телефону";
+"sos_health_online_call_title" = "Звонок через интернет";
+"sos_buy_insurance_alert_title" = "Полис отсутсвует";
+"sos_buy_insurance_alert_description" = "Для осуществления действия необходимо приобрести полис";
+"sos_buy_insurance_alert_cancel" = "Отменить";
+"sos_buy_insurance_alert_buy" = "Купить";
+"sos_travel_online_call_title" = "Страхование выезжающих за границу";
+
+/* Alfa Points */
+
+"alfa_points_bonus_account_number" = "Бонусный счет №%@";
+"alfa_points_total_points" = "Всего начислено*";
+"alfa_points_spent_points" = "Из них потрачено";
+"alfa_points_transactions_info" = "*Учтены баллы по транзакциям в обработке";
+"alfa_points_program_details" = "Подробнее о программе";
+"alfa_points_details" = "История операций";
+"alfa_points_current_status" = "Ваш статус - %@";
+"alfa_points_news_title" = "Как потратить?";
+"alfa_points_bronze_status" = "Bronze";
+"alfa_points_silver_status" = "Silver";
+"alfa_points_gold_status" = "Gold";
+"alfa_points_bronze_status_info" = "Для получения следующего статуса необходимо совершить покупку полиса КАСКО, Страхование путешественников (ВЗР), АльфаРЕМОНТ или Добрые соседи";
+"alfa_points_silver_status_info" = "Совершайте онлайн-покупки полисов и получайте 2% от суммы вашей покупки в виде бонусных АльфаБАЛЛОВ";
+"alfa_points_gold_status_info" = "При достижении суммы покупок 50 000 Р вы начнете получать 10% от суммы вашей покупки в виде бонусных АльфаБАЛЛОВ";
+"alfa_points_percentage" = "%d%%";
+"alfa_points_title" = "АльфаБАЛЛЫ";
+"alfa_points_operation_canceled" = "Операция отменена";
+
+/* About app */
+
+"about_app_rate_app" = "Оценить приложение";
+"about_app_proceed_to_site" = "Перейти на сайт";
+"about_app_made_by" = "";
+"about_app_version" = "Версия приложения: %@";
+"about_app_introduction" = "Знакомство с приложением";
+"about_app_conditions_yandex_maps" = "Условия использования Яндекс.Карт";
+"about_app_privacy_policy" = "Политика конфиденциальности";
+"about_app_title" = "О приложении";
+
+/* KASKO on/off */
+"kasko_on_off_active_trip_error_view_title" = "Приносим извинения";
+"kasko_on_off_active_trip_error_view_description" = "Нам не удалось загрузить актуальные данные.\nПожалуйста, попробуйте снова";
+"kasko_policy_extension" = "Увеличить страховое покрытие по полису";
+
+/* VZR on/off */
+
+"vzr_title" = "Travel on/off";
+"vzr_is_on_title" = "Travel on/off";
+"vzr_insured_period_format" = "%@ - %@";
+"vzr_buy_day_packages_title" = "Купить пакет дней";
+"vzr_buy_day_packages_button_title" = "Купить пакет дней";
+"vzr_agreement_info" = "Обращаем ваше внимание, оплата возможна только\nбанковской картой";
+"vzr_agreement_terms_label" = "Я согласен с правилами страхования";
+"vzr_agreement_terms_label_link_text" = "правилами страхования";
+"vzr_purchase_history_title" = "История покупок";
+"vzr_filter_all_purchases" = "Все покупки";
+"vzr_about_plane_text" = "Часто путешествуете, и не всегда есть время заранее запланировать поездку? Оформите полис и получите максимальный комфорт в управлении поездками";
+"vzr_about_calendar_text" = "Когда отправитесь в поездку – просто укажите даты в мобильном приложении и страховка Travel on/off начнет действовать";
+"vzr_about_phone_text" = "Вы всегда можете добавить период страхования, просто активировав новую поездку в приложении, указав новые даты";
+"vzr_about_man_text" = "Программа доступна для следующих условий: один Застрахованный; территория страхования – Шенген или Весь мир; не доступны спортивные риски";
+"vzr_about_more_info" = "Подробнее о программе";
+"vzr_about_program_title" = "Описание программы";
+"vzr_days_left_title" = "На вашем балансе %@";
+"vzr_activate_trip_reminder" = "Когда соберетесь за границу — просто активируйте поездку в приложении";
+"vzr_purchase_days_package" = "Купить пакет дней";
+"vzr_activate_new_trip" = "Активировать поездку";
+"vzr_trips_list" = "Ваши поездки";
+"vzr_purchase_list" = "Ваши покупки";
+"vzr_is_on_info_header" = "Включена страховка Travel on/off";
+"vzr_date_trip_duration_interval_format" = "\nс %@ по %@";
+"vzr_date_interval_format" = "с %@ по %@";
+"vzr_is_on_days_left_title_format" = "На вашем балансе — {balance}";
+"vzr_is_on_active_new_trip" = "Новая поездка";
+"vzr_is_on_activate_trip_title" = "Активировать поездку";
+"vzr_is_on_activate_trip_tip" = "Укажите срок, в течение которого будет действовать страховка";
+"vzr_is_on_activate_trip_date_title" = "Даты поездки";
+"vzr_about_program_title" = "О программе";
+"vzr_days_amount_info" = "Ваш баланс дней";
+"vzr_trip_duration_format" = "Поездка на %@";
+"vzr_selected_trip_duration_format" = "Период поездки составит %@";
+"vzr_purchase_list_section_title" = "Покупки за %@ г.";
+"vzr_purchase_filter_text" = "Покупки за %@ год";
+"vzr_trip_list_section_title" = "Поездки за %@ г.";
+"vzr_trip_filter_text" = "Поездки за %@ год";
+"vzr_on_off_active_trips_title" = "Активные поездки";
+"vzr_on_off_planned_trips_title" = "Предстоящие поездки";
+"vzr_on_off_passed_trips_title" = "Завершенные поездки";
+"vzr_on_off_start_new_trip_action" = "Активировать поездку";
+"vzr_on_off_cross_border_notification_text" = "У вас есть полис Travel on/off. Вы можете активировать поездку";
+"vzr_trip_history_title" = "История поездок";
+"vzr_filter_all_trips" = "Все поездки";
+"vzr_purchase_list_section_title" = "Покупки за %@ г.";
+"vzr_about_program_url_is_unavailable" = "Не удалось загрузить данные о программе";
+"vzr_final_terms_activate_format" = "Активация поездки на %@";
+"vzr_final_terms_date_title" = "Даты поездки";
+"vzr_final_terms_terms_text" = "Я согласен с условиями договора\nи правилами страхования";
+"vzr_final_terms_contract_link_text" = "условиями договора";
+"vzr_final_terms_terms_insurance_link_text" = "правилами страхования";
+"vzr_final_terms_screen_title" = "Travel on/off";
+"vzr_activate_trip_loading_text" = "Активируем поездку";
+"vzr_activate_trip_success_title" = "Поездка активирована";
+"vzr_activate_trip_failure_title" = "Не удалось загрузить";
+"vzr_on_off_activate_trip_not_enough_days_title" = "Недостаточно дней для активации";
+"vzr_on_off_activate_trip_not_enough_days_message" = "Выбранный период превышает количество дней на Вашем балансе. Уменьшите период или докупите пакет дней";
+"vzr_on_off_buy_more_days" = "Купить дни";
+"vzr_on_off_activate_trip_period_exceeded_title" = "Договор страхования заканчивается";
+"vzr_on_off_activate_trip_period_exceeded_message_value" = "Ваш договор страхования заканчивается %@. Оставшиеся дни поездки уже активированы по условиям договора страхования. Вы можете оформить новый полис на нашем сайте для установки новых периодов";
+"vzr_on_off_buy_new_policy" = "Оформить";
+"vzr_on_off_purchase_time_status_success" = "Успешная оплата";
+"vzr_on_off_purchase_time_status_failure" = "Оплата не завершена";
+"vzr_on_off_purchase_time_status_success_description" = "Вы приобрели пакет на %@ за\n%@";
+"vzr_on_off_purchase_time_status_failure_description" = "Оплата не завершена, пожалуйста,\nпопробуйте повторить позднее";
+"vzr_on_off_purchase_time_retry_payment" = "Повторить платеж";
+"vzr_on_off_filters_title" = "Фильтры";
+"vzr_on_off_days_packages_info_text" = "Обратите внимание – стоимость пакета зависит от текущего курса валюты";
+"vzr_terminate" = "Расторжение";
+
+/* Flat On/Off */
+
+"flat_on_off_title" = "Квартира on/off";
+"flat_on_off_active_title" = "Включена страховка Квартира on/off";
+"flat_on_off_active_period" = "с %1$@ по %2$@";
+"flat_on_off_active_balance" = "На вашем балансе — {balance} дней";
+"flat_on_off_purchase_button_title" = "Купить пакет дней";
+"flat_on_off_activate_button_title" = "Активировать защиту";
+"flat_on_off_inactive_title" = "На вашем балансе %d дней";
+"flat_on_off_inactive_subtitle" = "Вы можете активировать дополнительную защиту от рисков";
+"flat_on_off_error_title" = "Не удалось загрузить";
+"flat_on_off_error_subtitle" = "Мы не смогли загрузить активную защиту в связи с технической ошибкой";
+"flat_on_off_activations_title" = "История активаций";
+"flat_on_off_activation_active" = "Активные";
+"flat_on_off_activation_upcoming" = "Предстоящие";
+"flat_on_off_activation_completed" = "Завершенные";
+"flat_on_off_activate_title" = "Активировать защиту";
+"flat_on_off_activate_subtitle" = "Выберите период для активации дополнительного страхового покрытия";
+"flat_on_off_activate_period_title" = "Период страхования";
+"flat_on_off_activate_period_value" = "%1$@ — %2$@";
+"flat_on_off_activate_days_count" = "Период защиты составит %@";
+"flat_on_off_activate_balance_title" = "Ваш баланс дней";
+"flat_on_off_activate_buy_days" = "Купить пакет дней";
+"flat_on_off_activate_about_program" = "О программе";
+"flat_on_off_activate_error_buy_days" = "Купить дни";
+"flat_on_off_activate_error_buy_policy" = "Оформить";
+"flat_on_off_activate_activation_title" = "Активация защиты на %@";
+"flat_on_off_activate_loading_message" = "Активируем защиту";
+"flat_on_off_packages_title" = "Купить пакет дней";
+"flat_on_off_packages_info" = "Обращаем ваше внимание, оплата возможна только банковской картой";
+"flat_on_off_agreement_terms_text" = "Я согласен с условиями договора\nи правилами страхования";
+"flat_on_off_terms_agreement_link" = "условиями договора";
+"flat_on_off_agreement_insurance_terms_link" = "правилами страхования";
+"flat_on_off_purchase_time_status_success" = "Успешная оплата";
+"flat_on_off_purchase_time_status_failure" = "Оплата не завершена";
+"flat_on_off_purchase_time_status_failure_description" = "Оплата не завершена, пожалуйста,\nпопробуйте повторить позднее";
+"flat_on_off_purchase_time_retry_payment" = "Повторить платеж";
+"flat_is_on_title" = "Квартира on/off";
+
+/* CommonUserAgreementView */
+"personal_data_usage_and_privacy_policy_agreement_checkbox_text" = "Я согласен на обработку персональных данных и ознакомился с Политикой в отношении обработки персональных данных";
+"personal_data_usage_terms_link" = "согласен на обработку персональных данных";
+"privacy_policy_link" = "Политикой в отношении обработки персональных данных";
+
+/* FranchiseTransition */
+"franchise_transition" = "Перейти на программу с франшизой";
+
+/* VzrBonuses */
+"vzr_bonus_policies" = "Бонусные полисы ВЗР";
+"vzr_bonus_franchise_certificate" = "Получить справку по оплаченной франшизе";
+"vzr_bonus_refund_cerificate" = "Заявление на возврат авансового взноса";
+
+/* CostRecovery */
+
+"dms_cost_recovery" = "Возмещение расходов";
+"pages_progress_bar_template" = "Шаг %d из %d";
+"dms_cost_recovery_start_form" = "Начать оформление";
+"dms_cost_recovery_insured_person_info" = "Данные застрахованного";
+"dms_cost_recovery_insurance_event" = "Страховое событие";
+"dms_cost_recovery_confirm_application" = "Подтвердить заявление";
+"dms_cost_recovery_return_to_application_form" = "Вернуться к оформлению";
+"dms_cost_recovery_applicant_info" = "Данные заявителя";
+"dms_cost_recovery_passport_data" = "Паспортные данные";
+"dms_cost_recovery_email_input_title" = "Email";
+"dms_cost_recovery_necessary_conditions_title" = "Для оформления заявления необходимо:";
+"dms_cost_recovery_application_preview_notice" = "Ознакомьтесь с автоматически сформированным заявлением на возмещение и подтвердите его";
+"dms_cost_recovery_incorrectly_filled_data_for_application_request" = "Необходимые поля для создания заявления пусты или некорректны";
+
+"dms_cost_recovery_necessary_conditions_loading_text" = "Подождите, загружаем данные";
+"dms_cost_recovery_necessary_conditions_loading_error_title" = "Произошла ошибка на сервере";
+"dms_cost_recovery_necessary_conditions_loading_error_description" = "Не удалось загрузить данные. Пожалуйста, попробуйте повторить или обратитесь в чат.";
+"dms_cost_recovery_applicant_bank_details_request" = "Укажите банковские \nреквизиты для возврата";
+"dms_cost_recovery_applicant_bank_details_for_recovery" = "Реквизиты для возврата";
+"dms_cost_recovery_applicant_additional_info_request" = "Укажите дополнительную информацию";
+"dms_cost_recovery_applicant_additional_info_title" = "Дополнительная информация";
+"dms_cost_recovery_default_info_empty_state" = "Не заполнено";
+"dms_cost_recovery_default_info_filled_state" = "Заполнено";
+"dms_cost_recovery_application" = "Заявление на возмещение";
+
+"dms_cost_recovery_bank_search_title" = "Название или БИК банка";
+"dms_cost_recovery_bank_search_notice" = "Узнать номер БИК банка можно в личном кабинете интернет-банкинга. БИК банка содержит 9 цифр.";
+"dms_cost_recovery_bank_bik" = "БИК: ";
+"dms_cost_recovery_details_bank_bik_title" = "БИК банка";
+"dms_cost_recovery_details_bank_request" = "Укажите название или БИК банка";
+"dms_cost_recovery_details_bank_title" = "Реквизиты для возврата";
+"dms_cost_recovery_details_bank_info" = "Данные банка";
+"dms_cost_recovery_details_recipient_bank_title" = "Банк получателя";
+"dms_cost_recovery_details_recipient_bank_correspondent_account_title" = "Кор. счёт";
+"dms_cost_recovery_details_recipient_bank_personal_account" = "Личный счёт";
+"dms_cost_recovery_details_recipient_bank_personal_account_request" = "Введите номер личного счёта";
+"dms_cost_recovery_bank_search_popular" = "Популярное";
+
+"dms_cost_recovery_personal_info_fullname_title" = "ФИО";
+"dms_cost_recovery_personal_info_birthday_title" = "День рождения";
+"dms_cost_recovery_personal_info_policy_number_title" = "Номер полиса ДМС";
+"dms_cost_recovery_personal_info_service_number_title" = "Табельный номер";
+"dms_cost_recovery_personal_info_phone_number_title" = "Номер телефона";
+"dms_cost_recovery_personal_info_email" = "Электронная почта";
+"dms_cost_recovery_personal_info_fullname_request" = "Укажите данные заявителя";
+"dms_cost_recovery_personal_info_fullname" = "Данные заявителя";
+
+"dms_cost_recovery_insurance_event_country" = "Страна, в которой произошло событие";
+"dms_cost_recovery_insurance_event_country_input_title" = "Название страны";
+"dms_cost_recovery_insurance_event_country_input_request" = "Введите название страны";
+"dms_cost_recovery_insurance_event_application_date" = "Дата обращения за медицинской помощью";
+"dms_cost_recovery_insurance_event_application_date_input_title" = "Дата обращения за медицинской помощью";
+"dms_cost_recovery_insurance_event_application_type" = "Вид полученной медицинской помощи";
+"dms_cost_recovery_insurance_event_application_type_input_title" = "Вид полученной мед. помощи";
+"dms_cost_recovery_insurance_event_application_type_input_request" = "Введите вид полученной мед. помощи";
+"dms_cost_recovery_insurance_event_application_reason" = "Причина обращения за медицинской помощью";
+"dms_cost_recovery_insurance_event_application_reason_input_title" = "Причина обращения за медицинской помощью";
+"dms_cost_recovery_insurance_event_application_reason_input_request" = "Причина обращения за медицинской помощью";
+"dms_cost_recovery_insurance_event_expenses_amount" = "Размер понесённых расходов";
+"dms_cost_recovery_insurance_event_expenses_amount_input_title" = "Размер понесённых расходов";
+"dms_cost_recovery_insurance_event_expenses_amount_input_request" = "Введите размер понесённых расходов";
+"dms_cost_recovery_insurance_event_currency" = "Валюта";
+"dms_cost_recovery_insurance_event_currency_input_title" = "Валюта";
+"dms_cost_recovery_insurance_event_currency_input_request" = "Введите код валюты";
+
+"dms_cost_recovery_passport_series_title" = "Серия";
+"dms_cost_recovery_passport_series_prompt" = "Введите серию паспорта";
+"dms_cost_recovery_passport_number_title" = "Номер";
+"dms_cost_recovery_passport_number_prompt" = "Введите номер паспорта";
+"dms_cost_recovery_passport_issuer_title" = "Кем выдан";
+"dms_cost_recovery_passport_issuer_prompt" = "Введите кем паспорт выдан";
+"dms_cost_recovery_passport_issue_date_title" = "Дата выдачи";
+"dms_cost_recovery_passport_birth_place_title" = "Место рождения";
+"dms_cost_recovery_passport_birth_place_prompt" = "Введите город или название области, края";
+"dms_cost_recovery_passport_citizenship_title" = "Гражданство";
+"dms_cost_recovery_passport_citizenship_prompt" = "Введите ваше гражданство";
+"dms_cost_recovery_passport_info_request_title" = "Укажите ваши паспортные данные";
+"dms_cost_recovery_passport_info" = "Паспортные данные";
+
+"dms_cost_recovery_upload_recovery_type_request_title" = "Выберите тип возмещения";
+"dms_cost_recovery_upload_recovery_type_title" = "Тип возмещения";
+"dms_cost_recovery_upload_recovery_attach_documents" = "Прикрепить документы";
+"dms_cost_recovery_upload_recovery_no_files" = "Нет документов";
+"dms_cost_recovery_send_uploaded_files" = "Отправить пакет документов";
+"dms_cost_recovery_documents_sheet_done" = "Готово";
+
+"dms_cost_recovery_additional_info" = "Дополнительная информация";
+"dms_cost_recovery_RF_citizen_title" = "Гражданин РФ";
+"dms_cost_recovery_non_resident_title" = "Нерезидент";
+"dms_cost_recovery_SNILS_title" = "СНИЛС";
+"dms_cost_recovery_SNILS_prompt" = "Введите номер СНИЛС";
+"dms_cost_recovery_INN_title" = "ИНН";
+"dms_cost_recovery_INN_prompt" = "Введите номер ИНН";
+"dms_cost_recovery_migration_card_number_title" = "Номер миграционной карты / Migration card number";
+"dms_cost_recovery_migration_card_number_prompt" = "Введите номер миграционной карты / Type in migration card number";
+"dms_cost_recovery_residential_address_title" = "Адрес местонахождения / Residential address";
+"dms_cost_recovery_residential_address_prompt" = "Введите адрес местонахождения /  Type in residential address";
+
+"dms_cost_recovery_insured_person_personal_info_request" = "Укажите данные застрахованного,\n получавшего услуги";
+"dms_cost_recovery_insured_person_personal_info" = "Данные застрахованного";
+"dms_cost_recovery_insured_person_birthday_title" = "Дата рождения";
+"dms_cost_recovery_insured_person_policy_number_title" = "Номер полиса ДМС";
+"dms_cost_recovery_insured_person_event_request" = "Укажите информацию о страховом\n событии";
+"dms_cost_recovery_insured_person_event" = "Страховое событие";
+"dms_cost_recovery_insured_person_application_loading_text" = "Формируем ваше заявление";
+"dms_cost_recovery_insured_person_application_loading_error" = "Произошла ошибка на сервере";
+"dms_cost_recovery_insured_person_application_loading_error_previous_step" = "На шаг назад";
+"dms_cost_recovery_insured_person_application_necessary_to_confirm" = "Необходимо подтвердить заявление на следующем шаге";
+"dms_cost_recovery_insured_person_application_confirm_title" = "Сформировать заявление";
+ 
+"dms_cost_recovery_upload_files_size_title" = "Размер загруженных файлов";
+"dms_cost_recovery_upload_files_size_bounds_default_value" = "0 МБ";
+"dms_cost_recovery_upload_files_size_bounds_template" = "%@ из %@ МБ";
+"dms_cost_recovery_operation_status_server_error_title" = "Произошла ошибка на сервере";
+"dms_cost_recovery_application_error_description" = "Не удалось сформировать заявление. Пожалуйста, попробуйте повторить или обратитесь в чат";
+"dms_cost_recovery_upload_files_state_description" = "%@ из %@";
+"dms_cost_recovery_upload_files_size_exceed_error_description" = "Размер загруженных файлов превышает %@ МБ. Попробуйте уменьшить размер ваших файлов.";
+"dms_cost_recovery_operation_status_sending_application" = "Отправляем заявление";
+
+"dms_cost_recovery_exit_alert_title" = "Вы действительно хотите выйти?";
+"dms_cost_recovery_exit_alert_message" = "Введенная вами информация будет удалена";
+"dms_cost_recovery_insured_person_application_error_description" = "Произошла ошибка на сервере";
+
+/* Medical Card */
+"medical_card_menu_item_title" = "Медицинская карта";
+"medical_card_files_storage_title" = "Медицинская карта";
+"medical_card_files_selection_button_title" = "Выбрать";
+"medical_card_files_empty_state_title" = "Файлов в медицинской карте пока нет";
+"medical_card_files_empty_state_description" = "Загрузите файлы и фотографии в вашу медицинскую карту";
+"medical_card_file_upload_button_title" = "Загрузить файл";
+"medical_card_file_delete_file_title" = "Файл удалён";
+"medical_card_file_delete_files_title" = "Файлы удалены";
+"medical_card_file_success_rename_file_title" = "Файл переименован";
+"medical_card_files_upload_bottom_sheet_title" = "Документы";
+"medical_card_file_state_antivirus_scanning" = "Проверяем на вирусы";
+"medical_card_file_state_uploading" = "Загружаем...";
+"medical_card_file_state_error" = "Произошла ошибка";
+"medical_card_table_section_proccessing_title" = "Файлы в обработке";
+"medical_card_action_sheet_select_action_title" = "Выбрать";
+"medical_card_action_sheet_data_and_memory_action_title" = "Данные и память";
+"medical_card_files_storage_loading_text" = "Подождите, загружаем данные";
+"medical_card_files_storage_loading_rename_file_text" = "Подождите, мы сохраняем\nновое название файла";
+"medical_card_files_storage_loading_delete_file_text" = "Подождите, мы удаляем ваши файлы";
+"medical_card_files_storage_loading_error_title" = "Ошибка";
+"medical_card_files_storage_loading_error_description" = "Что-то пошло не так. Повторите попытку позже или обратитесь в чат";
+"medical_card_files_storage_found_files_title" = "Найденные файлы";
+"medical_card_files_storage_files_not_found_status" = "Файлы по вашему запросу не найдены";
+
+"medical_card_files_uploading_info_bottom_sheet_title" = "Мы загружаем\nфайлы на сервер";
+"medical_card_files_uploading_info_bottom_sheet_button_title" = "Понятно";
+"medical_card_files_uploading_info_bottom_sheet_description" = "Загрузка может занять от 2-х до 5 минут";
+"medical_card_files_uploading_info_bottom_sheet_subtitle" = "Зачем нужна проверка антивирусом?";
+"medical_card_files_uploading_info_bottom_sheet_secondary_description" = "После загрузки файлов, они пройдут проверку антивирусом в течение 30 минут";
+"medical_card_files_uploading_info_bottom_sheet_subdescription" = "Проверка необходима для обеспечения безопасности и сохранности ваших данных.";
+
+"medical_card_files_virus_check_info_bottom_sheet_title" = "Мы проверяем загруженные\nфайлы на вирусы";
+"medical_card_files_virus_check_info_bottom_sheet_button_title" = "Понятно";
+"medical_card_files_virus_check_info_bottom_sheet_description" = "Обычно, проверка занимает не более 30 минут";
+"medical_card_files_virus_check_info_bottom_sheet_subtitle" = "Зачем нужна проверка антивирусом?";
+"medical_card_files_virus_check_info_bottom_sheet_subdescription" = "Проверка необходима для обеспечения безопасности и сохранности ваших данных.";
+
+"medical_card_files_error_info_bottom_sheet_title" = "При загрузке файла произошла ошибка";
+"medical_card_files_error_info_bottom_sheet_button_title" = "Повторить загрузку";
+"medical_card_files_error_info_bottom_sheet_description" = "Попробуйте загрузить файл еще раз.\nПри повторении ошибок, обратитесь в чат";
+"medical_card_file_entry_common_error" = "Произошла ошибка";
+"medical_card_file_entry_virus_check_error" = "Файл с вирусом";
+"medical_card_file_size_exceeded_error_description" = "Размер файла %@ не должен превышать 5 Мб";
+"medical_card_file_storage_size_exceeded_error_description" = "Превышен сумарный объем файлов в хранилище";
+"medical_card_file_alert_error_title" = "Ошибка загрузки файла";
+"medical_card_file_alert_error_rename_title" = "Ошибка переименования файла";
+"medical_card_file_alert_remove_title" = "Удаление файла";
+"medical_card_files_alert_remove_title" = "Удалить %@?";
+"medical_card_files_alert_remove_all_files_title" = "Удалить все файлы?";
+"medical_card_file_alert_remove_message" = "Вы действительно хотите удалить выбранный файл?";
+"medical_card_files_alert_remove_message" = "После удаления их нельзя будет восстановить";
+"medical_card_files_remove_all_files_button" = "Удалить все";
+"medical_card_files_context_menu_rename" = "Переименовать";
+"medical_card_files_context_menu_select" = "Выбрать";
+"medical_card_files_context_menu_remove" = "Удалить";
+"medical_card_files_context_menu_more_about" = "Подробнее";
+"medical_card_files_context_menu_download" = "Скачать";
+"medical_card_files_context_menu_cancel_loading" = "Отменить загрузку";
+"medical_card_files_context_menu_retry_upload" = "Повторить загрузку";
+"medical_card_files_bottom_input_rename_title" = "Переименовать";
+"medical_card_file_is_being_processed_title" = "Файл в обработке";
+"medical_card_file_is_being_processed_description" = "Дождитесь, когда завершится обработка файла на стороне сервиса, чтобы скачать его";
+
+// Marks Web
+"marks_web_manage_subscription" = "Управление подпиской";
+"marks_web_appoint_beneficiary" = "Назначить выгодоприобретателя";
+"marks_web_edit_insurance_agreement" = "Изменить данные в договоре";
+
+// Web View
+"web_view_error_request_retry" = "Попробовать ещё раз";
+
+// Validation Rules
+"required_validation_error_description" = "Это поле необходимо заполнить";
+"email_validation_error_description" = "Почта должна быть в формате example@mail.ru";
+
+// Interactive Support
+"questionnaire_title" = "Вызов врача на дом";
+"questionnaire_send_request_button" = "Отправить заявку";
+"questionnaire_who_needs_doctor" = "Кому нужен врач";
+"questionnaire_your_address" = "Ваш адрес";
+"questionnaire_call_information" = "Информация по вызову";
+"questionnaire_initials_title" = "ФИО";
+"questionnaire_phone_title" = "Номер телефона";
+"questionnaire_location_title" = "Вы находитесь";
+"questionnaire_address_title" = "Полный адрес";
+"questionnaire_speciality_title" = "Специалист";
+"questionnaire_date_visit_title" = "Дата визита";
+"questionnaire_sick_list_title" = "Больничный лист";
+"questionnaire_symptoms_title" = "Симптомы";
+"questionnaire_bottom_sheet_visit_date_title" = "Выберите дату визита";
+"questionnaire_bottom_sheet_visit_date_button" = "Сохранить";
+"questionnaire_bottom_sheet_symptoms_title" = "Симптомы";
+"questionnaire_text_address_input_hint_text" = "Начните вводить адрес, куда необходимо вызвать врача";
+"questionnaire_text_address_input_not_found_info" = "К сожалению, поиск не дал результатов.";
+"questionnaire_alert_title" = "Хотите отменить заявку?";
+"questionnaire_alert_description" = "Введенные данные будут потеряны";
+"questionnaire_alert_button_continue" = "Продолжить";
+"questionnaire_alert_button_cancel" = "Отменить";
+"questionnaire_loading_text" = "Отправляем заявку, подождите";
+"questionnaire_loading_error_title" = "Произошла ошибка";
+"questionnaire_loading_error_description" = "Попробуйте отправить заявку ещё раз или напишите в чат";
+"questionnaire_loading_error_button_title" = "Попробовать ещё раз";
+"questionnaire_go_to_chat_button" = "Обратиться в чат";
+"questionnaire_children_info" = "Необходимо ввести номер телефона родителя, который в текущий момент находится с ребёнком";
+"interactive_support_onboarding_start_title" = "Начать";
+"interactive_support_title" = "Виртуальный помощник";
+"interactive_support_questionaire_info_steps_title" = "Три простых шага";
+"insurance_create_interactive_support_action_title" = "Запись к врачу";
+
+// Insurance search
+"insurance_search_request_header_highlighted_text" = "Внимание!    ";
+"insurance_search_request_header_text" = "Полисы, купленные через партнеров, а также полисы имущества физ. лиц могут появиться с задержкой от 15 до 50 дней.\nСрок отображения полисов, купленных онлайн
+– от 10 минут";
+"insurance_search_request_notice_highlighted_text" = "*";
+"insurance_search_request_notice_text" = "– поля, обязательные для заполнения";
+"insurance_search_request_insurance_number_input_title_text" = "Номер полиса ";
+"insurance_search_request_insurance_number_input_title_highlighted_text" = "*";
+"insurance_search_request_insurance_number_input_placeholder_text" = "\nВведите номер полиса";
+
+// Application theme
+"application_theme" = "Тема приложения";
+"application_theme_system" = "Как в системе";
+"application_theme_light" = "Светлая";
+"application_theme_dark" = "Темная";
+
+// Bonus points
+"bonus_points_title" = "Ваши бонусы";
+
+// Commont file selection
+"upload_photo_or_file" = "Загрузите фото или файл";
+"size_should_not_exceed" = "Размер не должен превышать";
+"select_from_media_library" = "Выбрать из медиатеки";
+"take_photo" = "Снять фото";
+"select_file" = "Выбрать файл";
+"select_from_medical_card" = "Выбрать из медкарты";
+
+// Chat attachments
+"chat_files_upload_bottom_sheet_title" = "Файлы";
+"chat_files_upload_error" = "Не отправлено, повторите попытку";
+"chat_files_retry_download" = "Скачать повторно";
+"chat_files_retry_upload" = "Загрузить повторно";
+"chat_files_source_size_limit" = "25 Мб";
+"chat_files_downloading_state_warning" = "Дождитесь полного скачивания выбранных файлов из медицинской карты";
+"chat_files_processing_state_warning" = "Дождитесь окончания обработки изображений";
+"chat_files_downloading_medical_card_info" = "Скачиваем...";
+"chat_files_remote_medical_card_info" = "Скачайте файл, чтобы отправить...";
+"chat_files_retry_info" = "Не удалось скачать файл";
+
+// Chat attachments info bottom sheet
+"chat_files_remote_info_bottom_sheet_title" = "Файла нет на вашем устройстве";
+"chat_files_remote_info_bottom_sheet_description" = "Перед отправкой файла, его необходимо скачать";
+"chat_files_virus_occured_info_bottom_sheet_title" = "Файла нет на вашем устройстве";
+"chat_files_virus_occured_info_bottom_sheet_description" = "Перед отправкой файла, его необходимо скачать";
+"chat_files_virus_check_info_bottom_sheet_title" = "Мы загружаем файлы на сервер";
+"chat_files_virus_check_info_bottom_sheet_description" = "Загрузка обычно занимает 2-5 мин. После загрузки файлы проходят проверку антивирусом 30 мин.";
+"chat_files_virus_check_info_bottom_sheet_subtitle" = "Зачем нужна проверка антивирусом?";
+"chat_files_virus_check_info_bottom_sheet_subdescription" = "Проверка необходима для обеспечения безопасности и сохранности ваших данных.";
+"chat_files_downloading_info_bottom_sheet_title" = "Файл скачивается на устройство";
+"chat_files_downloading_info_bottom_sheet_description" = "Дождитесь окончания скачивания, после файл станет доступным для отправки";
+"chat_files_download_error_info_bottom_sheet_title" = "При скачивании файла произошла ошибка";
+"chat_files_download_error_info_bottom_sheet_description" = "Попробуйте скачать файл еще раз. При повторении ошибки, обратитесь в чат";
+"chat_files_common_bottom_sheet_button_title" = "Понятно";
+"chat_files_download_bottom_sheet_button_title" = "Скачать";
+"chat_files_download_retry_bottom_sheet_button_title" = "Скачать повторно";
+"chat_files_medical_card_pricker_title" = "Выберите файлы";
+"chat_files_medical_card_pricker_empty_state_description" = "Файлы появятся после добавления";
+
+// BDUI
+"switch_to_bdui_title" = "Мы обновили дизайн главного экрана";
+"switch_to_bdui_description" = "Хотите перейти на новую версию?";
+"return_to_previous_version_action_title" = "Перейти к новой версии";
+"bdui_phone_number" = "Номер телефона";
+"bdui_osago_upload_photos_count" = "Загружено %@ фото";
+"bdui_osago_alert_filesource_camera" = "Сделать фото";
+"bdui_osago_alert_filesource_gallery" = "Выбрать из галереи";
+"bdui_osago_filepicker_sheet_close_alert_title" = "Вы уверены, что хотите выйти без сохранения?";
+"bdui_osago_filepicker_sheet_close_alert_positive_decision_title" = "Да, выйти";
+"bdui_osago_filepicker_sheet_close_alert_cancel_title" = "Отмена";
+"bdui_osago_filepicker_retry_upload_file" = "Повторите попытку";

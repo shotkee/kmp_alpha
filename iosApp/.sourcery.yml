@@ -1,0 +1,13 @@
+templates:
+    - Third party/SourceryTemplates
+output:
+    AlfaStrah/Generated
+prune:
+    true
+verbose:
+    true
+project:
+    file:
+        AlfaStrah.xcodeproj
+    target:
+        name: AlfaStrah

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bdui_upload_files_error</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploaded_files@</string>
+		<key>uploaded_files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d файлов не удалось загрузить</string>
+			<key>one</key>
+			<string>Файл не удалось загрузить</string>
+			<key>few</key>
+			<string>%d файла не удалось загрузить</string>
+			<key>many</key>
+			<string>%d файлов не удалось загрузить</string>
+			<key>other</key>
+			<string>%d файлов не удалось загрузить</string>
+		</dict>
+	</dict>
+	<key>bdui_osago_photo_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@photos@</string>
+		<key>photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Вы можете прикрепить до %d фотографий</string>
+			<key>one</key>
+			<string>Вы можете прикрепить одну фотографию</string>
+			<key>few</key>
+			<string>Вы можете прикрепить %d фотографии</string>
+			<key>many</key>
+			<string>Вы можете прикрепить до %d фотографий</string>
+			<key>other</key>
+			<string>Вы можете прикрепить до %d фотографий</string>
+		</dict>
+	</dict>
+	<key>count_metro_stations</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@metroStation@</string>
+		<key>metroStation</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Выбрано 0 станций метро</string>
+			<key>one</key>
+			<string>Выбрана %d станция метро</string>
+			<key>few</key>
+			<string>Выбрано %d станции метро</string>
+			<key>Many</key>
+			<string>Выбрано %d станций метро</string>
+			<key>other</key>
+			<string>Выбрано %d станций метро</string>
+		</dict>
+	</dict>
+	<key>count_specialties</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@specialties@</string>
+		<key>specialties</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Выбрать специальность врача</string>
+			<key>one</key>
+			<string>Выбрана %d специальность</string>
+			<key>few</key>
+			<string>Выбрано %d специальности</string>
+			<key>Many</key>
+			<string>Выбрано %d специальностей</string>
+			<key>other</key>
+			<string>Выбрано %d специальностей</string>
+		</dict>
+	</dict>
+	<key>count_clinic</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@clinics@</string>
+		<key>clinics</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d клиник</string>
+			<key>one</key>
+			<string>%d клиника</string>
+			<key>few</key>
+			<string>%d клиники</string>
+			<key>Many</key>
+			<string>%d клиник</string>
+			<key>other</key>
+			<string>%d клиник</string>
+		</dict>
+	</dict>
+	<key>deleted_drafts_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@drafts@</string>
+		<key>drafts</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d черновиков будут удалены</string>
+			<key>one</key>
+			<string>1 черновик будет удален</string>
+			<key>few</key>
+			<string>%d черновика будут удалены</string>
+			<key>many</key>
+			<string>%d черновиков будут удалены</string>
+			<key>other</key>
+			<string>%d черновики будут удалены</string>
+		</dict>
+	</dict>
+	<key>chat_files_download_error</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d файлов не удалось скачать на ваше устройство, они не будут отправлены</string>
+			<key>zero</key>
+			<string></string>
+			<key>one</key>
+			<string>1 файл не удалось скачать на ваше устройство, они не будут отправлены</string>
+			<key>few</key>
+			<string>%d файла не удалось скачать на ваше устройство, они не будут отправлены</string>
+			<key>Many</key>
+			<string>%d файлов не удалось скачать на ваше устройство, они не будут отправлены</string>
+		</dict>
+	</dict>
+	<key>documents_count_validation</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Одновременно может быть отправлено %d файлов</string>
+			<key>one</key>
+			<string>Одновременно может быть отправлено 1 файл</string>
+			<key>few</key>
+			<string>Одновременно может быть отправлено %d файла</string>
+			<key>Many</key>
+			<string>Одновременно может быть отправлено %d файлов</string>
+			<key>other</key>
+			<string>Одновременно может быть отправлено %d файлов</string>
+		</dict>
+	</dict>
+	<key>attempts</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@attempts@</string>
+		<key>attempts</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Осталось %d попыток</string>
+			<key>one</key>
+			<string>Осталась %d попыткa</string>
+			<key>two</key>
+			<string>Осталось %d попытки</string>
+			<key>few</key>
+			<string>Осталось %d попытки</string>
+			<key>Many</key>
+			<string>Осталось %d попыток</string>
+			<key>other</key>
+			<string>Осталось %d попыток</string>
+		</dict>
+	</dict>
+	<key>files_invalid_files_size_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d файлов</string>
+			<key>one</key>
+			<string>1 файл не будет отправлен, так как его размер  превышает 25 МБ</string>
+			<key>few</key>
+			<string>%d файла не будут отправлены, так как размер каждого файла превышает 25 МБ</string>
+			<key>Many</key>
+			<string>%d файлов не будут отправлены, так как размер каждого файла превышает 25 МБ</string>
+			<key>other</key>
+			<string>%d файлов не будут отправлены, так как размер каждого файла превышает 25 МБ</string>
+		</dict>
+	</dict>
+	<key>selected_files_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Выбрано %d файлов</string>
+			<key>one</key>
+			<string>Выбран 1 файл</string>
+			<key>few</key>
+			<string>Выбрано %d файла</string>
+			<key>Many</key>
+			<string>Выбрано %d файлов</string>
+			<key>other</key>
+			<string>Выбрано %d файлов</string>
+		</dict>
+	</dict>
+	<key>files_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d файлов</string>
+			<key>one</key>
+			<string>%d файл</string>
+			<key>few</key>
+			<string>%d файла</string>
+			<key>Many</key>
+			<string>%d файлов</string>
+			<key>other</key>
+			<string>%d файлов</string>
+		</dict>
+	</dict>
+	<key>minutes</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@minutes@</string>
+		<key>minutes</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d минут</string>
+			<key>one</key>
+			<string>%d минута</string>
+			<key>two</key>
+			<string>%d минуты</string>
+			<key>few</key>
+			<string>%d минуты</string>
+			<key>Many</key>
+			<string>%d минут</string>
+			<key>other</key>
+			<string>%d минут</string>
+		</dict>
+	</dict>
+	<key>minutes_left</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@minutes@</string>
+		<key>minutes</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>осталось %d минут</string>
+			<key>one</key>
+			<string>осталась %d минута</string>
+			<key>two</key>
+			<string>осталось %d минуты</string>
+			<key>few</key>
+			<string>осталось %d минуты</string>
+			<key>Many</key>
+			<string>осталось %d минут</string>
+			<key>other</key>
+			<string>осталось %d минут</string>
+		</dict>
+	</dict>
+	<key>alfa_points_score</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@points@</string>
+		<key>points</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>баллов</string>
+			<key>one</key>
+			<string>балл</string>
+			<key>few</key>
+			<string>балла</string>
+			<key>Many</key>
+			<string>баллов</string>
+			<key>other</key>
+			<string>баллов</string>
+		</dict>
+	</dict>
+	<key>insurance_filter_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@insurance@</string>
+		<key>insurance</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Нет полисов</string>
+			<key>one</key>
+			<string>%d полис</string>
+			<key>two</key>
+			<string>%d полиса</string>
+			<key>few</key>
+			<string>%d полиса</string>
+			<key>Many</key>
+			<string>%d полисов</string>
+			<key>other</key>
+			<string>%d полисов</string>
+		</dict>
+	</dict>
+	<key>insurance_expiration_days</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days@</string>
+		<key>days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d дней</string>
+			<key>one</key>
+			<string>%d день</string>
+			<key>two</key>
+			<string>%d дня</string>
+			<key>few</key>
+			<string>%d дня</string>
+			<key>Many</key>
+			<string>%d дней</string>
+			<key>other</key>
+			<string>%d дней</string>
+		</dict>
+	</dict>
+	<key>flat_on_off_activation_period</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days@</string>
+		<key>days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Активация на %d дней</string>
+			<key>one</key>
+			<string>Активация на %d день</string>
+			<key>two</key>
+			<string>Активация на %d дня</string>
+			<key>few</key>
+			<string>Активация на %d дня</string>
+			<key>Many</key>
+			<string>Активация на %d дней</string>
+			<key>other</key>
+			<string>Активация на %d дней</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

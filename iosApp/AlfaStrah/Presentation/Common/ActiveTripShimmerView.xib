@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qcQ-VJ-ZQI" customClass="ActiveTripShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVY-Rh-1eS" customClass="ShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="138.5" y="75" width="137" height="9"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="O1v-Rb-zRL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOI-t2-9Wi" customClass="ShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="83" y="102" width="248" height="9"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="0E3-8s-yhK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9p-DL-hji" customClass="ShimmerView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="93" y="120" width="228" height="9"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="Ka5-Gx-Idb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99k-F0-1FV">
+                    <rect key="frame" x="83" y="156" width="248" height="36"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="rtf-VA-HRM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="F9p-DL-hji" firstAttribute="width" secondItem="qcQ-VJ-ZQI" secondAttribute="width" multiplier="0.55" id="5XZ-IS-iWu"/>
+                <constraint firstItem="gOI-t2-9Wi" firstAttribute="centerX" secondItem="qcQ-VJ-ZQI" secondAttribute="centerX" id="AQX-uh-ZZr"/>
+                <constraint firstItem="F9p-DL-hji" firstAttribute="centerX" secondItem="qcQ-VJ-ZQI" secondAttribute="centerX" id="Dkn-E3-P4b"/>
+                <constraint firstAttribute="bottom" secondItem="99k-F0-1FV" secondAttribute="bottom" constant="24" id="KZg-cm-9DI"/>
+                <constraint firstItem="DVY-Rh-1eS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qcQ-VJ-ZQI" secondAttribute="top" constant="42" id="eud-3x-i89"/>
+                <constraint firstItem="gOI-t2-9Wi" firstAttribute="width" secondItem="qcQ-VJ-ZQI" secondAttribute="width" multiplier="0.6" id="hRn-X5-0Un"/>
+                <constraint firstItem="F9p-DL-hji" firstAttribute="top" secondItem="gOI-t2-9Wi" secondAttribute="bottom" constant="9" id="iE5-lt-n5z"/>
+                <constraint firstItem="99k-F0-1FV" firstAttribute="centerX" secondItem="qcQ-VJ-ZQI" secondAttribute="centerX" id="nFD-oO-Iu8"/>
+                <constraint firstItem="DVY-Rh-1eS" firstAttribute="centerX" secondItem="qcQ-VJ-ZQI" secondAttribute="centerX" id="pma-vd-970"/>
+                <constraint firstItem="99k-F0-1FV" firstAttribute="top" secondItem="F9p-DL-hji" secondAttribute="bottom" constant="27" id="qHe-gy-1D5"/>
+                <constraint firstItem="DVY-Rh-1eS" firstAttribute="width" secondItem="qcQ-VJ-ZQI" secondAttribute="width" multiplier="0.33" id="wYu-wI-gXz"/>
+                <constraint firstItem="gOI-t2-9Wi" firstAttribute="top" secondItem="DVY-Rh-1eS" secondAttribute="bottom" constant="18" id="yQ4-46-jMo"/>
+                <constraint firstItem="99k-F0-1FV" firstAttribute="width" secondItem="qcQ-VJ-ZQI" secondAttribute="width" multiplier="0.6" id="yto-jr-1SL"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadingView1" destination="DVY-Rh-1eS" id="jr2-aZ-PdD"/>
+                <outlet property="loadingView2" destination="gOI-t2-9Wi" id="qWg-ev-V1V"/>
+                <outlet property="loadingView3" destination="F9p-DL-hji" id="RXy-VA-pqg"/>
+                <outlet property="loadingView4" destination="99k-F0-1FV" id="Zo7-KI-oWI"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="-64.955357142857139"/>
+        </view>
+    </objects>
+</document>

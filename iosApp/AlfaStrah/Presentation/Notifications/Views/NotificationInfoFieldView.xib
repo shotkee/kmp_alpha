@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotificationInfoFieldView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvC-lT-s2B" userLabel="Title">
+                    <rect key="frame" x="20" y="8" width="560" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jy-2U-ARB" userLabel="Content">
+                    <rect key="frame" x="20" y="36.5" width="560" height="35.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEy-OD-NaL" userLabel="Separator">
+                    <rect key="frame" x="20" y="79" width="580" height="1"/>
+                    <color key="backgroundColor" red="0.8118598461151123" green="0.82528805732727051" blue="0.8445427417755127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jZ2-l1-OGY" customClass="SeparatorSizeConstraint" customModule="AlfaStrah" customModuleProvider="target"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Jy-2U-ARB" firstAttribute="top" secondItem="ZvC-lT-s2B" secondAttribute="bottom" constant="8" symbolic="YES" id="0mb-nH-5gp"/>
+                <constraint firstAttribute="trailing" secondItem="9Jy-2U-ARB" secondAttribute="trailing" constant="20" symbolic="YES" id="1cQ-mf-DST"/>
+                <constraint firstItem="ZvC-lT-s2B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="9bY-pe-uKc"/>
+                <constraint firstAttribute="bottom" secondItem="9Jy-2U-ARB" secondAttribute="bottom" constant="8" id="AgF-2j-wFs"/>
+                <constraint firstItem="9Jy-2U-ARB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="JuR-HC-Ina"/>
+                <constraint firstItem="ZvC-lT-s2B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="fod-1r-hwe"/>
+                <constraint firstItem="UEy-OD-NaL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="gIe-GF-9xE"/>
+                <constraint firstAttribute="trailing" secondItem="UEy-OD-NaL" secondAttribute="trailing" id="pkh-GA-ST5"/>
+                <constraint firstAttribute="trailing" secondItem="ZvC-lT-s2B" secondAttribute="trailing" constant="20" symbolic="YES" id="tm1-ph-EBQ"/>
+                <constraint firstAttribute="bottom" secondItem="UEy-OD-NaL" secondAttribute="bottom" id="y86-zX-JqU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="9Jy-2U-ARB" id="3Oo-qI-tIk"/>
+                <outlet property="titleLabel" destination="ZvC-lT-s2B" id="Axj-s1-mwR"/>
+            </connections>
+            <point key="canvasLocation" x="196" y="185"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

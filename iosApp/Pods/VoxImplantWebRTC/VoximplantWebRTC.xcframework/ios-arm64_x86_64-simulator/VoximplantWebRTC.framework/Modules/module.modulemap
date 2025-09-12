@@ -1,0 +1,6 @@
+framework module VoximplantWebRTC {
+  umbrella header "VoximplantWebRTC.h"
+
+  export *
+  module * { export * }
+}

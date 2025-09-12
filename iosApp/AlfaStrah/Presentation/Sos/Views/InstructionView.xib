@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InstructionView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="206"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="50" verticalHuggingPriority="990" verticalCompressionResistancePriority="990" text="ДТП" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIp-EI-kbc" userLabel="Title Label">
+                    <rect key="frame" x="16" y="14" width="560" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="Text Primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="10" verticalHuggingPriority="950" verticalCompressionResistancePriority="950" text="Дорожно–транспортное проишествие" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQJ-NR-r9P" userLabel="Details Label">
+                    <rect key="frame" x="16" y="36.5" width="560" height="157.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="Text Secondary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGX-mE-aRQ" userLabel="Accessory Container">
+                    <rect key="frame" x="576" y="0.0" width="24" height="206"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="24px:Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="3jg-zh-UIy" userLabel="Accessory Image View">
+                            <rect key="frame" x="0.0" y="91" width="24" height="24"/>
+                            <color key="tintColor" name="Icon Secondary"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="NwD-X8-vJq"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="3jg-zh-UIy" secondAttribute="centerY" id="M7L-JO-2dm"/>
+                        <constraint firstItem="3jg-zh-UIy" firstAttribute="leading" secondItem="dGX-mE-aRQ" secondAttribute="leading" id="bCW-o1-BEm"/>
+                        <constraint firstAttribute="trailing" secondItem="3jg-zh-UIy" secondAttribute="trailing" id="lHF-gd-BLf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-0s-bAr" userLabel="Separator" customClass="HairLineView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="16" y="205" width="584" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tWV-dm-fCD" customClass="SeparatorSizeConstraint" customModule="AlfaStrah" customModuleProvider="target"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="EQJ-NR-r9P" firstAttribute="top" secondItem="OIp-EI-kbc" secondAttribute="bottom" constant="2" id="6Fz-AW-8Mt"/>
+                <constraint firstAttribute="bottom" secondItem="EQJ-NR-r9P" secondAttribute="bottom" constant="12" id="Hg5-dm-6CQ"/>
+                <constraint firstItem="OIp-EI-kbc" firstAttribute="leading" secondItem="EQJ-NR-r9P" secondAttribute="leading" id="Oka-gn-gs0"/>
+                <constraint firstItem="EQJ-NR-r9P" firstAttribute="top" secondItem="OIp-EI-kbc" secondAttribute="bottom" constant="2" id="QjF-5S-kWc"/>
+                <constraint firstItem="OIp-EI-kbc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Rb0-ai-Vn9"/>
+                <constraint firstItem="EQJ-NR-r9P" firstAttribute="top" secondItem="OIp-EI-kbc" secondAttribute="bottom" constant="2" id="UjR-zn-lkF"/>
+                <constraint firstItem="dGX-mE-aRQ" firstAttribute="leading" secondItem="OIp-EI-kbc" secondAttribute="trailing" id="XHb-dQ-yz3"/>
+                <constraint firstAttribute="bottom" secondItem="5Bt-0s-bAr" secondAttribute="bottom" id="YOl-Yu-aBJ"/>
+                <constraint firstAttribute="bottom" secondItem="dGX-mE-aRQ" secondAttribute="bottom" id="bT1-gz-GC9"/>
+                <constraint firstItem="OIp-EI-kbc" firstAttribute="trailing" secondItem="EQJ-NR-r9P" secondAttribute="trailing" id="bnf-jw-cva"/>
+                <constraint firstItem="dGX-mE-aRQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bz2-9Y-ko7"/>
+                <constraint firstItem="dGX-mE-aRQ" firstAttribute="leading" secondItem="OIp-EI-kbc" secondAttribute="trailing" id="nSq-4r-w3B"/>
+                <constraint firstAttribute="trailing" secondItem="5Bt-0s-bAr" secondAttribute="trailing" id="qMe-Mh-ddE"/>
+                <constraint firstItem="OIp-EI-kbc" firstAttribute="leading" secondItem="5Bt-0s-bAr" secondAttribute="leading" id="w32-4P-cYa"/>
+                <constraint firstItem="dGX-mE-aRQ" firstAttribute="leading" secondItem="OIp-EI-kbc" secondAttribute="trailing" id="wfF-zp-7P1"/>
+                <constraint firstItem="OIp-EI-kbc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="zDz-YB-grv"/>
+                <constraint firstAttribute="trailing" secondItem="dGX-mE-aRQ" secondAttribute="trailing" id="zFI-JD-8uR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailsLabel" destination="EQJ-NR-r9P" id="Nbx-PP-GYZ"/>
+                <outlet property="titleLabel" destination="OIp-EI-kbc" id="Cmf-4N-SUd"/>
+            </connections>
+            <point key="canvasLocation" x="439" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="24px:Arrow" width="24" height="24"/>
+        <namedColor name="Icon Secondary">
+            <color red="0.70196078431372544" green="0.70196078431372544" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Primary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Secondary">
+            <color red="0.52549019607843139" green="0.52549019607843139" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

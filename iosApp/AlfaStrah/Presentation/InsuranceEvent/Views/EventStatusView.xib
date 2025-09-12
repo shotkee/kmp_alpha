@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lho-Wc-V4X" customClass="EventStatusView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="283"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jC9-3m-yQW" userLabel="Indicator Container" customClass="EventStatusIndicatorView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="283"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" placeholder="YES" id="Cgf-wr-mpk"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="800" verticalHuggingPriority="800" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-ou-U2j" userLabel="Title Label">
+                    <rect key="frame" x="64" y="15" width="380" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="600" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="600" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOq-zh-1Vu" userLabel="Description Label">
+                    <rect key="frame" x="64" y="39.5" width="380" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.52964758869999995" green="0.52963173389999996" blue="0.52964073420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="50" verticalHuggingPriority="500" horizontalCompressionResistancePriority="50" verticalCompressionResistancePriority="500" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAJ-LV-aSN" userLabel="Date Label">
+                    <rect key="frame" x="64" y="64" width="380" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.52964758869999995" green="0.52963173389999996" blue="0.52964073420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRK-3F-Zia" userLabel="Decision Container">
+                    <rect key="frame" x="64" y="84.5" width="380" height="186.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="10" id="cps-9Q-nrj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rg-7g-JSr" userLabel="Stoa Container">
+                    <rect key="frame" x="64" y="271" width="380" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="600" constant="12" id="xbV-Du-brb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbX-bW-aHb" userLabel="Separator" customClass="HairLineView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="64" y="282" width="396" height="1"/>
+                    <color key="backgroundColor" red="0.81185984609999995" green="0.82528805729999999" blue="0.8445427418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="R96-bn-jXD" customClass="SeparatorSizeConstraint" customModule="AlfaStrah" customModuleProvider="target"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Wgv-CW-WPC"/>
+            <constraints>
+                <constraint firstItem="Wdq-ou-U2j" firstAttribute="leading" secondItem="LbX-bW-aHb" secondAttribute="leading" id="2bd-SM-JKY"/>
+                <constraint firstItem="sAJ-LV-aSN" firstAttribute="trailing" secondItem="Wdq-ou-U2j" secondAttribute="trailing" id="588-Ex-MST"/>
+                <constraint firstItem="Wdq-ou-U2j" firstAttribute="leading" secondItem="hRK-3F-Zia" secondAttribute="leading" id="9TK-K6-ZCq"/>
+                <constraint firstItem="7rg-7g-JSr" firstAttribute="top" secondItem="hRK-3F-Zia" secondAttribute="bottom" id="GWT-hv-izH"/>
+                <constraint firstItem="7rg-7g-JSr" firstAttribute="trailing" secondItem="Wdq-ou-U2j" secondAttribute="trailing" id="K7m-4I-daP"/>
+                <constraint firstAttribute="bottom" secondItem="7rg-7g-JSr" secondAttribute="bottom" id="KRL-If-VYI"/>
+                <constraint firstItem="7rg-7g-JSr" firstAttribute="leading" secondItem="Wdq-ou-U2j" secondAttribute="leading" id="L27-VE-lcQ"/>
+                <constraint firstItem="SOq-zh-1Vu" firstAttribute="top" secondItem="Wdq-ou-U2j" secondAttribute="bottom" constant="4" id="MGF-v1-cnO"/>
+                <constraint firstItem="sAJ-LV-aSN" firstAttribute="top" secondItem="SOq-zh-1Vu" secondAttribute="bottom" constant="4" id="Q4u-zE-Ux3"/>
+                <constraint firstAttribute="bottom" secondItem="jC9-3m-yQW" secondAttribute="bottom" id="RwB-Mz-eOd"/>
+                <constraint firstItem="Wdq-ou-U2j" firstAttribute="trailing" secondItem="SOq-zh-1Vu" secondAttribute="trailing" id="Vqg-jN-LSF"/>
+                <constraint firstAttribute="bottom" secondItem="LbX-bW-aHb" secondAttribute="bottom" id="WSS-F9-OCH"/>
+                <constraint firstItem="Wdq-ou-U2j" firstAttribute="top" secondItem="lho-Wc-V4X" secondAttribute="top" constant="15" id="a6w-JY-IhS"/>
+                <constraint firstItem="jC9-3m-yQW" firstAttribute="leading" secondItem="lho-Wc-V4X" secondAttribute="leading" id="aCg-TH-wEE"/>
+                <constraint firstItem="sAJ-LV-aSN" firstAttribute="leading" secondItem="Wdq-ou-U2j" secondAttribute="leading" id="bAv-u7-kDG"/>
+                <constraint firstItem="hRK-3F-Zia" firstAttribute="top" secondItem="sAJ-LV-aSN" secondAttribute="bottom" id="fep-OD-g4H"/>
+                <constraint firstAttribute="trailing" secondItem="Wdq-ou-U2j" secondAttribute="trailing" constant="16" id="ra6-HN-rzb"/>
+                <constraint firstItem="Wdq-ou-U2j" firstAttribute="trailing" secondItem="hRK-3F-Zia" secondAttribute="trailing" id="tnN-uP-2MO"/>
+                <constraint firstItem="jC9-3m-yQW" firstAttribute="top" secondItem="lho-Wc-V4X" secondAttribute="top" id="uIj-pq-FJ7"/>
+                <constraint firstItem="Wdq-ou-U2j" firstAttribute="leading" secondItem="SOq-zh-1Vu" secondAttribute="leading" id="vjt-Kg-Zfn"/>
+                <constraint firstAttribute="trailing" secondItem="LbX-bW-aHb" secondAttribute="trailing" id="wwO-hQ-EZE"/>
+                <constraint firstItem="Wdq-ou-U2j" firstAttribute="leading" secondItem="jC9-3m-yQW" secondAttribute="trailing" id="zeb-GT-men"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="sAJ-LV-aSN" id="WcZ-Ue-0h4"/>
+                <outlet property="decisionContainer" destination="hRK-3F-Zia" id="J5q-KZ-ETS"/>
+                <outlet property="descriptionLabel" destination="SOq-zh-1Vu" id="PHB-hi-bEm"/>
+                <outlet property="indicatorView" destination="jC9-3m-yQW" id="B1J-UL-Wdj"/>
+                <outlet property="stoaContainer" destination="7rg-7g-JSr" id="wRn-w2-hXJ"/>
+                <outlet property="titleLabel" destination="Wdq-ou-U2j" id="zIQ-ri-p2s"/>
+            </connections>
+            <point key="canvasLocation" x="208" y="260"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RadioControlElementCell" rowHeight="68" id="2qm-yV-bEH" customClass="RadioControlElementCell" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2qm-yV-bEH" id="lc4-Hy-F5w">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjX-yt-6k8">
+                        <rect key="frame" x="16" y="16" width="248" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="radiobuttonOffRed" translatesAutoresizingMaskIntoConstraints="NO" id="L6U-KX-zcs">
+                        <rect key="frame" x="280" y="22" width="24" height="24"/>
+                        <color key="tintColor" red="0.84313725490000002" green="0.1529411765" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="219-0i-qTS"/>
+                            <constraint firstAttribute="height" constant="24" id="Pz2-C7-Bvc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="L6U-KX-zcs" secondAttribute="trailing" constant="16" id="26Y-lW-gZa"/>
+                    <constraint firstItem="L6U-KX-zcs" firstAttribute="leading" secondItem="yjX-yt-6k8" secondAttribute="trailing" constant="16" id="2gd-Sy-0P4"/>
+                    <constraint firstItem="yjX-yt-6k8" firstAttribute="top" secondItem="lc4-Hy-F5w" secondAttribute="top" constant="16" id="81T-Kt-uU2"/>
+                    <constraint firstItem="yjX-yt-6k8" firstAttribute="leading" secondItem="lc4-Hy-F5w" secondAttribute="leading" constant="16" id="O3V-Lj-ktW"/>
+                    <constraint firstAttribute="bottom" secondItem="yjX-yt-6k8" secondAttribute="bottom" constant="16" id="lOj-IZ-5GH"/>
+                    <constraint firstItem="L6U-KX-zcs" firstAttribute="centerY" secondItem="lc4-Hy-F5w" secondAttribute="centerY" id="mWa-y2-DjJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="L6U-KX-zcs" id="Mdc-8f-QOi"/>
+                <outlet property="titleLabel" destination="yjX-yt-6k8" id="Wrx-ou-Lp3"/>
+            </connections>
+            <point key="canvasLocation" x="-35.200000000000003" y="-90.854572713643179"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radiobuttonOffRed" width="24" height="24"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

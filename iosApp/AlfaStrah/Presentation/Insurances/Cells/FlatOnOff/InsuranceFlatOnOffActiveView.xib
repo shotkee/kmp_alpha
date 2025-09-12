@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InsuranceFlatOnOffActiveView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Включена страховка Квартира on/off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS0-iX-bAg">
+                    <rect key="frame" x="18" y="24" width="339" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="с 21.09.2019 по 11.10.2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPK-Od-lat">
+                    <rect key="frame" x="18" y="48" width="339" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На вашем балансе — 30 дней" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBE-x8-gV4">
+                    <rect key="frame" x="18" y="87" width="339" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZY-CE-ggr">
+                    <rect key="frame" x="27" y="120" width="321" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="dPX-0A-D2G"/>
+                    </constraints>
+                    <state key="normal" title="Купить пакет дней"/>
+                    <connections>
+                        <action selector="purchase" destination="iN0-l3-epB" eventType="touchUpInside" id="EwZ-cO-pmC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-RL-b1g" customClass="RoundEdgeButton" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="20" y="165" width="335" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="CEh-c1-MgT"/>
+                    </constraints>
+                    <state key="normal" title="Активировать защиту"/>
+                    <connections>
+                        <action selector="activate" destination="iN0-l3-epB" eventType="touchUpInside" id="GMD-eG-tON"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OZY-CE-ggr" firstAttribute="top" secondItem="VBE-x8-gV4" secondAttribute="bottom" constant="12" id="9yk-IL-FXN"/>
+                <constraint firstItem="VBE-x8-gV4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="BzG-Kn-oFx"/>
+                <constraint firstAttribute="bottom" secondItem="u9U-RL-b1g" secondAttribute="bottom" constant="24" id="Gd3-ZO-gUJ"/>
+                <constraint firstAttribute="trailing" secondItem="u9U-RL-b1g" secondAttribute="trailing" constant="20" id="NnP-rZ-21E"/>
+                <constraint firstItem="OZY-CE-ggr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="27" id="TE9-fc-mfz"/>
+                <constraint firstItem="VBE-x8-gV4" firstAttribute="top" secondItem="BPK-Od-lat" secondAttribute="bottom" constant="18" id="TKE-Rn-o74"/>
+                <constraint firstAttribute="trailing" secondItem="VBE-x8-gV4" secondAttribute="trailing" constant="18" id="WlQ-vJ-o1S"/>
+                <constraint firstItem="u9U-RL-b1g" firstAttribute="top" secondItem="OZY-CE-ggr" secondAttribute="bottom" constant="3" id="Wz0-W1-8GO"/>
+                <constraint firstItem="eS0-iX-bAg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="apf-C0-DGY"/>
+                <constraint firstItem="eS0-iX-bAg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="eJJ-X6-LLV"/>
+                <constraint firstAttribute="trailing" secondItem="OZY-CE-ggr" secondAttribute="trailing" constant="27" id="g4g-43-PMT"/>
+                <constraint firstItem="u9U-RL-b1g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="gEP-fV-9zy"/>
+                <constraint firstAttribute="trailing" secondItem="BPK-Od-lat" secondAttribute="trailing" constant="18" id="olw-73-ctP"/>
+                <constraint firstAttribute="trailing" secondItem="eS0-iX-bAg" secondAttribute="trailing" constant="18" id="omK-M6-b3l"/>
+                <constraint firstItem="BPK-Od-lat" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="yK9-aO-MWn"/>
+                <constraint firstItem="BPK-Od-lat" firstAttribute="top" secondItem="eS0-iX-bAg" secondAttribute="bottom" constant="3" id="zaJ-iY-qFA"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activateButton" destination="u9U-RL-b1g" id="tEu-fL-DbP"/>
+                <outlet property="balanceLabel" destination="VBE-x8-gV4" id="yI2-OO-yUN"/>
+                <outlet property="periodLabel" destination="BPK-Od-lat" id="Ac6-kG-m66"/>
+                <outlet property="purchaseButton" destination="OZY-CE-ggr" id="6y8-uy-4Pb"/>
+                <outlet property="titleLabel" destination="eS0-iX-bAg" id="F39-eR-ABg"/>
+            </connections>
+            <point key="canvasLocation" x="112.8" y="69.715142428785612"/>
+        </view>
+    </objects>
+</document>

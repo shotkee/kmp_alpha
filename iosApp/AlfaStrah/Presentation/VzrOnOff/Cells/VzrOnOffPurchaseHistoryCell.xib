@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VzrOnOffPurchaseHistoryCell" rowHeight="116" id="ira-iT-q4s" customClass="VzrOnOffPurchaseHistoryCell" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ira-iT-q4s" id="Fbg-ib-8Kw">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f38-5i-9Sg">
+                        <rect key="frame" x="18" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0V-UB-YAW">
+                        <rect key="frame" x="18" y="51" width="42" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkS-JE-d2f">
+                        <rect key="frame" x="354" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iy7-jU-NRG" customClass="HairLineView" customModule="AlfaStrah" customModuleProvider="target">
+                        <rect key="frame" x="18" y="79.5" width="378" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7oy-ot-tQ9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iy7-jU-NRG" firstAttribute="top" secondItem="Z0V-UB-YAW" secondAttribute="bottom" constant="15" id="Fmt-kD-sZs"/>
+                    <constraint firstItem="f38-5i-9Sg" firstAttribute="top" secondItem="Fbg-ib-8Kw" secondAttribute="top" constant="15" id="HT0-rR-ZNL"/>
+                    <constraint firstItem="Z0V-UB-YAW" firstAttribute="top" secondItem="f38-5i-9Sg" secondAttribute="bottom" constant="15" id="Hyl-p1-b9N"/>
+                    <constraint firstItem="Z0V-UB-YAW" firstAttribute="leading" secondItem="f38-5i-9Sg" secondAttribute="leading" id="Xlx-RR-JI3"/>
+                    <constraint firstItem="iy7-jU-NRG" firstAttribute="leading" secondItem="Fbg-ib-8Kw" secondAttribute="leading" constant="18" id="a7j-ot-0nL"/>
+                    <constraint firstItem="AkS-JE-d2f" firstAttribute="top" secondItem="Fbg-ib-8Kw" secondAttribute="top" constant="15" id="gSw-uQ-Q39"/>
+                    <constraint firstAttribute="bottom" secondItem="iy7-jU-NRG" secondAttribute="bottom" id="l9e-l1-X0W"/>
+                    <constraint firstAttribute="trailing" secondItem="iy7-jU-NRG" secondAttribute="trailing" constant="18" id="oBU-WA-2YM"/>
+                    <constraint firstItem="f38-5i-9Sg" firstAttribute="leading" secondItem="Fbg-ib-8Kw" secondAttribute="leading" constant="18" id="yk6-Jc-nvf"/>
+                    <constraint firstAttribute="trailing" secondItem="AkS-JE-d2f" secondAttribute="trailing" constant="18" id="zGT-Pl-Zo9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="f38-5i-9Sg" id="neQ-Oj-JHI"/>
+                <outlet property="priceLabel" destination="AkS-JE-d2f" id="Gda-uU-0tS"/>
+                <outlet property="titleLabel" destination="Z0V-UB-YAW" id="jNC-Ne-vju"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="148.99553571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="I4J-yc-d4d" customClass="RiskTypeCell" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I4J-yc-d4d" id="QLR-HH-c1L">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zau-0c-vFq">
+                        <rect key="frame" x="16" y="16" width="242" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="ico-passangers-ok" translatesAutoresizingMaskIntoConstraints="NO" id="65B-KM-3kT">
+                        <rect key="frame" x="274" y="19" width="30" height="30"/>
+                        <color key="tintColor" red="0.84313725490000002" green="0.1529411765" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="DkF-KW-V17"/>
+                            <constraint firstAttribute="height" constant="30" id="Gap-On-Ytf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zau-0c-vFq" firstAttribute="top" secondItem="QLR-HH-c1L" secondAttribute="top" constant="16" id="4hX-Dq-Sqb"/>
+                    <constraint firstItem="65B-KM-3kT" firstAttribute="centerY" secondItem="QLR-HH-c1L" secondAttribute="centerY" id="HaE-08-oUn"/>
+                    <constraint firstItem="65B-KM-3kT" firstAttribute="leading" secondItem="zau-0c-vFq" secondAttribute="trailing" constant="16" id="ML6-aq-2VF"/>
+                    <constraint firstItem="zau-0c-vFq" firstAttribute="leading" secondItem="QLR-HH-c1L" secondAttribute="leading" constant="16" id="YHY-gt-tVC"/>
+                    <constraint firstAttribute="bottom" secondItem="zau-0c-vFq" secondAttribute="bottom" constant="16" id="c5p-10-Rlh"/>
+                    <constraint firstAttribute="trailing" secondItem="65B-KM-3kT" secondAttribute="trailing" constant="16" id="nbj-Yc-UHp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="eventTypeTitleLabel" destination="zau-0c-vFq" id="Cal-cY-UeS"/>
+                <outlet property="iconView" destination="65B-KM-3kT" id="tVF-uu-zEj"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-67.466266866566727"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico-passangers-ok" width="52" height="52"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

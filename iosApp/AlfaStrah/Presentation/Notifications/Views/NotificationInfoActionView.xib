@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotificationInfoActionView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="990" verticalCompressionResistancePriority="990" text="Телефон" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxc-po-hQY">
+                    <rect key="frame" x="20" y="8" width="338" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="+7 (495) 995-12-20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVJ-Us-VQs">
+                    <rect key="frame" x="20" y="36.5" width="338" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iC-Dt-fdq" userLabel="Separator">
+                    <rect key="frame" x="20" y="63" width="398" height="1"/>
+                    <color key="backgroundColor" red="0.8118598461151123" green="0.82528805732727051" blue="0.8445427417755127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GBp-S2-F8z"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" image="ico-addf-tel" translatesAutoresizingMaskIntoConstraints="NO" id="040-Kb-jYJ">
+                    <rect key="frame" x="366" y="10" width="44" height="44"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="040-Kb-jYJ" secondAttribute="trailing" constant="8" id="2jy-3Z-a7S"/>
+                <constraint firstItem="040-Kb-jYJ" firstAttribute="leading" secondItem="FVJ-Us-VQs" secondAttribute="trailing" constant="8" symbolic="YES" id="3w6-7G-xht"/>
+                <constraint firstItem="1iC-Dt-fdq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="5WX-Pf-x94"/>
+                <constraint firstAttribute="bottom" secondItem="040-Kb-jYJ" secondAttribute="bottom" constant="10" id="BSl-o9-rPC"/>
+                <constraint firstItem="FVJ-Us-VQs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="HTh-oZ-6Ad"/>
+                <constraint firstItem="Zxc-po-hQY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Ks2-8P-4OV"/>
+                <constraint firstItem="040-Kb-jYJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="O6P-TP-geo"/>
+                <constraint firstItem="FVJ-Us-VQs" firstAttribute="trailing" secondItem="Zxc-po-hQY" secondAttribute="trailing" id="cCc-gp-X9J"/>
+                <constraint firstAttribute="centerY" secondItem="040-Kb-jYJ" secondAttribute="centerY" id="g3G-Mc-PkG"/>
+                <constraint firstItem="1iC-Dt-fdq" firstAttribute="leading" secondItem="Zxc-po-hQY" secondAttribute="leading" id="huJ-uE-ocy"/>
+                <constraint firstItem="040-Kb-jYJ" firstAttribute="leading" secondItem="Zxc-po-hQY" secondAttribute="trailing" constant="8" symbolic="YES" id="i8J-Cd-dsu"/>
+                <constraint firstAttribute="trailing" secondItem="1iC-Dt-fdq" secondAttribute="trailing" id="iwT-Ll-de3"/>
+                <constraint firstItem="Zxc-po-hQY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="pAG-cG-CKm"/>
+                <constraint firstItem="FVJ-Us-VQs" firstAttribute="leading" secondItem="Zxc-po-hQY" secondAttribute="leading" id="sOe-yl-ZtR"/>
+                <constraint firstAttribute="bottom" secondItem="1iC-Dt-fdq" secondAttribute="bottom" id="uAU-oX-fb7"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FVJ-Us-VQs" secondAttribute="bottom" constant="8" id="udb-Pv-TlB"/>
+                <constraint firstItem="FVJ-Us-VQs" firstAttribute="top" secondItem="Zxc-po-hQY" secondAttribute="bottom" constant="8" symbolic="YES" id="vr5-6D-948"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HTh-oZ-6Ad"/>
+                    <exclude reference="5WX-Pf-x94"/>
+                    <exclude reference="3w6-7G-xht"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="actionIconImageView" destination="040-Kb-jYJ" id="1ZH-tM-sxc"/>
+                <outlet property="subtitleLabel" destination="Zxc-po-hQY" id="aH3-BZ-GCH"/>
+                <outlet property="titleLabel" destination="FVJ-Us-VQs" id="JAP-WS-ryZ"/>
+            </connections>
+            <point key="canvasLocation" x="351" y="256.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-addf-tel" width="44" height="44"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

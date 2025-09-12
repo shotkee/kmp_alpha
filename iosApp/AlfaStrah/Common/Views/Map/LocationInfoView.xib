@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LocationInfoView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="269"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4U1-Gk-LMz">
+                    <rect key="frame" x="0.0" y="0.0" width="403" height="235"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMa-G7-Pgc" customClass="CommonNoteLabelView" customModule="AlfaStrah" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="403" height="135"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgu-Jp-WKS">
+                            <rect key="frame" x="0.0" y="139" width="403" height="96"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fce-za-mug" customClass="YMKMapView">
+                                    <rect key="frame" x="0.0" y="0.0" width="403" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="900" constant="96" id="tPl-d7-vkO"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Fce-za-mug" secondAttribute="bottom" id="510-Yo-ebN"/>
+                                <constraint firstItem="Fce-za-mug" firstAttribute="top" secondItem="Dgu-Jp-WKS" secondAttribute="top" id="PbE-3R-Oid"/>
+                                <constraint firstAttribute="trailing" secondItem="Fce-za-mug" secondAttribute="trailing" id="UIg-je-EqU"/>
+                                <constraint firstItem="Fce-za-mug" firstAttribute="leading" secondItem="Dgu-Jp-WKS" secondAttribute="leading" id="cS8-In-62h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysL-2J-jcG" customClass="HairLineView" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="234" width="403" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="VvC-p1-jPb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="ysL-2J-jcG" firstAttribute="leading" secondItem="4U1-Gk-LMz" secondAttribute="leadingMargin" id="FBN-pN-utX"/>
+                <constraint firstItem="4U1-Gk-LMz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NJb-Ab-889"/>
+                <constraint firstItem="4U1-Gk-LMz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OXR-mw-NoH"/>
+                <constraint firstItem="ysL-2J-jcG" firstAttribute="trailing" secondItem="4U1-Gk-LMz" secondAttribute="trailing" id="ViH-qA-QbW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4U1-Gk-LMz" secondAttribute="bottom" id="aUa-ow-XpD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4U1-Gk-LMz" secondAttribute="trailing" id="p2y-VO-npI"/>
+                <constraint firstItem="ysL-2J-jcG" firstAttribute="bottom" secondItem="4U1-Gk-LMz" secondAttribute="bottom" id="xiq-OS-2GA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressInput" destination="nMa-G7-Pgc" id="mfG-eb-0pa"/>
+                <outlet property="mapView" destination="Fce-za-mug" id="okM-yv-o63"/>
+                <outlet property="mapViewContainer" destination="Dgu-Jp-WKS" id="HHa-3a-c4r"/>
+                <outlet property="stackView" destination="4U1-Gk-LMz" id="p1e-Lp-KYf"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="-75"/>
+        </view>
+    </objects>
+</document>

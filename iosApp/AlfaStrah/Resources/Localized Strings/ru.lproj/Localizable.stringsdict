@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>selected_files_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Выбрано %d файлов</string>
+			<key>one</key>
+			<string>Выбран 1 файл</string>
+			<key>few</key>
+			<string>Выбрано %d файла</string>
+			<key>Many</key>
+			<string>Выбрано %d файлов</string>
+			<key>other</key>
+			<string>Выбрано %d файлов</string>
+		</dict>
+	</dict>
+	<key>files_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@files@</string>
+		<key>files</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d файлов</string>
+			<key>one</key>
+			<string>%d файл</string>
+			<key>few</key>
+			<string>%d файла</string>
+			<key>Many</key>
+			<string>%d файлов</string>
+			<key>other</key>
+			<string>%d файлов</string>
+		</dict>
+	</dict>
+	<key>minutes</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@minutes@</string>
+		<key>minutes</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d минут</string>
+			<key>one</key>
+			<string>%d минута</string>
+			<key>two</key>
+			<string>%d минуты</string>
+			<key>few</key>
+			<string>%d минуты</string>
+			<key>Many</key>
+			<string>%d минут</string>
+			<key>other</key>
+			<string>%d минут</string>
+		</dict>
+	</dict>
+	<key>minutes_left</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@minutes@</string>
+		<key>minutes</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>осталось %d минут</string>
+			<key>one</key>
+			<string>осталась %d минута</string>
+			<key>two</key>
+			<string>осталось %d минуты</string>
+			<key>few</key>
+			<string>осталось %d минуты</string>
+			<key>Many</key>
+			<string>осталось %d минут</string>
+			<key>other</key>
+			<string>осталось %d минут</string>
+		</dict>
+	</dict>
+	<key>alfa_points_score</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@points@</string>
+		<key>points</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>баллов</string>
+			<key>one</key>
+			<string>балл</string>
+			<key>few</key>
+			<string>балла</string>
+			<key>Many</key>
+			<string>баллов</string>
+			<key>other</key>
+			<string>баллов</string>
+		</dict>
+	</dict>
+	<key>doctor_experience_years</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@years@</string>
+		<key>years</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d лет</string>
+			<key>one</key>
+			<string>%d год</string>
+			<key>two</key>
+			<string>%d года</string>
+			<key>few</key>
+			<string>%d года</string>
+			<key>Many</key>
+			<string>%d лет</string>
+			<key>other</key>
+			<string>%d лет</string>
+		</dict>
+	</dict>
+	<key>insurance_filter_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@insurance@</string>
+		<key>insurance</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Нет полисов</string>
+			<key>one</key>
+			<string>%d полис</string>
+			<key>two</key>
+			<string>%d полиса</string>
+			<key>few</key>
+			<string>%d полиса</string>
+			<key>Many</key>
+			<string>%d полисов</string>
+			<key>other</key>
+			<string>%d полисов</string>
+		</dict>
+	</dict>
+	<key>insurance_expiration_days</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days@</string>
+		<key>days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d дней</string>
+			<key>one</key>
+			<string>%d день</string>
+			<key>two</key>
+			<string>%d дня</string>
+			<key>few</key>
+			<string>%d дня</string>
+			<key>Many</key>
+			<string>%d дней</string>
+			<key>other</key>
+			<string>%d дней</string>
+		</dict>
+	</dict>
+	<key>flat_on_off_activation_period</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days@</string>
+		<key>days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Активация на %d дней</string>
+			<key>one</key>
+			<string>Активация на %d день</string>
+			<key>two</key>
+			<string>Активация на %d дня</string>
+			<key>few</key>
+			<string>Активация на %d дня</string>
+			<key>Many</key>
+			<string>Активация на %d дней</string>
+			<key>other</key>
+			<string>Активация на %d дней</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

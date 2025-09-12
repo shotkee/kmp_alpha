@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="InsuranceCaseButtonView" id="iN0-l3-epB" customClass="InsuranceCaseButtonView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clq-Bo-FK2" customClass="RoundEdgeButton" customModule="AlfaStrah" customModuleProvider="target">
+                    <rect key="frame" x="15" y="35" width="353" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="PoR-2e-6zq"/>
+                    </constraints>
+                    <state key="normal" title="Страховой случай"/>
+                    <connections>
+                        <action selector="buttonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="4kY-El-J67"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background Secondary"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Clq-Bo-FK2" secondAttribute="trailing" constant="15" id="6CB-YB-Vbs"/>
+                <constraint firstItem="Clq-Bo-FK2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Ltf-ap-v7U"/>
+                <constraint firstItem="Clq-Bo-FK2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="gHR-O7-I71"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Clq-Bo-FK2" secondAttribute="bottom" constant="15" id="gtn-h2-7EA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="caseButton" destination="Clq-Bo-FK2" id="D6f-UZ-ndB"/>
+            </connections>
+            <point key="canvasLocation" x="144.80000000000001" y="421.43928035982015"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Clq-Bo-FK2">
+            <size key="intrinsicContentSize" width="154" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Background Secondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

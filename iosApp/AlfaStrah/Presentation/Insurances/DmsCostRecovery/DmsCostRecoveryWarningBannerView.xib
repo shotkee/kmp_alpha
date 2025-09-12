@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DmsCostRecoveryWarningBannerView" customModule="AlfaStrah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bj-kt-8qI">
+                    <rect key="frame" x="0.0" y="0.0" width="339" height="84"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTQ-m5-zZt">
+                            <rect key="frame" x="15" y="15" width="274" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0B-V1-JrE">
+                            <rect key="frame" x="306" y="15" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="M0B-V1-JrE" secondAttribute="height" multiplier="1:1" id="jWE-he-B5r"/>
+                                <constraint firstAttribute="height" constant="24" id="lY4-sO-vRC"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="icon-cross-close-alert_template"/>
+                            <connections>
+                                <action selector="closeButtonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="VGU-Rh-wc4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="M0B-V1-JrE" secondAttribute="trailing" constant="9" id="TEX-7i-G7D"/>
+                        <constraint firstItem="nTQ-m5-zZt" firstAttribute="top" secondItem="2bj-kt-8qI" secondAttribute="top" constant="15" id="XBi-SM-SvF"/>
+                        <constraint firstItem="M0B-V1-JrE" firstAttribute="top" secondItem="2bj-kt-8qI" secondAttribute="top" constant="15" id="Y2F-Ac-A7a"/>
+                        <constraint firstAttribute="bottom" secondItem="nTQ-m5-zZt" secondAttribute="bottom" constant="15" id="b7O-AW-Y6x"/>
+                        <constraint firstItem="nTQ-m5-zZt" firstAttribute="leading" secondItem="2bj-kt-8qI" secondAttribute="leading" constant="15" id="jGX-TY-7iA"/>
+                        <constraint firstItem="M0B-V1-JrE" firstAttribute="leading" secondItem="nTQ-m5-zZt" secondAttribute="trailing" constant="17" id="vG2-wt-AuZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2bj-kt-8qI" secondAttribute="bottom" id="9Zy-nj-r4k"/>
+                <constraint firstItem="2bj-kt-8qI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CLf-Ow-8uM"/>
+                <constraint firstAttribute="trailing" secondItem="2bj-kt-8qI" secondAttribute="trailing" id="PNE-y6-kCb"/>
+                <constraint firstItem="2bj-kt-8qI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wrg-yH-xdk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="M0B-V1-JrE" id="csg-UR-OXY"/>
+                <outlet property="containerView" destination="2bj-kt-8qI" id="IWM-Z9-Nb4"/>
+                <outlet property="textLabel" destination="nTQ-m5-zZt" id="U05-bM-DRc"/>
+            </connections>
+            <point key="canvasLocation" x="142.75362318840581" y="-247.82608695652175"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-cross-close-alert_template" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

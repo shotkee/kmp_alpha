@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "select-all-icon-action-menu-disable.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
