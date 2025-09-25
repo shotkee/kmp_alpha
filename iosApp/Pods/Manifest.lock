@@ -87,6 +87,7 @@ PODS:
   - SDWebImage (5.15.8):
     - SDWebImage/Core (= 5.15.8)
   - SDWebImage/Core (5.15.8)
+  - shared (1.0)
   - SlackTextViewController (1.9.6)
   - SwiftDate (6.3.1)
   - SwiftSignalRClient (1.0.0)
@@ -102,6 +103,7 @@ DEPENDENCIES:
   - FirebaseMessaging (~> 10.24.0)
   - IQKeyboardManagerSwift (~> 6.5.12)
   - SDWebImage (~> 5.15.8)
+  - shared (from `../shared`)
   - SlackTextViewController (from `https://github.com/S-V/SlackTextViewController.git`)
   - SwiftDate (~> 6.3.1)
   - SwiftSignalRClient (~> 1.0.0)
@@ -136,6 +138,8 @@ SPEC REPOS:
     - YandexMapsMobile
 
 EXTERNAL SOURCES:
+  shared:
+    :path: "../shared"
   SlackTextViewController:
     :git: https://github.com/S-V/SlackTextViewController.git
 
@@ -162,6 +166,7 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   SDWebImage: cb032eba469c54e0000e78bcb0a13cdde0a52798
+  shared: 5f44f3f8910a5c02edcba565fb3f2f29d9b7d70d
   SlackTextViewController: 77bd984be710e7bb543d0e2ceff41a3b95ef935e
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftSignalRClient: f9a23a0407d490a799cc1a3c8835b8611128d76c
@@ -170,6 +175,6 @@ SPEC CHECKSUMS:
   VoxImplantWebRTC: db29562c228542d16240401e5fc897441c014ba6
   YandexMapsMobile: e51e97fb489b19f9e493b7689a13cd1e04180f1a
 
-PODFILE CHECKSUM: 3352ef9d1052463d3dd6869fd37d5b9fa79b2144
+PODFILE CHECKSUM: 1dbe5a10aba7327ab89d647f6d722a400bff98e5
 
 COCOAPODS: 1.16.2

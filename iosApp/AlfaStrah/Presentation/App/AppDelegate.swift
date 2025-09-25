@@ -6,6 +6,8 @@
 //  Copyright © 2018 RedMadRobot. All rights reserved.
 //
 
+import shared
+
 import UIKit
 import UserNotifications
 import Legacy
@@ -65,114 +67,120 @@ class AppDelegate: UIResponder,
                    TransferManagerDependency,
                    ApplicationSettingsServiceDependency,
                    ActivityDelegate,
-                   MessagingDelegate {
-    var logger: TaggedLogger?
-    var window: UIWindow?
-    private var applicationFlow: ApplicationFlow!
-    var transferManager: TransferManager!
-    var applicationSettingsService: ApplicationSettingsService!
-    
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    ) -> Bool {
-        let window = Window(frame: UIScreen.main.bounds)
-        window.delegate = self
-        
-        self.window = window
-        
-        setupAppearance()
-
-        setupIQKeyboardManager()
-        
-        FirebaseApp.configure()
-        setupFirebaseMessaging()
-        
-        let configurator: RestConfigurator
-        switch environment {
-            case .appStore:
-                configurator = RestConfigurator(
-                    baseUrl: "https://alfamobile.alfastrah.ru",
-                    yandexMapsApiKey: "59bd8716-b711-4501-9a13-95c5b092e1b9",
-                    yandexMetricaApiKey: "8363dba7-06b3-40a6-bd0a-e0c1c63146d9",
-                    secretKey: secretKey,
-                    useProdEuroprotocolEnvironment: true
-                )
-            case .prodAdHoc:
-                configurator = RestConfigurator(
-                    baseUrl: "https://alfamobile.alfastrah.ru",
-                    yandexMapsApiKey: "59bd8716-b711-4501-9a13-95c5b092e1b9",
-                    yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
-                    secretKey: secretKey,
-                    useProdEuroprotocolEnvironment: true
-                )
-            case .prod:
-                configurator = RestConfigurator(
-                    baseUrl: "https://alfamobile.alfastrah.ru",
-                    yandexMapsApiKey: "59bd8716-b711-4501-9a13-95c5b092e1b9",
-                    yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
-                    secretKey: secretKey,
-                    useProdEuroprotocolEnvironment: true
-                )
-            case .stageAdHoc:
-                configurator = RestConfigurator(
-                    baseUrl: "https://alfa-stage.entelis.team",
-                    yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
-                    yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
-                    secretKey: secretKey,
-                    useProdEuroprotocolEnvironment: false
-                )
-            case .stage:
-                configurator = RestConfigurator(
-                    baseUrl: "https://alfa-stage.entelis.team",
-                    yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
-                    yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
-                    secretKey: secretKey,
-                    useProdEuroprotocolEnvironment: false
-                )
-            case .testAdHoc:
-                configurator = RestConfigurator(
-                    baseUrl: "https://alfa-test.entelis.team",
-                    yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
-                    yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
-                    secretKey: secretKey,
-                    useProdEuroprotocolEnvironment: false
-                )
-            case .test:
-                configurator = RestConfigurator(
-                    baseUrl: "https://alfa-test.entelis.team",
-                    yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
-                    yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
-                    secretKey: secretKey,
-                    useProdEuroprotocolEnvironment: false
-                )
-        }
-        
-        let container = configurator.create()
-        container.resolve(self)
+				   MessagingDelegate {
+	var logger: TaggedLogger?
+	var window: UIWindow?
+	private var applicationFlow: ApplicationFlow!
+	var transferManager: TransferManager!
+	var applicationSettingsService: ApplicationSettingsService!
+	
+	func application(
+		_ application: UIApplication,
+		didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+	) -> Bool {
+		let window = Window(frame: UIScreen.main.bounds)
+		window.delegate = self
+		
+		self.window = window
+		
+		setupAppearance()
+		
+		setupIQKeyboardManager()
+		
+		FirebaseApp.configure()
+		setupFirebaseMessaging()
+		
+		let configurator: RestConfigurator
+		switch environment {
+			case .appStore:
+				configurator = RestConfigurator(
+					baseUrl: "https://alfamobile.alfastrah.ru",
+					yandexMapsApiKey: "59bd8716-b711-4501-9a13-95c5b092e1b9",
+					yandexMetricaApiKey: "8363dba7-06b3-40a6-bd0a-e0c1c63146d9",
+					secretKey: secretKey,
+					useProdEuroprotocolEnvironment: true
+				)
+			case .prodAdHoc:
+				configurator = RestConfigurator(
+					baseUrl: "https://alfamobile.alfastrah.ru",
+					yandexMapsApiKey: "59bd8716-b711-4501-9a13-95c5b092e1b9",
+					yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
+					secretKey: secretKey,
+					useProdEuroprotocolEnvironment: true
+				)
+			case .prod:
+				configurator = RestConfigurator(
+					baseUrl: "https://alfamobile.alfastrah.ru",
+					yandexMapsApiKey: "59bd8716-b711-4501-9a13-95c5b092e1b9",
+					yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
+					secretKey: secretKey,
+					useProdEuroprotocolEnvironment: true
+				)
+			case .stageAdHoc:
+				configurator = RestConfigurator(
+					baseUrl: "https://alfa-stage.entelis.team",
+					yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
+					yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
+					secretKey: secretKey,
+					useProdEuroprotocolEnvironment: false
+				)
+			case .stage:
+				configurator = RestConfigurator(
+					baseUrl: "https://alfa-stage.entelis.team",
+					yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
+					yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
+					secretKey: secretKey,
+					useProdEuroprotocolEnvironment: false
+				)
+			case .testAdHoc:
+				configurator = RestConfigurator(
+					baseUrl: "https://alfa-test.entelis.team",
+					yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
+					yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
+					secretKey: secretKey,
+					useProdEuroprotocolEnvironment: false
+				)
+			case .test:
+				configurator = RestConfigurator(
+					baseUrl: "https://alfa-test.entelis.team",
+					yandexMapsApiKey: "f984b85e-314b-4e3d-a0d9-442955b343e1",
+					yandexMetricaApiKey: "498359d9-d0b3-4de8-b1ae-c1e130cfcd21",
+					secretKey: secretKey,
+					useProdEuroprotocolEnvironment: false
+				)
+		}
+		
+		let container = configurator.create()
+		container.resolve(self)
 		
 		container.resolve(BDUI.CommonActionHandlers.shared)
-        
-        let lastUsedEnvironment = applicationSettingsService.lastUsedEnvironmentIdentifier
-            .map { Environment(rawValue: $0) }
-        let appVersion = AppInfoService.applicationShortVersion
-        let lastKnownAppVersion = applicationSettingsService.lastKnownAppVersion
-        
-        applicationFlow = ApplicationFlow(window: window, container: container)
-        applicationFlow.start(
-            resetMobileDeviceToken: environment != lastUsedEnvironment,
-            resetPassengersInsurances: appVersion != lastKnownAppVersion
-        )
-        
-        applicationSettingsService.lastUsedEnvironmentIdentifier = environment.rawValue
-        applicationSettingsService.lastKnownAppVersion = appVersion
-                
-        if #available(iOS 13.0, *) {
-			showDebugMenuIfNeeded(environment)
-        }
 		
-        return true
-    }
+		let lastUsedEnvironment = applicationSettingsService.lastUsedEnvironmentIdentifier
+			.map { Environment(rawValue: $0) }
+		let appVersion = AppInfoService.applicationShortVersion
+		let lastKnownAppVersion = applicationSettingsService.lastKnownAppVersion
+		
+		applicationFlow = ApplicationFlow(window: window, container: container)
+		applicationFlow.start(
+			resetMobileDeviceToken: environment != lastUsedEnvironment,
+			resetPassengersInsurances: appVersion != lastKnownAppVersion
+		)
+		
+		applicationSettingsService.lastUsedEnvironmentIdentifier = environment.rawValue
+		applicationSettingsService.lastKnownAppVersion = appVersion
+		
+		if #available(iOS 13.0, *) {
+			showDebugMenuIfNeeded(environment)
+		}
+		
+		setupKmp()
+		
+		return true
+	}
+	
+	private func setupKmp() {
+		InitKoinKt.doInitKoinOnce()
+	}
 	    
     func applicationDidBecomeActive(_ application: UIApplication) {
         applicationFlow.notify.didBecomeActive(application)
@@ -307,7 +315,7 @@ class AppDelegate: UIResponder,
         Messaging.messaging().apnsToken = deviceToken
     }
     
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+	func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Swift.Error) {
         applicationFlow.notify.remoteNotificationToken(.failure(error))
     }
     

@@ -16,6 +16,7 @@ target 'iosApp' do
 	pod 'YandexMapsMobile', '~> 4.3.2-lite'
 	pod 'TinyConstraints', '~> 4.0.0'
   pod 'VoxImplantSDK', '~> 2.50.0'
+	pod 'shared', :path => '../shared'
 end
 
 post_install do |installer|

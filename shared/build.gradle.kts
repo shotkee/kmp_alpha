@@ -1,5 +1,6 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -41,11 +42,15 @@ kotlin {
             isStatic = true
         }
 
-        pod("SDWebImageSwiftUI") {
-            version = "3.0.0"
-            linkOnly = true
-            extraOpts += listOf("-compiler-option", "-fmodules")
-        }
+        xcodeConfigurationToNativeBuildType["Debug Prod"] = NativeBuildType.DEBUG
+        xcodeConfigurationToNativeBuildType["Debug Stage"] = NativeBuildType.DEBUG
+        xcodeConfigurationToNativeBuildType["Release Prod"] = NativeBuildType.RELEASE
+
+//        pod("SDWebImageSwiftUI") {
+//            version = "3.0.0"
+//            linkOnly = true
+//            extraOpts += listOf("-compiler-option", "-fmodules")
+//        }
     }
 
 
